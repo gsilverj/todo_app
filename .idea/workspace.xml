@@ -57,10 +57,8 @@
       <file leaf-file-name="Exception_Handler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/core/Exception_Handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.24770643" vertical-offset="0" max-vertical-offset="872">
-              <folding>
-                <element signature="e#6#220#0" expanded="true" />
-              </folding>
+            <state line="5" column="28" selection-start="121" selection-end="121" vertical-scroll-proportion="0.10321101" vertical-offset="0" max-vertical-offset="872">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -275,10 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Exception_Handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.24770643" vertical-offset="0" max-vertical-offset="872">
-          <folding>
-            <element signature="e#6#220#0" expanded="true" />
-          </folding>
+        <state line="5" column="28" selection-start="121" selection-end="121" vertical-scroll-proportion="0.10321101" vertical-offset="0" max-vertical-offset="872">
+          <folding />
         </state>
       </provider>
     </entry>
