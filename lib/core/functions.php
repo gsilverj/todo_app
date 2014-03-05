@@ -7,9 +7,9 @@
  * Project Name:    functions.php (tasks.dev/lib/core/functions.php   project)
  */
 
-
 const DS = '/';
 
+/*
 function __autoload()
 {
     try
@@ -18,7 +18,7 @@ function __autoload()
     }
     catch(Exception $e)
     {
-        Exception_Handler->getException('thrown exception here');
+        //Exception_Handler->getException('thrown exception here');
     }
 
-}
+}*/

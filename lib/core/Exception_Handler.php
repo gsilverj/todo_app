@@ -11,12 +11,13 @@ class Exception_Handler
 {
     private $exception = null;
 
-    private $errMessage_config_file = 'Error C1: The Config File Was Not Found.';
-    private $errMessage_database_issue = 'Error DB1: The Last Database Function Could Not Complete. Please Try Again.';
-    private $errMessage_couldnt_find_php_file = 'Error P1: The PHP File Could Not Be Found.';
-    private $errMessage_couldnt_make_class = 'Error C2: The Class Could Not Be Created.';
-    private $errMessage_text_not_valid = '';
-    private $errMessage_view_not_found = '';
+    const ERROR_MESSAGE_config_file = 'Error C1: The Config File Was Not Found.';
+    const ERROR_MESSAGE_database_issue = 'Error DB1: The Last Database Function Could Not Complete. Please Try Again.';
+    const ERROR_MESSAGE_couldnt_find_php_file = 'Error P1: The PHP File Could Not Be Found.';
+    const ERROR_MESSAGE_couldnt_make_class = 'Error C2: The Class Could Not Be Created.';
+    const ERROR_MESSAGE_text_not_valid = 'Error T1: The Text Entered Was Not Valid. Please Try Again.';
+    const ERROR_MESSAGE_view_not_found = 'Error V1: The View Was Not Found.';
+    const ERROR_MESSAGE_DEFAULT = 'Error D1: An Unknown Error Has Occured.';
 
 
 
@@ -26,10 +27,50 @@ class Exception_Handler
         $exception = (string)$exIn;
     }
 
-    public function getErrorMessage()
+    public function getErrorMessage($exception)
     {
+        switch ($exception)
+        {
+            case 'C1':
+            {
+                return self::ERROR_MESSAGE_config_file;
+            }
 
+            case 'DB1':
+            {
+                return self::ERROR_MESSAGE_database_issue;
+            }
 
+            case 'P1':
+            {
+                return self::ERROR_MESSAGE_couldnt_find_php_file;
+            }
+
+            case 'C2':
+            {
+                return self::ERROR_MESSAGE_couldnt_make_class;
+            }
+
+            case 'T1':
+            {
+                return self::ERROR_MESSAGE_text_not_valid;
+            }
+
+            case 'V1':
+            {
+                return self::ERROR_MESSAGE_view_not_found;
+            }
+
+            case 'D1':
+            {
+                return $this->$ERROR_MESSAGE_DEFAULT;
+            }
+
+            default:
+            {
+                return self::ERROR_MESSAGE_DEFAULT;
+            }
+        }
     }
 
 
