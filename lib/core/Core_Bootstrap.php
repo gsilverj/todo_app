@@ -16,70 +16,30 @@ final class Core_Bootstrap
     public static function initialize(){
         //Initialize App
         //Match URI to Controller
-        self::matchUri();
+        self::matchUri($_SERVER['REQUEST_URI']);
     }
 
-    public static function matchUri()
+
+    public static function matchUri($uri = null)
     {
-        var_dump(explode('/', $_SERVER['REQUEST_URI']));
+        $className = false;
+        if($uri){
 
-        //Convert: task/add/ => TaskController::add()
-        //Convert: task/ => TaskController::index()
-        //Convert: '' => IndexController::index()
+            //Convert: task/add/ => TaskController::add()
+            //Convert: task/ => TaskController::index()
+            //Convert: '' => IndexController::index()
 
-        $uri = '/cat/duck/';
-        $toConvert = array();
-        $finishedLocation = '';
+            $uri = explode(' ' , trim(str_replace('/' , ' ' ,$uri) , ' '));
 
-        $toConvert = explode(' ' , trim(str_replace('/' , ' ' ,$uri) , " "));
-        var_dump($toConvert);
-
-       //This may be usefull, so I left it here, obviously need to be changed.
-       /* if(!empty($toConvert[0]))
-        {
-            foreach($toConvert as $val)
+            if(array_key_exists(0, $uri) && empty($uri[0]))
             {
-                if ($val == $toConvert[count($toConvert) - 1 ] )
-                {
-
-                }
-
+                $uri[0] = 'Index';
             }
+
+            $className = ucfirst($uri[0]) . 'Controller::' . ((count($uri) == 2) ? $uri[1] : 'index' ) . '()';
+
         }
-        else
-        {
-            $finishedLocation = 'IndexController::index()';
-        }*/
-
-        /*
-        if(!empty($toConvert[0]))
-        {
-            switch (count($toConvert))
-            {
-                case 1:
-                {
-                    $finishedLocation = ucfirst($toConvert[0]) . 'Controller::index()';
-                    break;
-                }
-                case 2:
-                {
-                    $finishedLocation = ucfirst($toConvert[0]) . 'Controller::' . $toConvert[1] . '()';
-                    break;
-                }
-                default:
-                    {
-
-                    break;
-                    }
-            }
-        }
-        else
-        {
-            $finishedLocation = 'IndexController::index()';
-        }*/
-
-        var_dump(substr_count($uri, '/'));
-        var_dump($finishedLocation);
+        return $className;
 
 
 
