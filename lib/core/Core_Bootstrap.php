@@ -39,6 +39,7 @@ final class Core_Bootstrap
             $className = ucfirst($uri[0]) . 'Controller::' . ((count($uri) == 2) ? $uri[1] : 'index' ) . '()';
 
         }
+        echo $className;
         return $className;
     }
 
