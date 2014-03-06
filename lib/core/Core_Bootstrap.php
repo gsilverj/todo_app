@@ -40,15 +40,6 @@ final class Core_Bootstrap
 
         }
         return $className;
-
-
-
-
-
-
-
-
-
     }
 
 } 
