@@ -7,7 +7,7 @@
  * Project Name:    TaskController.php (tasks.dev/lib/core/controllers/TaskController.php   project)
  */
 
-class TaskController
+class Core_TaskController
 {
 
     function add()

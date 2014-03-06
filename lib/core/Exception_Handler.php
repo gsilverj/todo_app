@@ -7,7 +7,7 @@
  * Project Name:    Exception_Handler.php (tasks.dev/lib/core/Exception_Handler.php   project)
  */
 
-class Exception_Handler
+class Core_Exception_Handler extends Exception
 {
     private $exception = null;
 

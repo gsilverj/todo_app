@@ -4,7 +4,7 @@
  * User:            Gabriell J.
  * Date:            3/5/14
  * Time:            10:51 AM
- * Project Name:    Core_Bootstrap.php  (tasks.dev/lib/core/Core_Bootstrap.php  project)
+ * Project Name:    Bootstrap.php  (tasks.dev/lib/core/Bootstrap.php  project)
  */
 
 namespace lib\core;
@@ -39,16 +39,8 @@ final class Core_Bootstrap
             $className = ucfirst($uri[0]) . 'Controller::' . ((count($uri) == 2) ? $uri[1] : 'index' ) . '()';
 
         }
+        echo $className;
         return $className;
-
-
-
-
-
-
-
-
-
     }
 
 } 
