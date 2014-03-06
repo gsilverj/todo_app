@@ -9,7 +9,7 @@
  * @package     Core_Config
  */
 
-class Config
+class Core_Config
 {
 
 

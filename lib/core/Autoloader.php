@@ -21,7 +21,7 @@
  * ^^^Seems that the a Autoloaders purpose is:
  *      "An autoloader should just be used to find a class file and include it. It shouldn't (and can't) do any logic
  *          such as instantiating an object or making decisions about which object to load. ... it doesn't create the object." - joonty (http://stackoverflow.com/questions/9671109/singleton-factory-autoloader)
- *s
+ *
  * autoload function was heavily based on:   http://www.devshed.com/c/a/PHP/The-Data-Mapper-Design-Pattern-A-Final-Example/2/
  *
  *
@@ -40,43 +40,64 @@ class Core_Autoloader
     private $dir;   //this will be the beginning of the directory desired,defined in __construct() (in this case "lib/core/" for ease of testing purposes)
 
 
+
+
+    //gets
+    public function getDir()
+    {
+        return  $this->dir;
+    }
+
+    //sets
+    public function setDir($newDir)
+    {
+        //The input should be layed out like this when changing should be as follows:
+        //
+        //  DS . foldername . DS . foldername . DS    - Etc....
+        //
+        $this->dir = $newDir;
+    }
+
+
+
+    //others
+
+    //assigns $dir a default value.
     public function __construct()
     {
         $this->dir = 'lib' . DS . 'core' . DS;
     }
 
-    //will attempt to load the class passed in, if the class already exists it will return true, otherwise it will try to find the file/require it,
+        //will attempt to load the class passed in, if the class already exists it will return true, otherwise it will try to find the file/require it,
     //      otherwise it will return false because file was not found so it cant require it. (ex if bootstrap taskcontroller isnt required, check for taskcontroller.php and require it)
     //      (true = already required OR is now required'd, false = file is not found)
     public function autoload($class)
     {
         if(class_exists($class, false)) //check if $class exists and dont default __autoload if it doesnt.
         {
-            return true;
+            //it already exists so no need to do anything...
         }
-
-        $file = $this->dir . $class . '.php';  //prepend the $dir and append .php to end of the class string that is passed in.
-        //echo $file; // this is what is coming out of $file after 'pends.
-
-        if(!file_exists($file))                                                                         //TODO:need to change this
+        else
         {
-            return false;
+            $file = $this->dir . $class . '.php';
+            //prepend the $dir and append .php to end of the class string that is passed in.
+            //echo $file; // this is what is coming out of $file after 'pends.
+
+            if(!file_exists($file))                                                                         //TODO:need to change this
+            {
+                //todo: load the exception handler here.
+                //todo: pop an exception here.
+            }
+
+            require_once $file;
+
+            //echo ' yeah it actually worked <br />';   //just a check to see if it is working.
         }
-
-        require_once $file;
-
-        //echo ' yeah it actually worked <br />';   //just a check to see if it is working.
-        return true;
     }
 
 
-
-
-
-
-
     //TODO: for some reason i cant get spl_ to work unless I do it in the class currently?
-    //will set autoload() as the only __autoloader to use for the current project.
+    //will set autoload() as the ONLY __autoloader to use for the current project.
     public function registerAutoloader()
     {
         spl_autoload_register(null, false);
