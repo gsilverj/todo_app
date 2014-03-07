@@ -18,6 +18,7 @@ class Core_TaskController
 {
 
     private $_currentRequest = '';
+    private $_currentRoute= '';
 
     //gets
     private function _getCurrentRequest()    { return $this->_currentRequest;}
@@ -67,22 +68,34 @@ class Core_TaskController
         $route = 'IndexController::index()';
 
 
-        //if newRequest is null or starts with a number do this
-        if($newRequest === null || is_numeric($newRequest) == true)
-        {
-            self::_getCurrentRequest($newRequest);
-        }
-        else
+        //todo: this may not work correctly if there is a " " before the $newRequest passed in, might fix by trimming white space before checking.
+        //if newRequest is null or starts with a number return the index route.
+        if($newRequest === null || is_numeric(substr($newRequest, 0, 1 ))== true)
         {
             return $route;
         }
+        else
+        {
+            self::_setCurrentRequest($newRequest);
+        }
 
+
+        //split up the currentRequest by "::" after trimming off the "()" at the end of the string.
+        $routeArray = explode('::', rtrim($this->_currentRequest, "()"));
+
+
+        //find the last occurance of a cap letter, then remove 1 space before it, and that first part is the div and the last part is the "name".php
+
+        //the part in routeArray[1] is then the function name.
 
 
 
 
         return  $route;
     }
+
+
+
 
     //todo: find a better name for this function.
     //@Description:
