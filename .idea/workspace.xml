@@ -35,9 +35,20 @@
       <file leaf-file-name="TaskController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/core/controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.7729358" vertical-offset="64" max-vertical-offset="1134">
+            <state line="61" column="0" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.54357797" vertical-offset="624" max-vertical-offset="1854">
               <folding>
                 <element signature="e#6#298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bootstrap.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="0" selection-start="886" selection-end="886" vertical-scroll-proportion="-23.962963" vertical-offset="19" max-vertical-offset="918">
+              <folding>
+                <element signature="e#6#204#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,12 +70,12 @@
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/lib/core/Core_Bootstrap.php" />
         <option value="$PROJECT_DIR$/lib/core/functions.php" />
-        <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
         <option value="$PROJECT_DIR$/lib/core/Exception_Handler.php" />
         <option value="$PROJECT_DIR$/lib/core/controllers/ViewController.php" />
         <option value="$PROJECT_DIR$/lib/core/Config.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/lib/core/controllers/TaskController.php" />
       </list>
     </option>
@@ -575,28 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.020642202" vertical-offset="0" max-vertical-offset="918">
-          <folding>
-            <element signature="e#6#204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="1" selection-start="165" selection-end="165" vertical-scroll-proportion="0.18577981" vertical-offset="0" max-vertical-offset="872">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="62" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.5029104" vertical-offset="0" max-vertical-offset="2034">
-          <folding>
-            <element signature="e#6#154#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -607,9 +600,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="197" selection-start="2046" selection-end="2046" vertical-scroll-proportion="0.27473807" vertical-offset="754" max-vertical-offset="1872">
+          <folding>
+            <element signature="e#6#154#0" expanded="true" />
+            <element signature="n#getDir#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
+            <element signature="n#setDir#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="886" selection-end="886" vertical-scroll-proportion="-23.962963" vertical-offset="19" max-vertical-offset="918">
+          <folding>
+            <element signature="e#6#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/controllers/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.7729358" vertical-offset="64" max-vertical-offset="1134">
+        <state line="61" column="0" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.54357797" vertical-offset="624" max-vertical-offset="1854">
           <folding>
             <element signature="e#6#298#0" expanded="true" />
           </folding>

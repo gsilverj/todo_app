@@ -63,6 +63,7 @@ class Core_Autoloader
     //others
 
     //assigns $dir a default value.
+    //todo: possibly change to protected and add $value - null as paramater to allow users to override the constructor so dev can change dir immideatly after calling constructor even when extended.
     public function __construct()
     {
         $this->dir = 'lib' . DS . 'core' . DS;
