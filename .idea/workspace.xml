@@ -35,20 +35,9 @@
       <file leaf-file-name="TaskController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/core/controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.54357797" vertical-offset="624" max-vertical-offset="1854">
+            <state line="69" column="63" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.39908257" vertical-offset="894" max-vertical-offset="2250">
               <folding>
                 <element signature="e#6#298#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bootstrap.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="886" selection-end="886" vertical-scroll-proportion="-23.962963" vertical-offset="19" max-vertical-offset="918">
-              <folding>
-                <element signature="e#6#204#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,50 +140,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -602,7 +547,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="197" selection-start="2046" selection-end="2046" vertical-scroll-proportion="0.27473807" vertical-offset="754" max-vertical-offset="1872">
+        <state line="65" column="197" selection-start="2046" selection-end="2046" vertical-scroll-proportion="0.08614668" vertical-offset="916" max-vertical-offset="1872">
           <folding>
             <element signature="e#6#154#0" expanded="true" />
             <element signature="n#getDir#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
@@ -622,7 +567,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/controllers/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.54357797" vertical-offset="624" max-vertical-offset="1854">
+        <state line="69" column="63" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.39908257" vertical-offset="894" max-vertical-offset="2250">
           <folding>
             <element signature="e#6#298#0" expanded="true" />
           </folding>

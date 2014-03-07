@@ -40,7 +40,7 @@ class Core_TaskController
     //
     //@depends  : n/a
     //@input    : n/a
-    //@return   : $route (tasks route)
+    //@return   : $_currentRequest
     public function getTaskRequest($newRequest = null)
     {
         $this->_currentRequest = (($this->_setCurrentRequest($newRequest) === null) ? false  : $newRequest);
@@ -49,17 +49,39 @@ class Core_TaskController
 
     //TODO: This functions WILL BREAK if the URI needs paramaters, need to fix.(ex. method/func() <- will work, method/func()/param1/param2 <- will not.)
     //@Description:     This function will take the request and look for it's route in the program. Essentially checking for its existance
-    //                      as a class and method. It will then return a route based on the URI.
-    //                  Ex. valid uri      = uri route
-    //                      wrong method   = index route , index func
-    //                      wrong func     = uri_route, index func
+    //                      as a class and method. It will then return a route based on the URI. If the input is blank , it will use the
+    //                      $_currentRequest's value. If empty
     //
-    //@depends  : Bootstrap.php (core_bootstrap::matchURI), Autoloader.php (core_autoloader::autoload has been set as __autoload)
+    //                  Ex. valid uri      = URI route
+    //                      wrong class    = IndexController::index()  <- or index.php
+    //                      wrong func     = MethodClass::index()
+    //                      invalid uri    = IndexController::index()
+    //                      null input     = IndexController::index()
+    //
+    //@depends  : Autoloader.php (core_autoloader::autoload has been set as __autoload)
     //@input    : n/a
     //@return   : $route (tasks route)
-    public function getTaskRoute()
+    public function getTaskRoute($newRequest = null)
     {
+        //set a default $route, just incase
+        $route = 'IndexController::index()';
 
+
+        //if newRequest is null or starts with a number do this
+        if($newRequest === null || is_numeric($newRequest) == true)
+        {
+            self::_getCurrentRequest($newRequest);
+        }
+        else
+        {
+            return $route;
+        }
+
+
+
+
+
+        return  $route;
     }
 
     //todo: find a better name for this function.
