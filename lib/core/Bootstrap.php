@@ -15,6 +15,8 @@ final class Core_Bootstrap
 
     public static function initialize(){
         //Initialize App
+        self::setIncludePaths();
+
         //Match URI to Controller
         self::matchUri($_SERVER['REQUEST_URI']);
     }
@@ -36,11 +38,27 @@ final class Core_Bootstrap
                 $uri[0] = 'Index';
             }
 
-            $className = ucfirst($uri[0]) . 'Controller::' . ((count($uri) == 2) ? $uri[1] : 'index' ) . '()';
+            $className = ucfirst($uri[0]) . 'Controller';
+            $function = ((count($uri) == 2) ? $uri[1] : 'index' );
+            $inst = new $className;
+            $inst->$function();
 
         }
         echo $className;
         return $className;
+    }
+
+    public static function setIncludePaths(){
+
+        $_paths = array('lib' => 'core', 'app' => false);
+
+        $includePath = '';
+
+        foreach($_paths as $key => $value){
+            $includePath = $includePath . getcwd() . DS . $key . ($value ? DS . $value : '') . ':';
+        }
+        set_include_path($includePath);
+
     }
 
 } 

@@ -10,8 +10,7 @@ include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'Bootstrap.php';
 include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'Autoloader.php';
 
 
-\lib\core\Core_Bootstrap::initialize();
-
 $loader = new Core_Autoloader();
 $loader -> registerAutoloader();
 
+\lib\core\Core_Bootstrap::initialize();

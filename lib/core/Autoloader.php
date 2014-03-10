@@ -39,7 +39,11 @@ class Core_Autoloader
 {
     private $dir;   //this will be the beginning of the directory desired,defined in __construct() (in this case "lib/core/" for ease of testing purposes)
 
-
+    private $_fileTypes = array(
+        'controller' => 'controllers',
+        'model' => 'models',
+        'view' => 'views'
+    );
 
 
     //gets
@@ -59,38 +63,46 @@ class Core_Autoloader
     }
 
 
-
     //others
 
     //assigns $dir a default value.
     //todo: possibly change to protected and add $value - null as paramater to allow users to override the constructor so dev can change dir immideatly after calling constructor even when extended.
-    public function __construct()
-    {
-        $this->dir = 'lib' . DS . 'core' . DS;
-    }
+    public function __construct(){}
 
-        //will attempt to load the class passed in, if the class already exists it will return true, otherwise it will try to find the file/require it,
+    //will attempt to load the class passed in, if the class already exists it will return true, otherwise it will try to find the file/require it,
     //      otherwise it will return false because file was not found so it cant require it. (ex if bootstrap taskcontroller isnt required, check for taskcontroller.php and require it)
     //      (true = already required OR is now required'd, false = file is not found)
     public function autoload($class)
     {
-        if(class_exists($class, false)) //check if $class exists and dont default __autoload if it doesnt.
+        if(!class_exists($class, false)) //check if $class exists and dont default __autoload if it doesnt.
         {
-            //it already exists so no need to do anything...
-        }
-        else
-        {
-            $file = $this->dir . $class . '.php';
+            $includedDir = false;
+
+            foreach($this->_fileTypes as $fileType => $dir){
+                if(strpos(strtolower($class), $fileType) !== false){
+                    $includedDir = $dir;
+                    break;
+                }
+            }
+            $file = $includedDir. DS . $class . '.php';
             //prepend the $dir and append .php to end of the class string that is passed in.
             //echo $file; // this is what is coming out of $file after 'pends.
 
-            if(!file_exists($file))                                                                         //TODO:need to change this
-            {
-                //todo: load the exception handler here.
-                //todo: pop an exception here.
+            $fileFound = false;
+            foreach(explode(':', get_include_path()) as $path){
+                if(file_exists($path . DS . $file))
+                {
+                    require_once $path . DS . $file;
+                    $fileFound = true;
+                    break;
+                }
             }
+            if(!$fileFound){
 
-            require_once $file;
+            }
+            //todo: load the exception handler here.
+            //todo: pop an exception here.
+
 
             //echo ' yeah it actually worked <br />';   //just a check to see if it is working.
         }

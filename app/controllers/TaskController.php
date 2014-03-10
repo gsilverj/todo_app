@@ -83,10 +83,39 @@ class Core_TaskController
         //split up the currentRequest by "::" after trimming off the "()" at the end of the string.
         $routeArray = explode('::', rtrim($this->_currentRequest, "()"));
 
+        //***get the dir of the .php file to look for;
+        $routeFunctionName = $routeArray[1];        //set the function part of the array as this variable.
+        /*$routeDir = explode('_', $routeArray[0]);   //explode the first element of the array into this array. (they are now seperated by '_')
 
-        //find the last occurance of a cap letter, then remove 1 space before it, and that first part is the div and the last part is the "name".php
 
-        //the part in routeArray[1] is then the function name.
+
+
+        $routeFolderName = '';
+        //find the last occurance of a cap letter, and that first part is the  "filename".php, the second part is part of the
+        //essentially get the length of the string of the #th element of the routeDir array....
+        // todo: -1 so that length of char array == the correct letter... eh? come back to this
+        for($i = (mb_strlen($routeDir[count($routeDir)])); $i >= 0; $i--)
+        {
+            if(ctype_upper($routeDir[$i]))
+            {
+                $routeFolderName = (substr(routeDire[$i])));
+                break;
+            }
+
+        }
+
+
+
+
+
+        $routeFilename = '';
+*/
+
+
+        //create the object to see if it exists and then unset to destroy the object used.
+
+
+
 
 
 
