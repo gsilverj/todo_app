@@ -43,7 +43,9 @@ class Task_TaskController
     private function _setCurrentRequest($newRequest)    {$this->_currentRequest = $newRequest;}
 
 
-
+    public function index(){
+        die('Died in Core_IndexController::index()');
+    }
 
 
     function __construct()

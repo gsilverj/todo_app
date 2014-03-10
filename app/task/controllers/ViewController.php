@@ -10,6 +10,10 @@
 class Task_ViewController
 {
 
+    public function index(){
+        die('Died in Core_IndexController::index()');
+    }
+
     function add()
     {}
 

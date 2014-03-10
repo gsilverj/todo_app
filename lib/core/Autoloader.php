@@ -85,6 +85,8 @@ class Core_Autoloader
     public function autoload($class)
     {
         $relativePath = $this->buildRelativePath($class);
+        $classFound = false;
+
 
         foreach(explode(':', get_include_path()) as $includePath)  //loop through the included paths
         {
@@ -103,6 +105,7 @@ class Core_Autoloader
                 }
             }
         }
+
     }
 
     public function buildRelativePath($class = null){

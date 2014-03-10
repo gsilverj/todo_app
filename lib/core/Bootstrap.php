@@ -13,15 +13,19 @@ namespace lib\core;
 final class Core_Bootstrap
 {
 
+    protected static $_config;
+
+
+
     public static function initialize(){
         //Initialize App
         self::setIncludePaths();
+        //self::getConfig();
+        self::readXmlConfigFile();
 
         //Match URI to Controller
         self::matchUri($_SERVER['REQUEST_URI']);
     }
-
-
     public static function matchUri($uri = null)
     {
         $className = false;
@@ -63,4 +67,40 @@ final class Core_Bootstrap
 
     }
 
-} 
+
+    public static function getConfig()
+    {
+        if (null === static::$_config) {
+            static::$_config = '';//read file
+        }
+
+        return static::$_config;
+    }
+
+    public static function readXmlConfigFile($source = null)
+    {
+        if($source === null)
+        {
+            $source = getcwd() . DS . 'lib' . DS . 'core' . DS . 'Config.xml';
+        }
+
+
+        $xml = false;
+
+        if(file_exists($source))
+        {
+            $xml = simplexml_load_file($source);
+            var_dump($xml);
+        }
+        else
+        {
+            echo 'failed to open file!!!!';
+        }
+
+        return $xml;
+    }
+
+
+
+
+}
