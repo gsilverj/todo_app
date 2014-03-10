@@ -35,14 +35,14 @@ final class Core_Bootstrap
 
             if(array_key_exists(0, $uri) && empty($uri[0]))
             {
-                $uri[0] = 'Index';
+                $uri[0] = 'Core_Index';
             }
 
             $className = ucfirst($uri[0]) . 'Controller';
             $className = preg_replace_callback('/_[a-z]?/', function ($matches) {return strtoupper($matches[0]);} , $className);
             $function = ((count($uri) == 2) ? $uri[1] : 'index' );
 
-             $inst = new $className;
+            $inst = new $className;
             $inst->$function();
 
         }
@@ -56,7 +56,7 @@ final class Core_Bootstrap
 
         $includePath = '';
 
-        foreach($_paths as $key => $value){
+        foreach($_paths as $value){
             $includePath = $includePath . getcwd() . DS . $value . ':';
         }
         set_include_path($includePath);

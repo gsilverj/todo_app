@@ -31,7 +31,7 @@
 
 
 
-class TaskController
+class Task_TaskController
 {
 
     private $_currentRequest = '';

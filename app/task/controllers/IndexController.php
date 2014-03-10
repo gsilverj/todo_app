@@ -12,7 +12,7 @@
 //Todo: Maybe include validation for the  _setCurrentRequest() & public getTaskRequest() functions.
 
 
-class IndexController
+class Task_IndexController
 {
     public function index(){
         die('Died in Core_IndexController::index()');

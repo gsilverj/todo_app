@@ -86,12 +86,21 @@ class Core_Autoloader
     {
         $relativePath = $this->buildRelativePath($class);
 
-        foreach(explode(':', get_include_path()) as $path){
-            $newPath = $path . DS . $relativePath;
-            if(file_exists($newPath))
+        foreach(explode(':', get_include_path()) as $includePath)  //loop through the included paths
+        {
+            foreach($this->_fileTypes as $fileType => $folderName) //loop through the file types (controller/model/views) in each included path
             {
-                require_once $newPath;
-                break;
+
+                $newPath = $includePath . DS . $relativePath;                        // make the new path
+                $newPath = explode(DS,  $newPath);                                   // explode it so you can grab the "filename.php"
+                $fileName = array_pop($newPath);                                     // grab filename
+                $newPath = implode(DS, $newPath) . DS . $folderName . DS . $fileName;// implode it, and make the correct new path.
+
+                if(file_exists($newPath))
+                {
+                    require_once $newPath;
+                    break;
+                }
             }
         }
     }
@@ -99,6 +108,7 @@ class Core_Autoloader
     public function buildRelativePath($class = null){
         $relativePath = null;
         if($class){
+
             $folders = explode('_', $class);
             $fileName = array_pop($folders);
 
@@ -109,12 +119,12 @@ class Core_Autoloader
 
     }
 
-//will set autoload() as the ONLY __autoloader to use for the current project.
-public function registerAutoloader()
-{
-    spl_autoload_register(null, false);
-    spl_autoload_register(array($this, 'autoload'));
-}
+    //will set autoload() as the ONLY __autoloader to use for the current project.
+    public function registerAutoloader()
+    {
+        spl_autoload_register(null, false);
+        spl_autoload_register(array($this, 'autoload'));
+    }
 
 
 }
