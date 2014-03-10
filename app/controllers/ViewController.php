@@ -7,7 +7,7 @@
  * Project Name:    ViewController.php (tasks.dev/lib/core/controllers/ViewController.php   project)
  */
 
-class Core_ViewController
+class ViewController
 {
 
     function add()

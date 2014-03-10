@@ -9,12 +9,29 @@
  *
  * @catagory    TaskController
  * @package     Core_TaskController
+ *
+ *
+ *
+ * TODO's:
+ *
+ *      ALL:
+ *          -Maybe include validation for the  _setCurrentRequest() & public getTaskRequest() functions.
+ *
+ *      getTaskRequest():
+ *          - Make validation (or use a class) to make sure a valid request string literal has been made.
+ *
+ *      getTaskRoute():
+ *          - This functions WILL BREAK if the URI needs paramaters, need to fix.(ex. method/func() <- will work, method/func()/param1/param2 <- will not.)
+ *          - May not work correctly if there is a " " before the $newRequest passed in, might fix by trimming white space before checking.
+ *
+ *
+ *
+ *
  */
 
-//Todo: Maybe include validation for the  _setCurrentRequest() & public getTaskRequest() functions.
 
 
-class Core_TaskController
+class TaskController
 {
 
     private $_currentRequest = '';
@@ -35,7 +52,6 @@ class Core_TaskController
     //others
 
 
-    //TODO: Make validation (or use a class) to make sure a valid request string literal has been made.
     //@Description:     This function will get the task request from a URI when a user action happens and set it to _currentRequest.
     //                      It will then return _currentRequest.(ex. button click)
     //
@@ -48,7 +64,7 @@ class Core_TaskController
         return  $this->_currentRequest;
     }
 
-    //TODO: This functions WILL BREAK if the URI needs paramaters, need to fix.(ex. method/func() <- will work, method/func()/param1/param2 <- will not.)
+
     //@Description:     This function will take the request and look for it's route in the program. Essentially checking for its existance
     //                      as a class and method. It will then return a route based on the URI. If the input is blank , it will use the
     //                      $_currentRequest's value. If empty
@@ -67,9 +83,7 @@ class Core_TaskController
         //set a default $route, just incase
         $route = 'IndexController::index()';
 
-
-        //todo: this may not work correctly if there is a " " before the $newRequest passed in, might fix by trimming white space before checking.
-        //if newRequest is null or starts with a number return the index route.
+        //if newRequest is null or starts with a number :  return the index route.
         if($newRequest === null || is_numeric(substr($newRequest, 0, 1 ))== true)
         {
             return $route;
@@ -79,44 +93,10 @@ class Core_TaskController
             self::_setCurrentRequest($newRequest);
         }
 
+        //load uri?
+        //$obj = new object();
 
-        //split up the currentRequest by "::" after trimming off the "()" at the end of the string.
-        $routeArray = explode('::', rtrim($this->_currentRequest, "()"));
-
-        //***get the dir of the .php file to look for;
-        $routeFunctionName = $routeArray[1];        //set the function part of the array as this variable.
-        /*$routeDir = explode('_', $routeArray[0]);   //explode the first element of the array into this array. (they are now seperated by '_')
-
-
-
-
-        $routeFolderName = '';
-        //find the last occurance of a cap letter, and that first part is the  "filename".php, the second part is part of the
-        //essentially get the length of the string of the #th element of the routeDir array....
-        // todo: -1 so that length of char array == the correct letter... eh? come back to this
-        for($i = (mb_strlen($routeDir[count($routeDir)])); $i >= 0; $i--)
-        {
-            if(ctype_upper($routeDir[$i]))
-            {
-                $routeFolderName = (substr(routeDire[$i])));
-                break;
-            }
-
-        }
-
-
-
-
-
-        $routeFilename = '';
-*/
-
-
-        //create the object to see if it exists and then unset to destroy the object used.
-
-
-
-
+        \lib\core\Core_Bootstrap::matchUri();
 
 
 

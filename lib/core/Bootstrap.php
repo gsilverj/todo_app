@@ -39,8 +39,10 @@ final class Core_Bootstrap
             }
 
             $className = ucfirst($uri[0]) . 'Controller';
+            $className = preg_replace_callback('/_[a-z]?/', function ($matches) {return strtoupper($matches[0]);} , $className);
             $function = ((count($uri) == 2) ? $uri[1] : 'index' );
-            $inst = new $className;
+
+             $inst = new $className;
             $inst->$function();
 
         }
@@ -50,12 +52,12 @@ final class Core_Bootstrap
 
     public static function setIncludePaths(){
 
-        $_paths = array('lib' => 'core', 'app' => false);
+        $_paths = array('lib', 'app');
 
         $includePath = '';
 
         foreach($_paths as $key => $value){
-            $includePath = $includePath . getcwd() . DS . $key . ($value ? DS . $value : '') . ':';
+            $includePath = $includePath . getcwd() . DS . $value . ':';
         }
         set_include_path($includePath);
 
