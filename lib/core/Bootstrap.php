@@ -125,12 +125,14 @@ final class Core_Bootstrap
                         self::$_registered_modules[$module->getName()][$key] = (string)$value;
                         //var_dump(self::$_registered_modules);
                         //echo self::$_registered_modules[$module][$array[$key]];
+                        //TODO: Maybe use the self::addModuleToRegisteredModules() method here instead of hardcoding it...
+
                     }
                 }
             }
         }
 
-        var_dump(self::$_registered_modules);
+        //var_dump(self::$_registered_modules);
         //echo self::$_registered_modules['task']['namespace'];
 
     }
@@ -143,20 +145,23 @@ final class Core_Bootstrap
     public static function addModuleToRegisteredModules($moduleName = null, $moduleNameSpace = null, $moduleFilePath = null)
     {
 
-        if(is_null($moduleName) || is_null($moduleNameSpace) || is_null($moduleFilePath))
-        {
-            //ThrowException
-            return;
-        }
-        elseif(!is_string($moduleName) || !is_string($moduleNameSpace) || !is_string($moduleFilePath))
-        {
+        if(
+            self::validateName($moduleName) &&
+            self::validateName($moduleNameSpace) &&
+            self::validateName($moduleFilePath)
+        ) {
+            self::$_registered_modules[$moduleName]['namespace'] = $moduleNameSpace;
+            self::$_registered_modules[$moduleName]['file_path'] = $moduleFilePath;
+        } else {
             //ThrowException
             return;
         }
 
-        self::$_registered_modules[$moduleName]['namespace'] = $moduleNameSpace;
-        self::$_registered_modules[$moduleName]['file_path'] = $moduleFilePath;
+    }
 
+    //validation for addModuleToRegisteredModules, to make sure the passed in values are valid. (maybe change name or something?)
+    public function validateName($name = null){
+        return (!is_null($name) && is_string($name));
     }
 
 

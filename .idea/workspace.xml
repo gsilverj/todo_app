@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Bootstrap.php" afterPath="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Config.xml" afterPath="$PROJECT_DIR$/lib/core/Config.xml" />
     </list>
     <ignored path="tasks.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,22 +28,17 @@
       <file leaf-file-name="Bootstrap.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="0" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.2396789" vertical-offset="349" max-vertical-offset="1728">
+            <state line="56" column="0" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.49541286" vertical-offset="0" max-vertical-offset="872">
               <folding>
                 <element signature="e#777#1641#0" expanded="false" />
                 <element signature="e#1647#1922#0" expanded="false" />
                 <element signature="e#1929#2168#0" expanded="false" />
                 <element signature="e#2174#2656#0" expanded="false" />
+                <element signature="e#2662#3957#0" expanded="false" />
+                <element signature="e#3963#4063#0" expanded="false" />
+                <element signature="e#4069#4619#0" expanded="false" />
+                <element signature="e#4755#4858#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -279,7 +273,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -287,7 +281,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -389,19 +383,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+        <state line="3" column="14" selection-start="92" selection-end="92" vertical-scroll-proportion="0.06006674" vertical-offset="0" max-vertical-offset="899">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.2396789" vertical-offset="349" max-vertical-offset="1728">
+        <state line="56" column="0" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.49541286" vertical-offset="0" max-vertical-offset="872">
           <folding>
             <element signature="e#777#1641#0" expanded="false" />
             <element signature="e#1647#1922#0" expanded="false" />
             <element signature="e#1929#2168#0" expanded="false" />
             <element signature="e#2174#2656#0" expanded="false" />
+            <element signature="e#2662#3957#0" expanded="false" />
+            <element signature="e#3963#4063#0" expanded="false" />
+            <element signature="e#4069#4619#0" expanded="false" />
+            <element signature="e#4755#4858#0" expanded="false" />
           </folding>
         </state>
       </provider>
