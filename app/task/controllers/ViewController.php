@@ -7,8 +7,12 @@
  * Project Name:    ViewController.php (tasks.dev/lib/core/controllers/ViewController.php   project)
  */
 
-class Core_ViewController
+class Task_ViewController
 {
+
+    public function index(){
+        die('Died in Core_IndexController::index()');
+    }
 
     function add()
     {}

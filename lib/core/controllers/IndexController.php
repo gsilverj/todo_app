@@ -2,17 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: incubator
- * Date: 3/5/14
- * Time: 2:06 PM
- * Project Name:    IndexController.php (tasks/dev/lib/core/controllers  project)
+ * Date: 3/10/14
+ * Time: 12:49 PM
  */
 
 
+class Core_IndexController {
 
-class IndexController
-{
-    function index()
-    {
-
+    public function index(){
+        die('yrdy');
     }
-}
+} 

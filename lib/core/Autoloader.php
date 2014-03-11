@@ -26,10 +26,20 @@
  *
  *
  *
- * TODO:
+ * TODO: ALL
  *      - Make this more modular. (ex. add spl_extensions so .php isnt hardcoded.)
  *      - Clean up the look of the code and trim the comments.
  *
+ * TODO: __construct()
+ *      - Possibly change to protected and add $value - null as paramater to allow users to override the constructor so dev can change
+ *          dir immideatly after calling constructor even when extended.
+ *
+ * TODO: autoload()
+ *      -  add an exception handler.
+ *      -  pop an exception when an exception could occur.
+ *
+ * TODO: registerAutoloader()
+ *      - For some reason i cant get spl_ to work unless I do it in the class currently?
  */
 
 
@@ -39,7 +49,11 @@ class Core_Autoloader
 {
     private $dir;   //this will be the beginning of the directory desired,defined in __construct() (in this case "lib/core/" for ease of testing purposes)
 
-
+    private $_fileTypes = array(
+        'controller' => 'controllers',
+        'model' => 'models',
+        'view' => 'views'
+    );
 
 
     //gets
@@ -59,44 +73,55 @@ class Core_Autoloader
     }
 
 
-
     //others
 
     //assigns $dir a default value.
-    public function __construct()
-    {
-        $this->dir = 'lib' . DS . 'core' . DS;
-    }
+    // public function __construct(){}
 
-        //will attempt to load the class passed in, if the class already exists it will return true, otherwise it will try to find the file/require it,
+
+    //will attempt to load the class passed in, if the class already exists it will return true, otherwise it will try to find the file/require it,
     //      otherwise it will return false because file was not found so it cant require it. (ex if bootstrap taskcontroller isnt required, check for taskcontroller.php and require it)
     //      (true = already required OR is now required'd, false = file is not found)
     public function autoload($class)
     {
-        if(class_exists($class, false)) //check if $class exists and dont default __autoload if it doesnt.
-        {
-            //it already exists so no need to do anything...
-        }
-        else
-        {
-            $file = $this->dir . $class . '.php';
-            //prepend the $dir and append .php to end of the class string that is passed in.
-            //echo $file; // this is what is coming out of $file after 'pends.
+        $relativePath = $this->buildRelativePath($class);
+        $classFound = false;
 
-            if(!file_exists($file))                                                                         //TODO:need to change this
+
+        foreach(explode(':', get_include_path()) as $includePath)  //loop through the included paths
+        {
+            foreach($this->_fileTypes as $fileType => $folderName) //loop through the file types (controller/model/views) in each included path
             {
-                //todo: load the exception handler here.
-                //todo: pop an exception here.
+
+                $newPath = $includePath . DS . $relativePath;                        // make the new path
+                $newPath = explode(DS,  $newPath);                                   // explode it so you can grab the "filename.php"
+                $fileName = array_pop($newPath);                                     // grab filename
+                $newPath = implode(DS, $newPath) . DS . $folderName . DS . $fileName;// implode it, and make the correct new path.
+
+                if(file_exists($newPath))
+                {
+                    require_once $newPath;
+                    break;
+                }
             }
-
-            require_once $file;
-
-            //echo ' yeah it actually worked <br />';   //just a check to see if it is working.
         }
+
     }
 
+    public function buildRelativePath($class = null){
+        $relativePath = null;
+        if($class){
 
-    //TODO: for some reason i cant get spl_ to work unless I do it in the class currently?
+            $folders = explode('_', $class);
+            $fileName = array_pop($folders);
+
+            $relativePath = strtolower(implode(DS, $folders)) . (count($folders) >= 1 ? DS : '') . ucfirst($fileName) . '.php';
+
+        }
+        return $relativePath;
+
+    }
+
     //will set autoload() as the ONLY __autoloader to use for the current project.
     public function registerAutoloader()
     {
