@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Bootstrap.php" afterPath="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-    </list>
+    <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="" />
     <ignored path="tasks.dev.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Bootstrap.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Bootstrap.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.49541286" vertical-offset="0" max-vertical-offset="872">
+            <state line="19" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="720">
               <folding>
+                <element signature="e#468#772#0" expanded="false" />
                 <element signature="e#777#1641#0" expanded="false" />
                 <element signature="e#1647#1922#0" expanded="false" />
                 <element signature="e#1929#2168#0" expanded="false" />
@@ -38,6 +37,18 @@
                 <element signature="e#3963#4063#0" expanded="false" />
                 <element signature="e#4069#4619#0" expanded="false" />
                 <element signature="e#4755#4858#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Autoloader.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="0" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.6018626" vertical-offset="1085" max-vertical-offset="2160">
+              <folding>
+                <element signature="n#getDir#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
+                <element signature="n#setDir#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -273,7 +284,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -281,7 +292,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -364,16 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="3965" selection-end="3965" vertical-scroll-proportion="1.170082" vertical-offset="1031" max-vertical-offset="2160">
-          <folding>
-            <element signature="n#getDir#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
-            <element signature="n#setDir#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="25" selection-start="149" selection-end="149" vertical-scroll-proportion="0.21556886" vertical-offset="0" max-vertical-offset="501">
@@ -390,8 +391,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.49541286" vertical-offset="0" max-vertical-offset="872">
+        <state line="19" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="720">
           <folding>
+            <element signature="e#468#772#0" expanded="false" />
             <element signature="e#777#1641#0" expanded="false" />
             <element signature="e#1647#1922#0" expanded="false" />
             <element signature="e#1929#2168#0" expanded="false" />
@@ -400,6 +402,16 @@
             <element signature="e#3963#4063#0" expanded="false" />
             <element signature="e#4069#4619#0" expanded="false" />
             <element signature="e#4755#4858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="0" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.6018626" vertical-offset="1085" max-vertical-offset="2160">
+          <folding>
+            <element signature="n#getDir#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
+            <element signature="n#setDir#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
