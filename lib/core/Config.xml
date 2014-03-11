@@ -2,12 +2,12 @@
 <application>
     <registered_modules>
         <core>
-            <file_path>core</file_path>
             <namespace>lib</namespace>
+            <file_path>core</file_path>
         </core>
         <task>
-            <file_path>task</file_path>
             <namespace>app</namespace>
+            <file_path>task</file_path>
         </task>
     </registered_modules>
 </application>

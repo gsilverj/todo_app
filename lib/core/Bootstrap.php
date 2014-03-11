@@ -130,13 +130,34 @@ final class Core_Bootstrap
             }
         }
 
-        //var_dump(self::$_registered_modules);
+        var_dump(self::$_registered_modules);
         //echo self::$_registered_modules['task']['namespace'];
 
     }
 
     public static function getRegisteredModules()
-    {}
+    {
+        return self::$_registered_modules;
+    }
+
+    public static function addModuleToRegisteredModules($moduleName = null, $moduleNameSpace = null, $moduleFilePath = null)
+    {
+
+        if(is_null($moduleName) || is_null($moduleNameSpace) || is_null($moduleFilePath))
+        {
+            //ThrowException
+            return;
+        }
+        elseif(!is_string($moduleName) || !is_string($moduleNameSpace) || !is_string($moduleFilePath))
+        {
+            //ThrowException
+            return;
+        }
+
+        self::$_registered_modules[$moduleName]['namespace'] = $moduleNameSpace;
+        self::$_registered_modules[$moduleName]['file_path'] = $moduleFilePath;
+
+    }
 
 
 }
