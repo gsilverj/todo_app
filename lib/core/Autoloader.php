@@ -29,6 +29,7 @@
  * TODO: ALL
  *      - Make this more modular. (ex. add spl_extensions so .php isnt hardcoded.)
  *      - Clean up the look of the code and trim the comments.
+ *      - Maybe add the fileTypes into the config so it doesnt have to be hardcoded.
  *
  * TODO: __construct()
  *      - Possibly change to protected and add $value - null as paramater to allow users to override the constructor so dev can change
