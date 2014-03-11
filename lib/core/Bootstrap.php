@@ -13,16 +13,17 @@ namespace lib\core;
 final class Core_Bootstrap
 {
 
-    protected static $_config;
+    protected static $_config;  //the loaded xml file
+    protected static $_registered_modules = array(); //will hold a 2-dimensional associative array. (ex. registered_modules['core']['location Dir'];
 
 
 
     public static function initialize(){
         //Initialize App
         self::setIncludePaths();
+        self::$_config = self::readInXmlConfigFile();
+        self::setRegisteredModules();
         //self::getConfig();
-        self::readXmlConfigFile();
-
         //Match URI to Controller
         self::matchUri($_SERVER['REQUEST_URI']);
     }
@@ -71,13 +72,14 @@ final class Core_Bootstrap
     public static function getConfig()
     {
         if (null === static::$_config) {
-            static::$_config = '';//read file
+            //static::$_config = '';//read file
+            static::$_config = self::readInXmlConfigFile();
         }
 
         return static::$_config;
     }
 
-    public static function readXmlConfigFile($source = null)
+    public static function readInXmlConfigFile($source = null)
     {
         if($source === null)
         {
@@ -89,8 +91,8 @@ final class Core_Bootstrap
 
         if(file_exists($source))
         {
+            //load xml file as a simple xml and into $xml
             $xml = simplexml_load_file($source);
-            var_dump($xml);
         }
         else
         {
@@ -100,7 +102,41 @@ final class Core_Bootstrap
         return $xml;
     }
 
+    public static function setRegisteredModules()
+    {
+        //below will read stuff out of the xml file , can change to show the specific children of the <tag>. (so you can throw children into the include path.)
 
+        $xml = self::$_config;
+
+        //var_dump($xml);
+
+        foreach ($xml->children() as $child)
+        {
+            if($child->getName() == 'registered_modules')
+            {
+                foreach($child->children() as $module)
+                {
+                    //var_dump($module);
+                    foreach($module->children() as $key => $value)
+                    {
+                        //echo $key;
+                        //echo '.' . $value . "...";
+                        //echo $array[$key] . ".....";
+                        self::$_registered_modules[$module->getName()][$key] = (string)$value;
+                        //var_dump(self::$_registered_modules);
+                        //echo self::$_registered_modules[$module][$array[$key]];
+                    }
+                }
+            }
+        }
+
+        //var_dump(self::$_registered_modules);
+        //echo self::$_registered_modules['task']['namespace'];
+
+    }
+
+    public static function getRegisteredModules()
+    {}
 
 
 }
