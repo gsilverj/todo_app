@@ -26,6 +26,10 @@ class Core_TaskController
 
 
 
+    function index()
+    {
+        
+    }
 
 
     function __construct()

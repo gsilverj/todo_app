@@ -10,6 +10,6 @@
 class Core_IndexController {
 
     public function index(){
-        die('yrdy');
+        die('Died in Core_IndexController::index()');
     }
 } 
