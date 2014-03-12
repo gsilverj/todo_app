@@ -45,6 +45,7 @@
  *      -  I need to adjust this function, it only accounts for 2 layer directories and nothing bigger.
  *      -  I can probably adjust this function to use the namespace as opposed to hardcoding it in the relative path.(ex. "core"/File.php -> "modName['namespace']"/File.php)
  *      -  Can probably break if the Dev. is looking for a file like Functions.php since it doesnt have a file type like controllers or models...(fix might be to loop 3 times and if not found just check for file in the folder itself. See notepad for possible solution.)
+ *      -  Maybe check what
  *
  * TODO: registerAutoloader()
  *      - For some reason i cant get spl_ to work unless I do it in the class currently?
@@ -111,17 +112,24 @@ class Core_Autoloader
                     $newPath = getcwd() . DS . $modName['namespace'] . DS . $relativePath;          //  make the new path
                     $newPath = explode(DS,  $newPath);                                              //  explode it so you can grab the "filename.php"
                     $fileName = array_pop($newPath);                                                //  grab filename
-                    $newPath = implode(DS, $newPath) . DS . $folderName . DS . $fileName;           //  implode it, and make the correct new path.
+                    $fileLocation = implode(DS, $newPath) . DS . $folderName . DS . $fileName;      //  implode it, and make the correct new path.
 
-                    if(file_exists($newPath))                                                       //  if: that file exists, require it once.
+                    if(file_exists($fileLocation))                                                  //  if: that file exists, require it once.
                     {
                         $classFound = true;
-                        require_once $newPath;
-                        break;
+                        require_once $fileLocation;
+                        //return $obj1 = new Task_IndexController;
+                        //break;
                     }                                                                               //  end if: file exists
                 }                                                                                   //end if: relative path has filetype
             }                                                                                       //end inner foreach
         }                                                                                           //end outer foreach
+
+
+
+
+
+
 
         //class not found...
         if($classFound === false)
@@ -160,12 +168,25 @@ class Core_Autoloader
             $folders = explode('_', $class);
             $fileName = array_pop($folders);
 
+            if(count($folders) == 0)
+            {
+                $folders = explode('Controller', $fileName);
+                $fileName = 'IndexController';
+
+                //$relativePath = strtolower($folders[0]) . DS . ucfirst($fileName) . '.php';
+                return $relativePath;
+            }
             $relativePath = strtolower(implode(DS, $folders)) . (count($folders) >= 1 ? DS : '') . ucfirst($fileName) . '.php';
 
         }
         return $relativePath;
 
     }
+
+
+    //public function getIndexPath(){}
+
+
 
 
 

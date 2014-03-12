@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
     <registered_modules>
-        <core>
-            <namespace>lib</namespace>
-            <file_path>core</file_path>
-        </core>
         <task>
             <namespace>app</namespace>
             <file_path>task</file_path>
         </task>
+        <core>
+            <namespace>lib</namespace>
+            <file_path>core</file_path>
+        </core>
     </registered_modules>
 </application>

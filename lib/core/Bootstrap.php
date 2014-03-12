@@ -49,6 +49,8 @@ final class Core_Bootstrap
             $className = preg_replace_callback('/_[a-z]?/', function ($matches) {return strtoupper($matches[0]);} , $className);
             $function = ((count($uri) == 2) ? $uri[1] : 'index' );
 
+
+            $className = self::getValidClassName($className);
             $inst = new $className;
             $inst->$function();
 
@@ -162,9 +164,29 @@ final class Core_Bootstrap
     }
 
     //validation for addModuleToRegisteredModules, to make sure the passed in values are valid. (maybe change name or something?)
-    public function validateName($name = null){
+    public static function validateName($name = null){
         return (!is_null($name) && is_string($name));
     }
+
+    //can change this to completely set up the class, location_class::function, kind of thing in the future.
+    public static function getValidClassName($className = null)
+    {
+        $folders = explode('_', $className);
+        $fileName = array_pop($folders);
+
+        if(count($folders) == 0)
+        {
+            $folders = explode('Controller', $fileName);
+            $fileName = 'IndexController';
+
+            $className = $folders[0] . '_' . ucfirst($fileName);
+            return $className;
+        }
+
+        return $className;
+
+    }
+
 
 
 }

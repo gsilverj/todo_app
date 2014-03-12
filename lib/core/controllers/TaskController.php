@@ -28,7 +28,7 @@ class Core_TaskController
 
     function index()
     {
-        
+        die('Died in Core_TaskController::index()');
     }
 
 

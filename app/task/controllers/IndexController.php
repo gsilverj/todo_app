@@ -15,6 +15,6 @@
 class Task_IndexController
 {
     public function index(){
-        die('Died in Core_IndexController::index()');
+        die('Died in Task_IndexController::index()');
     }
 }
