@@ -23,34 +23,26 @@ class Core_IndexController {
 
         if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
             $class = new $class;
-            return $class->render();
+            $class->render();
         }
         die('Died in Core_IndexController::index()');
     }
 
 
-    /**
-     * @param null $intent
-     */
-    protected function _add($intent = null)
+
+    protected function add()
     {
 
     }
 
 
-    /**
-     * @param null $intent
-     */
-    protected function _delete($intent = null)
+    protected function delete()
     {
 
     }
 
 
-    /**
-     * @param null $intent
-     */
-    protected function _reload($intent = null)
+    protected function reload()
     {
 
     }

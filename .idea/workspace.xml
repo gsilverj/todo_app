@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/task/index/index.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" afterPath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/views/IndexView.php" afterPath="$PROJECT_DIR$/app/task/views/IndexView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/views/IndexView.php" afterPath="$PROJECT_DIR$/lib/core/views/IndexView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tasks.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,57 +30,71 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="14" selection-start="459" selection-end="459" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="432">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexView.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/core/views/IndexView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="97" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.4011976" vertical-offset="429" max-vertical-offset="1134">
-              <folding>
-                <element signature="e#275#933#0" expanded="false" />
-                <element signature="n#render#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-                <element signature="e#2659#4244#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/task/index/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexView.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/task/views/IndexView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="2" selection-start="142" selection-end="142" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="216">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="2.6666667" vertical-offset="270" max-vertical-offset="1350">
+            <state line="43" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="-8.555555" vertical-offset="345" max-vertical-offset="1260">
               <folding>
-                <element signature="e#432#470#0" expanded="false" />
-                <element signature="e#534#572#0" expanded="false" />
-                <element signature="e#639#677#0" expanded="false" />
-                <element signature="n#getViewClass#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-                <element signature="e#1074#1328#0" expanded="false" />
+                <element signature="n#add#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+                <element signature="n#delete#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+                <element signature="n#reload#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+                <element signature="e#894#1148#0" expanded="false" />
                 <element signature="n#_validateIntent#0;n#Core_IndexController#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/task/delete/delete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="69" selection-start="873" selection-end="873" vertical-scroll-proportion="0.46307385" vertical-offset="56" max-vertical-offset="612">
+              <folding>
+                <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+                <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+                <element signature="n#reload#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+                <element signature="n#getViewClass#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddView.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="306">
+              <folding>
+                <element signature="n#render#0;n#Task_AddView#0;n#!!top" expanded="false" />
+                <element signature="n#getTemplate#0;n#Task_AddView#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteView.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/task/views/DeleteView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="2" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="342">
+              <folding>
+                <element signature="n#getTemplate#0;n#Task_DeleteView#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReloadView.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/task/views/ReloadView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="29" selection-start="170" selection-end="170" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="684">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,16 +119,24 @@
         <option value="$PROJECT_DIR$/lib/core/controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/app/task/controllers/ViewController.php" />
         <option value="$PROJECT_DIR$/lib/core/Functions.php" />
-        <option value="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
         <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/templates/core/index/index.php" />
         <option value="$PROJECT_DIR$/lib/core/Config.xml" />
         <option value="$PROJECT_DIR$/templates/four_oh_four/four_oh_four/four_oh_four.php" />
-        <option value="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/task/views/IndexView.php" />
         <option value="$PROJECT_DIR$/lib/core/views/IndexView.php" />
+        <option value="$PROJECT_DIR$/templates/core/add/add.php" />
+        <option value="$PROJECT_DIR$/templates/core/delete/delete.php" />
+        <option value="$PROJECT_DIR$/templates/task/index/index.php" />
+        <option value="$PROJECT_DIR$/templates/task/add/add.php" />
+        <option value="$PROJECT_DIR$/templates/task/delete/delete.php" />
+        <option value="$PROJECT_DIR$/app/task/views/IndexView.php" />
+        <option value="$PROJECT_DIR$/app/task/views/AddView.php" />
+        <option value="$PROJECT_DIR$/app/task/views/DeleteView.php" />
+        <option value="$PROJECT_DIR$/app/task/views/ReloadView.php" />
+        <option value="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
       </list>
     </option>
   </component>
@@ -212,18 +236,8 @@
               <option name="myItemId" value="task" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="delete" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -241,11 +255,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="task" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
+              <option name="myItemId" value="add" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,6 +292,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,9 +393,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/task/index" />
-      <recent name="$PROJECT_DIR$/templates/four_oh_four/four_oh_four" />
-      <recent name="$PROJECT_DIR$/app/controllers" />
+      <recent name="$PROJECT_DIR$/app/task/views" />
+      <recent name="$PROJECT_DIR$/templates/task/add" />
+      <recent name="$PROJECT_DIR$/templates/task/delete" />
+      <recent name="$PROJECT_DIR$/templates/core/add" />
+      <recent name="$PROJECT_DIR$/templates/core/delete" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/task/controllers" />
@@ -486,24 +538,22 @@
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/lib/core/controllers/IndexController.php</url>
-          <line>23</line>
-          <option name="timeStamp" value="66" />
+          <url>file://$PROJECT_DIR$/app/task/controllers/IndexController.php</url>
+          <line>37</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="67" />
+      <option name="time" value="77" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="0" selection-start="4168" selection-end="4168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3726">
-          <folding>
-            <element signature="e#4176#5962#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -532,9 +582,7 @@
     <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="29" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="2106">
-          <folding>
-            <element signature="e#4176#5962#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -591,38 +639,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="0" selection-start="5566" selection-end="5566" vertical-scroll-proportion="0.60504204" vertical-offset="324" max-vertical-offset="810">
-          <folding>
-            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#matchUri#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#setIncludePaths#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#readInXmlConfigFile#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#addModuleToRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#validateName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="25" selection-start="323" selection-end="323" vertical-scroll-proportion="0.39363816" vertical-offset="0" max-vertical-offset="503">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="148" selection-start="4316" selection-end="4316" vertical-scroll-proportion="-0.5555556" vertical-offset="1731" max-vertical-offset="3222">
-          <folding>
-            <element signature="e#4176#5962#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -633,55 +653,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/core/index/index.php">
+    <entry file="file://$PROJECT_DIR$/templates/task/add/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="5420" selection-end="5420" vertical-scroll-proportion="-6.0" vertical-offset="1836" max-vertical-offset="3582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="0" selection-start="4163" selection-end="4163" vertical-scroll-proportion="0.33333334" vertical-offset="319" max-vertical-offset="1008">
+          <folding>
+            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#matchUri#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#setIncludePaths#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#readInXmlConfigFile#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#setRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#addModuleToRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#validateName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/task/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="306">
+          <folding>
+            <element signature="n#render#0;n#Task_AddView#0;n#!!top" expanded="false" />
+            <element signature="n#getTemplate#0;n#Task_AddView#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/views/DeleteView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="2" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="342">
+          <folding>
+            <element signature="n#getTemplate#0;n#Task_DeleteView#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/views/IndexView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="5" selection-start="1857" selection-end="1857" vertical-scroll-proportion="1.0966387" vertical-offset="0" max-vertical-offset="774">
+          <folding>
+            <element signature="e#275#933#0" expanded="false" />
+            <element signature="n#__construct#0;n#Core_IndexView#0;n#!!top" expanded="false" />
+            <element signature="n#getTemplate#0;n#Core_IndexView#0;n#!!top" expanded="false" />
+            <element signature="e#2659#4244#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="2.6666667" vertical-offset="270" max-vertical-offset="1350">
+        <state line="43" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="-8.555555" vertical-offset="345" max-vertical-offset="1260">
           <folding>
-            <element signature="e#432#470#0" expanded="false" />
-            <element signature="e#534#572#0" expanded="false" />
-            <element signature="e#639#677#0" expanded="false" />
-            <element signature="n#getViewClass#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-            <element signature="e#1074#1328#0" expanded="false" />
+            <element signature="n#add#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#reload#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="e#894#1148#0" expanded="false" />
             <element signature="n#_validateIntent#0;n#Core_IndexController#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/templates/task/delete/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="459" selection-end="459" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="432">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/task/views/IndexView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="142" selection-end="142" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/task/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/views/IndexView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="97" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.4011976" vertical-offset="429" max-vertical-offset="1134">
+        <state line="15" column="23" selection-start="235" selection-end="235" vertical-scroll-proportion="0.35928145" vertical-offset="0" max-vertical-offset="501">
           <folding>
-            <element signature="e#275#933#0" expanded="false" />
-            <element signature="n#render#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-            <element signature="e#2659#4244#0" expanded="false" />
+            <element signature="n#getTemplate#0;n#Task_IndexView#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/views/ReloadView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="170" selection-end="170" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/core/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="69" selection-start="873" selection-end="873" vertical-scroll-proportion="0.46307385" vertical-offset="56" max-vertical-offset="612">
+          <folding>
+            <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#reload#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#getViewClass#0;n#Task_IndexController#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

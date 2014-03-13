@@ -21,7 +21,40 @@ class Task_IndexController extends Core_IndexController
     public function index(){
         if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
             $class = new $class;
-            return $class->render();
+            $class->render();
         }
     }
+    public function add()
+    {
+        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
+            $class = new $class;
+            $class->render();
+        }
+    }
+    public function delete()
+    {
+        //change __CLASS__ -> 'Task_' .function. 'View' kind of thing
+
+        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
+            $class = new $class;
+            $class->render();
+        }
+    }
+    public function reload()
+    {
+        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
+            $class = new $class;
+            $class->render();
+        }
+    }
+
+
+    protected function getViewClass($class = false, $function = false){
+        $viewClass = false;
+        if($class && $function){
+            $viewClass = Core_Bootstrap::getModuleNameFromClass($class) . '_' . ucwords($function) . 'View' ;
+        }
+        return $viewClass;
+    }
+
 }

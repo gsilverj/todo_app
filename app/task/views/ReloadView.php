@@ -6,7 +6,7 @@
  * Time: 1:20 PM
  */
 
-class Task_IndexView extends Core_IndexView {
+class Task_ReloadView extends Core_IndexView {
 
 
     public function render(){
