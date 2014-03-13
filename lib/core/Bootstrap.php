@@ -16,8 +16,6 @@ final class Core_Bootstrap
     protected static $_config;  //the loaded xml file
     protected static $_registered_modules = array(); //will hold a 2-dimensional associative array. (ex. registered_modules['lib(namespace)']['core(file_path)'];
 
-
-
     public static function initialize(){
         //Initialize App
         self::setIncludePaths();
@@ -28,7 +26,9 @@ final class Core_Bootstrap
         self::matchUri($_SERVER['REQUEST_URI']);
     }
 
-    //todo: this function automatically places 'controller' to the end, it shouldnt do that.
+
+
+    //todo: this function automatically places 'controller' to the end, it shouldnt do that?
     public static function matchUri($uri = null)
     {
         $className = false;
@@ -71,7 +71,6 @@ final class Core_Bootstrap
         set_include_path($includePath);
 
     }
-
 
     public static function getConfig()
     {
