@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Bootstrap.php" afterPath="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/controllers/TaskController.php" afterPath="$PROJECT_DIR$/app/task/controllers/TaskController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/controllers/TaskController.php" afterPath="$PROJECT_DIR$/lib/core/controllers/TaskController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" afterPath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
     </list>
     <ignored path="tasks.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +28,17 @@
       <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="53" selection-start="206" selection-end="206" vertical-scroll-proportion="0.14449541" vertical-offset="0" max-vertical-offset="872">
-              <folding />
+            <state line="83" column="2" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.7224771" vertical-offset="0" max-vertical-offset="872">
+              <folding>
+                <element signature="e#322#360#0" expanded="false" />
+                <element signature="n#_add#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+                <element signature="e#555#593#0" expanded="false" />
+                <element signature="n#_delete#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+                <element signature="e#791#829#0" expanded="false" />
+                <element signature="n#_reload#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+                <element signature="e#1027#1281#0" expanded="false" />
+                <element signature="n#_validateIntent#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,7 +60,6 @@
         <option value="$PROJECT_DIR$/app/controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ViewController.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/task/controllers/ViewController.php" />
         <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
@@ -62,6 +67,7 @@
         <option value="$PROJECT_DIR$/lib/core/Config.xml" />
         <option value="$PROJECT_DIR$/app/task/controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/lib/core/controllers/TaskController.php" />
+        <option value="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
       </list>
     </option>
   </component>
@@ -413,7 +419,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/task/controllers/ViewController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="255" selection-end="255" vertical-scroll-proportion="0.17964073" vertical-offset="0" max-vertical-offset="501" />
+        <state line="11" column="0" selection-start="255" selection-end="255" vertical-scroll-proportion="0.17964073" vertical-offset="0" max-vertical-offset="501">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
@@ -483,8 +491,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="206" selection-end="206" vertical-scroll-proportion="0.14449541" vertical-offset="0" max-vertical-offset="872">
-          <folding />
+        <state line="83" column="2" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.7224771" vertical-offset="0" max-vertical-offset="872">
+          <folding>
+            <element signature="e#322#360#0" expanded="false" />
+            <element signature="n#_add#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="e#555#593#0" expanded="false" />
+            <element signature="n#_delete#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="e#791#829#0" expanded="false" />
+            <element signature="n#_reload#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="e#1027#1281#0" expanded="false" />
+            <element signature="n#_validateIntent#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
