@@ -13,4 +13,4 @@ include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'Autoloader.php';
 $loader = new Core_Autoloader();
 $loader -> registerAutoloader();
 
-\lib\core\Core_Bootstrap::initialize();
+Core_Bootstrap::initialize();

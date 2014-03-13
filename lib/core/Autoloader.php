@@ -103,7 +103,7 @@ class Core_Autoloader
 
         $classFound = false;
 
-        foreach(\lib\core\Core_Bootstrap::getRegisteredModules() as $modName)                       //go through each module as a namespace and its file path.
+        foreach(Core_Bootstrap::getRegisteredModules() as $modName)                       //go through each module as a namespace and its file path.
         {
             foreach($this->_fileTypes as $fileType => $folderName)                                  //loop through each fileType as the type and its folderName.
             {

@@ -7,8 +7,6 @@
  * Project Name:    Bootstrap.php  (tasks.dev/lib/core/Bootstrap.php  project)
  */
 
-namespace lib\core;
-
 
 final class Core_Bootstrap
 {
@@ -184,6 +182,16 @@ final class Core_Bootstrap
 
         return $className;
 
+    }
+
+    public static function getModuleNameFromClass($class = false){
+        $moduleName = false;
+        if($class){
+            $classArr = explode('_', $class);
+            $classArr = array_reverse($classArr);
+            $moduleName = array_pop($classArr);
+        }
+        return $moduleName;
     }
 
 

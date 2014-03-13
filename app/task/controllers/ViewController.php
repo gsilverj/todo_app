@@ -7,20 +7,34 @@
  * Project Name:    ViewController.php (tasks.dev/lib/core/controllers/ViewController.php   project)
  */
 
-class Task_ViewController
+class Task_ViewController Extends Core_IndexController
 {
 
     public function index(){
         die('Died in Task_ViewController::index()');
     }
 
-    function add()
-    {}
+    function _add()
+    {
+        die('Died in Task_ViewController::_add()');
+    }
 
-    function delete()
-    {}
+    function _delete()
+    {
+        die('Died in Task_ViewController::_delete()');
+    }
 
-    function updateTask()
-    {}
+    function _reload()
+    {
+        die('Died in Task_ViewController::_reload()');
+    }
 
+
+    function _displayView($intent = null)
+    {
+        $requestedView = parent::_validateIntent($intent);
+
+
+
+    }
 }

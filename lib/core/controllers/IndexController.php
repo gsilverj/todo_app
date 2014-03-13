@@ -11,13 +11,13 @@
 
 /*  Todo's:
  *
- *      _validateIntent
- *          -   Need to pop an exception on false...
  *
  */
 
 
 class Core_IndexController {
+
+    protected $_view = 'DefaultView';
 
     public function index(){
         die('Died in Core_IndexController::index()');
@@ -33,7 +33,7 @@ class Core_IndexController {
 
         $intent = self::_validateIntent($intent);
 
-        $view->displayView($intent);
+        $view->displayVew($intent);
     }
 
 
@@ -70,7 +70,7 @@ class Core_IndexController {
      * @param null $intent
      * @return string
      */
-    private function _validateIntent($intent = null)
+    protected function _validateIntent($intent = null)
     {
 //        if(is_null($intent) || is_numeric(substr($intent, 0, 1)))
 //        {
@@ -81,4 +81,12 @@ class Core_IndexController {
 
         return (is_null($intent) || is_numeric((substr($intent, 0 , 1)))) ? 'index' : $intent;
     }
-} 
+
+    protected function getViewClass($class = false, $function = false){
+        $viewClass = false;
+        if($class && $function){
+            $viewClass = Core_Bootstrap::getModuleNameFromClass($class) . '_' . ucwords($function) . 'View' ;
+        }
+        return $viewClass;
+    }
+}

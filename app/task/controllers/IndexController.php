@@ -12,9 +12,16 @@
 //Todo: Maybe include validation for the  _setCurrentRequest() & public getTaskRequest() functions.
 
 
-class Task_IndexController
+class Task_IndexController extends Core_IndexController
 {
+    /**
+     * Task_IndexView
+     * Task_AddView
+     */
     public function index(){
-        die('Died in Task_IndexController::index()');
+        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
+            $class = new $class;
+            return $class->render();
+        }
     }
 }
