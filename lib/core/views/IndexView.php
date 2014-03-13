@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: incubator
+ * User: Gabriell Juliana
  * Date: 3/13/14
  * Time: 1:23 PM
  */
@@ -11,6 +11,7 @@ class Core_IndexView {
 
     protected $_templateDir;
     protected $_defaultTemplate = 'index/index.php';
+    protected $_errorTemplate = "four_oh_four/four_oh_four.php";
     /* test array for use of the "fallback" structure....
      * private $validTemplateLocations = array(            //think namespace->foldername->filePurpose & fileName
 
@@ -37,6 +38,19 @@ class Core_IndexView {
         $this->_templateDir = getcwd() . DS . 'templates' . DS;
     }
 
+
+    //gets & sets
+
+    protected  function getTemplateDir()        {return $this->_templateDir;}
+    protected  function getDefaultTemplate()    {return $this->_defaultTemplate;}
+    protected  function getErrorTemplate()      {return $this->_errorTemplate;}
+
+    protected  function setTemplateDir($newTemplateDir)         {$this->_templateDir = $newTemplateDir;}
+    protected  function setDefaultTemplate($newDefaultTemplate) {$this->_templateDir = $newDefaultTemplate;}
+    protected  function setErrorTemplate($newErrorTemplate)     {$this->_templateDir = $newErrorTemplate;}
+
+    //other functions
+
     public function render(){
         die($this->getTemplate());
     }
@@ -48,6 +62,12 @@ class Core_IndexView {
         $template = $this->_defaultTemplate;
         $viewTemplate = $view . $template;
 
+        if(!file_exists($viewTemplate))
+        {
+            $view = $this->_templateDir . 'four_oh_four' . DS;
+            $template = $this->_errorTemplate;
+            $viewTemplate = $view . $template;
+        }
 
         include_once $viewTemplate;
 

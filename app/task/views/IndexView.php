@@ -7,4 +7,6 @@
  */
 
 class Task_IndexView extends Core_IndexView {
+
+
 } 

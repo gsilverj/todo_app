@@ -20,6 +20,11 @@ class Core_IndexController {
     protected $_view = 'DefaultView';
 
     public function index(){
+
+        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
+            $class = new $class;
+            return $class->render();
+        }
         die('Died in Core_IndexController::index()');
     }
 
@@ -29,11 +34,7 @@ class Core_IndexController {
      */
     protected function _add($intent = null)
     {
-        $view = new Task_ViewController();
 
-        $intent = self::_validateIntent($intent);
-
-        $view->displayVew($intent);
     }
 
 
@@ -42,11 +43,7 @@ class Core_IndexController {
      */
     protected function _delete($intent = null)
     {
-        $view = new Task_ViewController();
 
-        $intent = self::_validateIntent($intent);
-
-        $view->displayView($intent);
     }
 
 
@@ -55,13 +52,32 @@ class Core_IndexController {
      */
     protected function _reload($intent = null)
     {
-        $view = new Task_ViewController();
 
-        $intent = self::_validateIntent($intent);
-
-        $view->displayView($intent);
     }
 
+
+
+    protected function getViewClass($class = false, $function = false){
+        $viewClass = false;
+        if($class && $function){
+            $viewClass = Core_Bootstrap::getModuleNameFromClass($class) . '_' . ucwords($function) . 'View' ;
+        }
+        return $viewClass;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Other stuff if needed?
 
     /**
      * @description : This function will check if the $intent passed in is a valid non-null/non-numeric string.
@@ -82,11 +98,6 @@ class Core_IndexController {
         return (is_null($intent) || is_numeric((substr($intent, 0 , 1)))) ? 'index' : $intent;
     }
 
-    protected function getViewClass($class = false, $function = false){
-        $viewClass = false;
-        if($class && $function){
-            $viewClass = Core_Bootstrap::getModuleNameFromClass($class) . '_' . ucwords($function) . 'View' ;
-        }
-        return $viewClass;
-    }
+
+
 }
