@@ -29,26 +29,6 @@ class Core_IndexController {
     }
 
 
-
-    protected function add()
-    {
-
-    }
-
-
-    protected function delete()
-    {
-
-    }
-
-
-    protected function reload()
-    {
-
-    }
-
-
-
     protected function getViewClass($class = false, $function = false){
         $viewClass = false;
         if($class && $function){
@@ -68,27 +48,6 @@ class Core_IndexController {
 
 
 
-
-    //Other stuff if needed?
-
-    /**
-     * @description : This function will check if the $intent passed in is a valid non-null/non-numeric string.
-     *                  If true, return 'index', otherwise return $intent.
-     *
-     * @param null $intent
-     * @return string
-     */
-    protected function _validateIntent($intent = null)
-    {
-//        if(is_null($intent) || is_numeric(substr($intent, 0, 1)))
-//        {
-//            //pop exception
-//            $intent = 'index';
-//        }
-
-
-        return (is_null($intent) || is_numeric((substr($intent, 0 , 1)))) ? 'index' : $intent;
-    }
 
 
 

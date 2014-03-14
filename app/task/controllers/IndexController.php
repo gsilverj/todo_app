@@ -33,8 +33,6 @@ class Task_IndexController extends Core_IndexController
     }
     public function delete()
     {
-        //change __CLASS__ -> 'Task_' .function. 'View' kind of thing
-
         if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
             $class = new $class;
             $class->render();
@@ -48,13 +46,5 @@ class Task_IndexController extends Core_IndexController
         }
     }
 
-
-    protected function getViewClass($class = false, $function = false){
-        $viewClass = false;
-        if($class && $function){
-            $viewClass = Core_Bootstrap::getModuleNameFromClass($class) . '_' . ucwords($function) . 'View' ;
-        }
-        return $viewClass;
-    }
 
 }

@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/task/index/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/task/controllers/TaskController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/task/controllers/ViewController.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/views/AddView.php" afterPath="$PROJECT_DIR$/app/task/views/AddView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Autoloader.php" afterPath="$PROJECT_DIR$/lib/core/Autoloader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/views/DeleteView.php" afterPath="$PROJECT_DIR$/app/task/views/DeleteView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" afterPath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/views/IndexView.php" afterPath="$PROJECT_DIR$/app/task/views/IndexView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/views/IndexView.php" afterPath="$PROJECT_DIR$/lib/core/views/IndexView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/views/ReloadView.php" afterPath="$PROJECT_DIR$/app/task/views/ReloadView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/core/index/index.php" afterPath="$PROJECT_DIR$/templates/core/index/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tasks.dev.iws" />
@@ -29,71 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/core/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="-8.555555" vertical-offset="345" max-vertical-offset="1260">
-              <folding>
-                <element signature="n#add#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-                <element signature="n#delete#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-                <element signature="n#reload#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-                <element signature="e#894#1148#0" expanded="false" />
-                <element signature="n#_validateIntent#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/task/delete/delete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="69" selection-start="873" selection-end="873" vertical-scroll-proportion="0.46307385" vertical-offset="56" max-vertical-offset="612">
-              <folding>
-                <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-                <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-                <element signature="n#reload#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-                <element signature="n#getViewClass#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddView.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="306">
-              <folding>
-                <element signature="n#render#0;n#Task_AddView#0;n#!!top" expanded="false" />
-                <element signature="n#getTemplate#0;n#Task_AddView#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteView.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/task/views/DeleteView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="2" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="342">
-              <folding>
-                <element signature="n#getTemplate#0;n#Task_DeleteView#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReloadView.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/task/views/ReloadView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="29" selection-start="170" selection-end="170" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="684">
+            <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.035856575" vertical-offset="0" max-vertical-offset="502">
               <folding />
             </state>
           </provider>
@@ -115,28 +61,28 @@
         <option value="$PROJECT_DIR$/app/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ViewController.php" />
-        <option value="$PROJECT_DIR$/app/task/controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/lib/core/controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/app/task/controllers/ViewController.php" />
         <option value="$PROJECT_DIR$/lib/core/Functions.php" />
-        <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-        <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/templates/core/index/index.php" />
         <option value="$PROJECT_DIR$/lib/core/Config.xml" />
         <option value="$PROJECT_DIR$/templates/four_oh_four/four_oh_four/four_oh_four.php" />
-        <option value="$PROJECT_DIR$/lib/core/views/IndexView.php" />
         <option value="$PROJECT_DIR$/templates/core/add/add.php" />
         <option value="$PROJECT_DIR$/templates/core/delete/delete.php" />
         <option value="$PROJECT_DIR$/templates/task/index/index.php" />
         <option value="$PROJECT_DIR$/templates/task/add/add.php" />
         <option value="$PROJECT_DIR$/templates/task/delete/delete.php" />
-        <option value="$PROJECT_DIR$/app/task/views/IndexView.php" />
+        <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
         <option value="$PROJECT_DIR$/app/task/views/AddView.php" />
-        <option value="$PROJECT_DIR$/app/task/views/DeleteView.php" />
-        <option value="$PROJECT_DIR$/app/task/views/ReloadView.php" />
-        <option value="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/task/controllers/TaskController.php" />
+        <option value="$PROJECT_DIR$/app/task/views/DeleteView.php" />
+        <option value="$PROJECT_DIR$/app/task/views/IndexView.php" />
+        <option value="$PROJECT_DIR$/app/task/views/ReloadView.php" />
+        <option value="$PROJECT_DIR$/lib/core/views/IndexView.php" />
+        <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
+        <option value="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/templates/core/index/index.php" />
       </list>
     </option>
   </component>
@@ -178,7 +124,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,180 +152,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delete" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="add" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,16 +247,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25506938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39935413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25773746" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39827773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -487,27 +265,27 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39827773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25506938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25773746" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -529,31 +307,108 @@
       <breakpoints>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/lib/core/Autoloader.php</url>
-          <line>160</line>
+          <line>161</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/lib/core/Autoloader.php</url>
-          <line>164</line>
+          <line>165</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/app/task/views/ReloadView.php</url>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/app/task/controllers/IndexController.php</url>
+          <line>28</line>
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/task/controllers/IndexController.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="76" />
+          <line>36</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/task/views/DeleteView.php</url>
+          <line>13</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/lib/core/views/IndexView.php</url>
+          <line>76</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/lib/core/views/IndexView.php</url>
+          <line>70</line>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="77" />
+      <option name="time" value="105" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
+          <folding>
+            <element signature="n#index#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#getViewClass#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/task/delete/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="69" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="612">
+          <folding>
+            <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#reload#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/views/DeleteView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="2" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/views/ReloadView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="774">
+          <folding>
+            <element signature="n#__construct#0;n#Task_ReloadView#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="0" selection-start="4168" selection-end="4168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3726">
-          <folding />
+          <folding>
+            <element signature="e#6276#7284#0" expanded="false" />
+            <element signature="n#buildRelativePath#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -568,13 +423,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="3528">
           <folding>
+            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
             <element signature="n#setIncludePaths#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="e#1915#2024#0" expanded="false" />
             <element signature="n#getConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
             <element signature="n#readInXmlConfigFile#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
             <element signature="n#setRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="e#3090#3985#0" expanded="false" />
+            <element signature="e#3225#3961#0" expanded="false" />
+            <element signature="e#3343#3943#0" expanded="false" />
             <element signature="n#addModuleToRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
             <element signature="n#validateName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -582,7 +443,10 @@
     <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="29" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="2106">
-          <folding />
+          <folding>
+            <element signature="e#6276#7284#0" expanded="false" />
+            <element signature="n#buildRelativePath#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -607,17 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/task/controllers/ViewController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="52" selection-start="366" selection-end="366" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="540">
-          <folding>
-            <element signature="n#_add#0;n#Task_ViewController#0;n#!!top" expanded="false" />
-            <element signature="n#_delete#0;n#Task_ViewController#0;n#!!top" expanded="false" />
-            <element signature="n#_reload#0;n#Task_ViewController#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="396">
@@ -634,9 +487,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/four_oh_four/four_oh_four/four_oh_four.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="40" selection-start="112" selection-end="112" vertical-scroll-proportion="0.11344538" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
+        <state line="3" column="40" selection-start="112" selection-end="112" vertical-scroll-proportion="0.11344538" vertical-offset="0" max-vertical-offset="476" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
@@ -646,92 +497,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/task/controllers/TaskController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="5" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.35928145" vertical-offset="0" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/task/add/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="0" selection-start="5420" selection-end="5420" vertical-scroll-proportion="-6.0" vertical-offset="1836" max-vertical-offset="3582">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="0" selection-start="4163" selection-end="4163" vertical-scroll-proportion="0.33333334" vertical-offset="319" max-vertical-offset="1008">
-          <folding>
-            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#matchUri#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#setIncludePaths#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#readInXmlConfigFile#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#addModuleToRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#validateName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/task/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="306">
-          <folding>
-            <element signature="n#render#0;n#Task_AddView#0;n#!!top" expanded="false" />
-            <element signature="n#getTemplate#0;n#Task_AddView#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/task/views/DeleteView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="2" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="342">
-          <folding>
-            <element signature="n#getTemplate#0;n#Task_DeleteView#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/views/IndexView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="5" selection-start="1857" selection-end="1857" vertical-scroll-proportion="1.0966387" vertical-offset="0" max-vertical-offset="774">
-          <folding>
-            <element signature="e#275#933#0" expanded="false" />
-            <element signature="n#__construct#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-            <element signature="n#getTemplate#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-            <element signature="e#2659#4244#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="-8.555555" vertical-offset="345" max-vertical-offset="1260">
-          <folding>
-            <element signature="n#add#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#reload#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-            <element signature="e#894#1148#0" expanded="false" />
-            <element signature="n#_validateIntent#0;n#Core_IndexController#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,38 +518,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/task/views/IndexView.php">
+    <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="235" selection-end="235" vertical-scroll-proportion="0.35928145" vertical-offset="0" max-vertical-offset="501">
-          <folding>
-            <element signature="n#getTemplate#0;n#Task_IndexView#0;n#!!top" expanded="false" />
-          </folding>
+        <state line="10" column="0" selection-start="137" selection-end="258" vertical-scroll-proportion="0.17928287" vertical-offset="0" max-vertical-offset="502">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/task/views/ReloadView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="170" selection-end="170" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="684">
+        <state line="14" column="5" selection-start="261" selection-end="261" vertical-scroll-proportion="0.18867925" vertical-offset="0" max-vertical-offset="477">
+          <folding>
+            <element signature="n#__construct#0;n#Task_ReloadView#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/views/IndexView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.35856575" vertical-offset="0" max-vertical-offset="502">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/core/index/index.php">
+    <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
-          <folding />
+        <state line="44" column="0" selection-start="713" selection-end="713" vertical-scroll-proportion="0.93227094" vertical-offset="0" max-vertical-offset="738">
+          <folding>
+            <element signature="n#index#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#getViewClass#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="69" selection-start="873" selection-end="873" vertical-scroll-proportion="0.46307385" vertical-offset="56" max-vertical-offset="612">
+        <state line="36" column="0" selection-start="871" selection-end="871" vertical-scroll-proportion="0.53386456" vertical-offset="128" max-vertical-offset="630">
           <folding>
-            <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
             <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
             <element signature="n#reload#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#getViewClass#0;n#Task_IndexController#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/views/DeleteView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.2868526" vertical-offset="0" max-vertical-offset="502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/views/IndexView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="13" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.51195216" vertical-offset="859" max-vertical-offset="2664">
+          <folding>
+            <element signature="e#360#1018#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="28" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.33742332" vertical-offset="501" max-vertical-offset="1368">
+          <folding>
+            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#setIncludePaths#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="e#1915#2024#0" expanded="false" />
+            <element signature="n#getConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#readInXmlConfigFile#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#setRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="e#3090#3985#0" expanded="false" />
+            <element signature="e#3225#3961#0" expanded="false" />
+            <element signature="e#3343#3943#0" expanded="false" />
+            <element signature="n#addModuleToRegisteredModules#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#validateName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="9" selection-start="6152" selection-end="6152" vertical-scroll-proportion="0.6380368" vertical-offset="1974" max-vertical-offset="2880">
+          <folding>
+            <element signature="e#6276#7284#0" expanded="false" />
+            <element signature="n#buildRelativePath#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/core/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.035856575" vertical-offset="0" max-vertical-offset="502">
+          <folding />
         </state>
       </provider>
     </entry>

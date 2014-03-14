@@ -135,6 +135,7 @@ class Core_Autoloader
         if($classFound === false)
         {
             //throw exception here
+            echo'class not found exception here...';
             return;
         }
 
