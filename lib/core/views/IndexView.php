@@ -8,31 +8,12 @@
 
 class Core_IndexView {
 
-
+    protected $_pagePieces; //is an array...
     protected $_templateDir;
     ######you need to change this!!!!!!!!!!!!!!!!!!!
     protected $_defaultTemplate = 'index/index.php';
     protected $_errorTemplate = "four_oh_four/four_oh_four.php";
     protected $_targetTemplate;
-    /* test array for use of the "fallback" structure....
-     * private $validTemplateLocations = array(            //think namespace->foldername->filePurpose & fileName
-
-        'task' => array(
-            'index' => array(
-                'index'      => 'index.php'           ,
-                'taskAdd'    => 'taskAddIndex.php'    ,
-                'taskDelete' => 'taskDeleteIndex.php' )
-            ),
-
-        'core' => array(
-            'index' => array(
-                'index'      => 'index.php'           ,
-                'taskAdd'    => 'taskAddIndex.php'    ,
-                'taskDelete' => 'taskDeleteIndex.php' )
-            )
-
-        );
-*/
 
 
     public function __construct(){
@@ -94,12 +75,12 @@ class Core_IndexView {
         die($this->getTemplate());
     }
 
-    public function getTemplate(){
+    public function getTemplate($module = false, $template = false){
         //include_once $this->_templateDir . strtolower(Core_Bootstrap::getModuleNameFromClass(__CLASS__)) . DS .  'index' . DS . $this->_template;
         //set the _targetTemplate;
 
-        $view = $this->_templateDir . strtolower(Core_Bootstrap::getModuleNameFromClass(get_class($this))) . DS;
-        $template = $this->_targetTemplate;
+        $view = $this->_templateDir . (($module) ? $module : strtolower(Core_Bootstrap::getModuleNameFromClass(get_class($this)))) . DS;
+        $template = ($template) ? $template : $this->_targetTemplate;
         $viewTemplate = $view . $template;
 
         if(!file_exists($viewTemplate))
@@ -111,55 +92,53 @@ class Core_IndexView {
 
         include_once $viewTemplate;
 
+      }
 
-        //only needed if a "fallback" structure is desired for the view templates...
-        //$viewTemplate = $viewTemplate . $this->getTemplateAndFolder();
+    public function getHeader(){
+        return $this->getTemplate(false, 'page/header.php');
     }
 
-/*  this is only needed if "fallback" for the views are needed...
-    //must change to allow inclusion of $_registeredTemplates and to include passing in a template name.
-    private function getTemplateAndFolder($validTemplateLocations = null)
+    public function getHead(){
+        return $this->getTemplate(false, 'page/head.php');
+    }
+
+    public function getBaseUrl($url = null)
     {
-        $foundTemplate = false;
-        $folderList = '';
-        //obviously need to change the above and directly below code for future implementations besides testing...
-        if ($validTemplateLocations !== null)
+        return ($url === null) ? $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . DS : $url . DS;
+    }
+
+
+    // v-- below hasn't been tested but it should work theoretically.
+    public function setUpPage($pieceDirToAdd = false)
+    {
+        if(count($this->_pagePieces))
         {
-           $folderList = $validTemplateLocations;
+            $this->_pagePieces[count($this->_pagePieces)] = $pieceDirToAdd;
         }
         else
         {
-            $folderList = $this->validTemplateLocations;
+            $this->_pagePieces[0] = $pieceDirToAdd;
         }
+    }
 
-
-        foreach($folderList as $namespace => $folderName)
+    public function loadPagePieces($pagePieceList = null)
+    {
+        if($pagePieceList === null)
         {
-            foreach($folderName as $filePurpose => $fileName)
+            foreach($this->_pagePieces as $piece)
             {
-                foreach($fileName as $file => $fileLocation)
-                if(strpos($file, 'index') !== false)
-                {
-                    if(file_exists($this->_templateDir . strtolower(Core_Bootstrap::getModuleNameFromClass(__CLASS__)) . DS . $this->_defaultTemplate))
-                    {
-                        var_dump($file);
-                        var_dump($fileLocation);
-                        $templateAndFolderLocation = $file . DS . $fileLocation;
-                        var_dump($templateAndFolderLocation);
-                        return $templateAndFolderLocation;
-                    }
-
-                }
+                $this->getTemplate(false, $piece);
             }
         }
-
-        if ($foundTemplate === false)
+        else
         {
-            $folderName = $this->_defaultTemplate;
+            foreach($pagePieceList as $piece)
+            {
+                $this->getTemplate(false, $piece);
+            }
         }
-        return $folderName;
     }
-*/
+
 
 
 
