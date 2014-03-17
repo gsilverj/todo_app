@@ -104,20 +104,23 @@ class Core_IndexView {
 
     public function getBaseUrl($url = null)
     {
-        return ($url === null) ? $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . DS : $url . DS;
+        echo ($url === null) ? 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] : $url;
     }
 
 
     // v-- below hasn't been tested but it should work theoretically.
     public function setUpPage($pieceDirToAdd = false)
     {
-        if(count($this->_pagePieces))
+        if($pieceDirToAdd !== false)
         {
-            $this->_pagePieces[count($this->_pagePieces)] = $pieceDirToAdd;
-        }
-        else
-        {
-            $this->_pagePieces[0] = $pieceDirToAdd;
+            if(count($this->_pagePieces))
+            {
+                $this->_pagePieces[count($this->_pagePieces)] = $pieceDirToAdd;
+            }
+            else
+            {
+                $this->_pagePieces[0] = $pieceDirToAdd;
+            }
         }
     }
 

@@ -185,13 +185,6 @@ class Core_Autoloader
     }
 
 
-    //public function getIndexPath(){}
-
-
-
-
-
-
     //will set autoload() as the ONLY __autoloader to use for the current project.
     public function registerAutoloader()
     {
