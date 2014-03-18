@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
-
     <url>http://tasks.dev/</url>
     <current_theme>core_theme</current_theme>
     <registered_modules>
@@ -13,28 +12,25 @@
             <file_path>core</file_path>
         </core>
     </registered_modules>
-
     <registered_themes>
         <task_theme>
-            <folders>
+            <folderList>
                <name>add</name>
                <name>delete</name>
                <name>index</name>
-            </folders>
+            </folderList>
         </task_theme>
-
         <core_theme>
-            <folders>
+            <folderList>
                 <name>css</name>
                 <name>index</name>
                 <name>page</name>
-            </folders>
+            </folderList>
         </core_theme>
-
         <four_oh_four_theme>
-            <folders>
+            <folderList>
                 <name>four_oh_four</name>
-            </folders>
+            </folderList>
         </four_oh_four_theme>
     </registered_themes>
 </application>

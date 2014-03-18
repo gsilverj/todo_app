@@ -83,11 +83,18 @@ class Core_IndexView {
         $template = ($template) ? $template : $this->_targetTemplate;
         $viewTemplate = $view . $template;
 
+//****put the checkforvalidtheme here!!!!
+
+
         if(!file_exists($viewTemplate))
         {
             $view = $this->_templateDir . 'four_oh_four' . DS;
             $template = $this->_errorTemplate;
             $viewTemplate = $view . $template;
+
+            //if even the 404 cant be found throw exception and default back to index?
+
+
         }
 
         include_once $viewTemplate;
@@ -106,6 +113,25 @@ class Core_IndexView {
     {
         echo ($url === null) ? 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] : $url;
     }
+
+    public function checkForValidTheme()
+    {
+        Core_XMLConfig::getRegisteredThemes();
+
+
+        //first check through list of registered themes for the current theme to use, and if the part requested is in any of those folders
+        //if not check through the base theme for the requested piece...
+        //then return true it does, so include it
+        //false it doesnt, so throw base version
+        //???null if it cant be found period, throw exception???
+
+
+
+    }
+
+
+
+
 
 
     // v-- below hasn't been tested but it should work theoretically.
@@ -141,6 +167,7 @@ class Core_IndexView {
             }
         }
     }
+
 
 
 

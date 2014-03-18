@@ -56,7 +56,6 @@
 
 class Core_Autoloader
 {
-    //private $dir;   //this will be the beginning of the directory desired,defined in __construct() (in this case "lib/core/" for ease of testing purposes)
 
     private $_fileTypes = array(
         'Controller' => 'controllers',
@@ -64,33 +63,6 @@ class Core_Autoloader
         'View' => 'views'
     );
 
-
-    //gets
-    public function getDir()
-    {
-        return  $this->dir;
-    }
-
-    //sets
-    public function setDir($newDir)
-    {
-        //The input should be layed out like this when changing should be as follows:
-        //
-        //  DS . foldername . DS . foldername . DS    - Etc....
-        //
-        $this->dir = $newDir;
-    }
-
-
-    //others
-
-    //assigns $dir a default value.
-    // public function __construct(){}
-
-
-    //will attempt to load the class passed in, if the class already exists it will return true, otherwise it will try to find the file/require it,
-    //      otherwise it will return false because file was not found so it cant require it. (ex if bootstrap taskcontroller isnt required, check for taskcontroller.php and require it)
-    //      (true = already required OR is now required'd, false = file is not found)
     public function autoload($class = null)
     {
         $relativePath = $this->buildRelativePath($class);
@@ -103,7 +75,7 @@ class Core_Autoloader
 
         $classFound = false;
 
-        foreach(Core_Bootstrap::getRegisteredModules() as $modName)                       //go through each module as a namespace and its file path.
+        foreach(Core_XMLConfig::getRegisteredModules() as $modName)                       //go through each module as a namespace and its file path.
         {
             foreach($this->_fileTypes as $fileType => $folderName)                                  //loop through each fileType as the type and its folderName.
             {
@@ -125,12 +97,6 @@ class Core_Autoloader
             }                                                                                       //end inner foreach
         }                                                                                           //end outer foreach
 
-
-
-
-
-
-
         //class not found...
         if($classFound === false)
         {
@@ -139,27 +105,6 @@ class Core_Autoloader
             return;
         }
 
-    /*        $relativePath = $this->buildRelativePath($class);
-        $classFound = false;
-
-
-        foreach(explode(':', get_include_path()) as $includePath)  //loop through the included paths
-        {
-            foreach($this->_fileTypes as $fileType => $folderName) //loop through the file types (controller/model/views) in each included path
-            {
-
-                $newPath = $includePath . DS . $relativePath;                        // make the new path
-                $newPath = explode(DS,  $newPath);                                   // explode it so you can grab the "filename.php"
-                $fileName = array_pop($newPath);                                     // grab filename
-                $newPath = implode(DS, $newPath) . DS . $folderName . DS . $fileName;// implode it, and make the correct new path.
-
-                if(file_exists($newPath))
-                {
-                    require_once $newPath;
-                    break;
-                }
-            }
-        }*/
     }
 
     public function buildRelativePath($class = null){

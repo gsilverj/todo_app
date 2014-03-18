@@ -37,7 +37,24 @@ class Core_IndexController {
         return $viewClass;
     }
 
-
+    protected function render($function = null)
+    {
+        if($function !== null)
+        {
+            if($class = $this->getViewClass(get_class($this), $function))
+            {
+                $class = new $class;
+                $class->render();
+            }
+        }
+        else
+        {
+            //maybe throw exception?...
+            $class = $this->getViewClass(get_class($this), 'index');
+            $class = new $class;
+            $class->render();
+        }
+    }
 
 
 

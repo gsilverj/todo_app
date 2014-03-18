@@ -18,32 +18,21 @@ class Task_IndexController extends Core_IndexController
      * Task_IndexView
      * Task_AddView
      */
-    public function index(){
-        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
-            $class = new $class;
-            $class->render();
-        }
+    public function index()
+    {
+        $this->render(__FUNCTION__);
     }
     public function add()
     {
-        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
-            $class = new $class;
-            $class->render();
-        }
+        $this->render(__FUNCTION__);
     }
     public function delete()
     {
-        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
-            $class = new $class;
-            $class->render();
-        }
+        $this->render(__FUNCTION__);
     }
     public function reload()
     {
-        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
-            $class = new $class;
-            $class->render();
-        }
+        $this->render(__FUNCTION__);
     }
 
 
