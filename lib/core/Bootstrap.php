@@ -13,11 +13,13 @@ final class Core_Bootstrap
 
     protected static $_config;  //the loaded xml file
     protected static $_registered_modules = array(); //will hold a 2-dimensional associative array. (ex. registered_modules['lib(namespace)']['core(file_path)'];
+    protected static $_base_url = '';
 
     public static function initialize(){
         //Initialize App
         self::setIncludePaths();
         self::$_config = self::readInXmlConfigFile();
+        self::setBaseUrlFromConfig();
         self::setRegisteredModules();
         //self::getConfig();
         //Match URI to Controller
@@ -101,6 +103,27 @@ final class Core_Bootstrap
         }
 
         return $xml;
+    }
+
+    public static function setBaseUrlFromConfig($baseUrl = null)
+    {
+        if($baseUrl === null)
+        {
+            $xml = self::$_config;
+            //var_dump($xml);
+            foreach ($xml->children() as $child)
+            {
+                //var_dump($child);
+                if($child->getName() == 'url')
+                {
+                    self::$_base_url = $child;
+                }
+            }
+        }
+        else
+        {
+            self::$_base_url = $baseUrl;
+        }
     }
 
     public static function setRegisteredModules()
