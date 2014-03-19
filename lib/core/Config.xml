@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
     <url>http://tasks.dev/</url>
-    <current_theme>core_theme</current_theme>
+    <current_theme>task_theme</current_theme>
     <registered_modules>
         <task>
             <namespace>app</namespace>

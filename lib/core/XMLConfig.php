@@ -8,6 +8,7 @@
 
 class Core_XMLConfig {
 
+    protected static $_current_theme ='';
     protected static $_base_url = '';
     protected static $_config;  //the loaded xml file
     protected static $_registered_modules = array(); //will hold a 2-dimensional associative array. (ex. registered_modules['lib(namespace)']['core(file_path)'];
@@ -73,6 +74,11 @@ class Core_XMLConfig {
         {
             self::$_base_url = $baseUrl;
         }
+    }
+
+    public static function getBaseUrl()
+    {
+        return self::$_base_url;
     }
 
     public static function setRegisteredModules()
@@ -162,6 +168,31 @@ class Core_XMLConfig {
     public static function getRegisteredThemes()
     {
         return self::$_registered_themes;
+    }
+
+    public static function setCurrentTheme($themeName = null)
+    {
+        if($themeName === null)
+        {
+            $xml = self::getConfig();
+            //loop through the config to find what the 'current_theme' is... (so it can dynamically locate it)
+            foreach($xml->children() as $child)
+            {
+                if($child->getName() == 'current_theme')
+                {
+                    self::$_current_theme = $child;
+                }
+            }
+        }
+        else
+        {
+            self::$_current_theme = $themeName;
+        }
+    }
+
+    public static function getCurrentTheme()
+    {
+        return self::$_current_theme;
     }
 
 

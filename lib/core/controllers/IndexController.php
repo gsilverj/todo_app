@@ -15,8 +15,10 @@
  */
 
 
-class Core_IndexController {
+class Core_IndexController
+{
 
+    //this may not be needed...
     protected $_view = 'DefaultView';
 
     public function index(){

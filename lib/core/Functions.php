@@ -8,3 +8,10 @@
  */
 
 const DS = '/';
+
+//Will probably do at a later date...
+//
+//public function is_null_or_starts_with_a_number($input)
+//{
+//    if($input)
+//}

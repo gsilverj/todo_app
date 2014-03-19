@@ -25,6 +25,11 @@ final class Core_Bootstrap
         {
             //maybe throw an exception here...
             $xmlConfigObj = new Core_XMLConfig($configFile);
+            $xmlConfigObj->readInXmlConfigFile();
+            $xmlConfigObj->setBaseUrlFromConfig();
+            $xmlConfigObj->setCurrentTheme();
+            $xmlConfigObj->setRegisteredModules();
+            $xmlConfigObj->setRegisteredThemes();
         }
         else
         {
@@ -32,6 +37,7 @@ final class Core_Bootstrap
             $xmlConfigObj = new Core_XMLConfig();
             $xmlConfigObj->readInXmlConfigFile();
             $xmlConfigObj->setBaseUrlFromConfig();
+            $xmlConfigObj->setCurrentTheme();
             $xmlConfigObj->setRegisteredModules();
             $xmlConfigObj->setRegisteredThemes();
         }

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<h5>piece = index page, source = core/.../index.php</h5>
+<h5>piece = CORE index page, source = core/.../index.php</h5>
 
+<!-- maybe have <head> here>
+
+<!--  make a getPreHead() ? -->
 <?php $this->getHead() ?>
+<!--  make a getPostHead() ? -->
+
+<!-- maybe have </head> here-->
+
 
 <body>
+
 <?php $this->getHeader() ?>
+
 <br />
-
-
-
 
 
 <?php
@@ -26,17 +32,10 @@
 */?>
 
 
-<?php $this->getTemplate(false, 'page/todoListPanel.php')?>
-
-<?php $this->getTemplate(false, 'page/backToHomeBtn.php') ?>
-<?php $this->getTemplate(false, '../task/add/addBtn.php') ?>
-<?php $this->getTemplate(false, '../task/delete/deleteBtn.php') ?>
-
-<?php $this->getTemplate(false, 'page/bootstrapJs.php') ?>
-<?php $this->getTemplate(false, 'page/compiledPlugins.php')?>
-<?php $this->getTemplate(false, 'page/individualIncludeFiles.php')?>
-
-<?php $this->getTemplate(false, 'page/footer.php')?>
+<?php $this->getTemplate(false, 'bootstrapJs.php') ?>
+<?php $this->getTemplate(false, 'compiledPlugins.php')?>
+<?php $this->getTemplate(false, 'individualIncludeFiles.php')?>
+<?php $this->getTemplate(false, 'footer.php')?>
 
 </body>
 </html>
