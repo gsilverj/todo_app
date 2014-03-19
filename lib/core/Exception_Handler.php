@@ -9,6 +9,14 @@
 
 class Core_Exception_Handler extends Exception
 {
+    //It was mentioned to me that it would be smarter to use '1' (most likely string) variable and make set that to the message I want to send. Then return that variable. (less returns in a method is better than a lot of them.)
+
+
+
+
+
+
+
     private $exception = null;
 
     const ERROR_MESSAGE_config_file = 'Error C1: The Config File Was Not Found.';

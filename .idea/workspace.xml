@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/core/models/IndexModel.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Exception_Handler.php" afterPath="$PROJECT_DIR$/lib/core/Exception_Handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php" afterPath="$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php" afterPath="$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php" afterPath="$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php" />
     </list>
     <ignored path="tasks.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +28,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Index_Database_Object_Model.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Index_Database_Object_Model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.041284405" vertical-offset="0" max-vertical-offset="872">
-              <folding />
+            <state line="106" column="9" selection-start="3119" selection-end="3119" vertical-scroll-proportion="-27.11111" vertical-offset="222" max-vertical-offset="3330">
+              <folding>
+                <element signature="n#index#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
+                <element signature="n#__construct#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
+                <element signature="n#connectToDb#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
+                <element signature="n#disconnectFromDb#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
+                <element signature="e#3340#3379#0" expanded="false" />
+                <element signature="e#3470#3502#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,17 +47,28 @@
       <file leaf-file-name="Index_Database_Data_Mapper_Model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="198">
-              <folding />
+            <state line="8" column="2" selection-start="94" selection-end="609" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="504">
+              <folding>
+                <element signature="e#6#92#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Index_Database_Services_Model.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Index_Database_Services_Model.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="234">
-              <folding />
+            <state line="18" column="3" selection-start="792" selection-end="792" vertical-scroll-proportion="0.15599534" vertical-offset="190" max-vertical-offset="1404">
+              <folding>
+                <element signature="e#6#92#0" expanded="true" />
+                <element signature="n#index#0;n#Core_Index_Database_Services_Model#0;n#!!top" expanded="false" />
+                <element signature="n#__construct#0;n#Core_Index_Database_Services_Model#0;n#!!top" expanded="false" />
+                <marker date="1395264282652" expanded="true" signature="1596:1622" placeholder="INSERT INTO ..." />
+                <marker date="1395264282652" expanded="true" signature="1596:1740" placeholder="INSERT INTO ..." />
+                <marker date="1395264282652" expanded="true" signature="1596:1631" placeholder="INSERT INTO ..." />
+                <marker date="1395264282652" expanded="true" signature="1596:1631" placeholder="INSERT INTO ..." />
+                <marker date="1395264282652" expanded="true" signature="1596:1631" placeholder="INSERT INTO ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,8 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ViewController.php" />
         <option value="$PROJECT_DIR$/lib/core/controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/app/task/controllers/ViewController.php" />
@@ -115,6 +133,8 @@
         <option value="$PROJECT_DIR$/themes/core_theme/index/index.php" />
         <option value="$PROJECT_DIR$/lib/core/Config.xml" />
         <option value="$PROJECT_DIR$/lib/core/models/IndexModel.php" />
+        <option value="$PROJECT_DIR$/lib/core/Exception_Handler.php" />
+        <option value="$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php" />
         <option value="$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php" />
         <option value="$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php" />
       </list>
@@ -324,9 +344,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19370331" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19370331" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16221985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16221985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39827773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -340,6 +360,26 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19370331" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39827773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16221985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -576,7 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="172" column="61" selection-start="5547" selection-end="5547" vertical-scroll-proportion="0.6228172" vertical-offset="203" max-vertical-offset="1062">
           <folding>
-            <element signature="e#6#93#0" expanded="true" />
+            <element signature="e#6#93#0" expanded="false" />
             <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
             <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
             <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
@@ -645,32 +685,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/6eea60e3/2684e5a6-5584-48a9-b551-0d17d93b3f31/test..Todo_List">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php">
+    <entry file="file://$PROJECT_DIR$/lib/core/Exception_Handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="899">
+        <state line="11" column="227" selection-start="498" selection-end="498" vertical-scroll-proportion="0.10477299" vertical-offset="0" max-vertical-offset="1548">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php">
+    <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="234">
-          <folding />
+        <state line="8" column="2" selection-start="94" selection-end="609" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="504">
+          <folding>
+            <element signature="e#6#92#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.041284405" vertical-offset="0" max-vertical-offset="872">
+        <state line="106" column="9" selection-start="3119" selection-end="3119" vertical-scroll-proportion="-27.11111" vertical-offset="222" max-vertical-offset="3330">
+          <folding>
+            <element signature="n#index#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
+            <element signature="n#__construct#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
+            <element signature="n#connectToDb#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
+            <element signature="n#disconnectFromDb#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
+            <element signature="e#3340#3379#0" expanded="false" />
+            <element signature="e#3470#3502#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/6eea60e3/2684e5a6-5584-48a9-b551-0d17d93b3f31/test..Todo_List">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="3" selection-start="792" selection-end="792" vertical-scroll-proportion="0.15599534" vertical-offset="190" max-vertical-offset="1404">
+          <folding>
+            <element signature="e#6#92#0" expanded="true" />
+            <element signature="n#index#0;n#Core_Index_Database_Services_Model#0;n#!!top" expanded="false" />
+            <element signature="n#__construct#0;n#Core_Index_Database_Services_Model#0;n#!!top" expanded="false" />
+            <marker date="1395264282652" expanded="true" signature="1596:1622" placeholder="INSERT INTO ..." />
+            <marker date="1395264282652" expanded="true" signature="1596:1740" placeholder="INSERT INTO ..." />
+            <marker date="1395264282652" expanded="true" signature="1596:1631" placeholder="INSERT INTO ..." />
+            <marker date="1395264282652" expanded="true" signature="1596:1631" placeholder="INSERT INTO ..." />
+            <marker date="1395264282652" expanded="true" signature="1596:1631" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
