@@ -15,8 +15,10 @@
  */
 
 
-class Core_IndexController {
+class Core_IndexController
+{
 
+    //this may not be needed...
     protected $_view = 'DefaultView';
 
     public function index(){
@@ -37,7 +39,24 @@ class Core_IndexController {
         return $viewClass;
     }
 
-
+    protected function render($function = null)
+    {
+        if($function !== null)
+        {
+            if($class = $this->getViewClass(get_class($this), $function))
+            {
+                $class = new $class;
+                $class->render();
+            }
+        }
+        else
+        {
+            //maybe throw exception?...
+            $class = $this->getViewClass(get_class($this), 'index');
+            $class = new $class;
+            $class->render();
+        }
+    }
 
 
 

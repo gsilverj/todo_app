@@ -11,22 +11,38 @@
 final class Core_Bootstrap
 {
 
-    protected static $_config;  //the loaded xml file
-    protected static $_registered_modules = array(); //will hold a 2-dimensional associative array. (ex. registered_modules['lib(namespace)']['core(file_path)'];
-
     public static function initialize(){
         //Initialize App
-        self::setIncludePaths();
-        self::$_config = self::readInXmlConfigFile();
-        self::setRegisteredModules();
-        //self::getConfig();
+        self::quickHandleConfig();
+
         //Match URI to Controller
         self::matchUri($_SERVER['REQUEST_URI']);
     }
 
+    public static function quickHandleConfig($configFile = null)
+    {
+        if($configFile !== null)
+        {
+            //maybe throw an exception here...
+            $xmlConfigObj = new Core_XMLConfig($configFile);
+            $xmlConfigObj->readInXmlConfigFile();
+            $xmlConfigObj->setBaseUrlFromConfig();
+            $xmlConfigObj->setCurrentTheme();
+            $xmlConfigObj->setRegisteredModules();
+            $xmlConfigObj->setRegisteredThemes();
+        }
+        else
+        {
+            //may want to do a try-catch here, just in-case of somehow getting an error?
+            $xmlConfigObj = new Core_XMLConfig();
+            $xmlConfigObj->readInXmlConfigFile();
+            $xmlConfigObj->setBaseUrlFromConfig();
+            $xmlConfigObj->setCurrentTheme();
+            $xmlConfigObj->setRegisteredModules();
+            $xmlConfigObj->setRegisteredThemes();
+        }
+    }
 
-
-    //todo: this function automatically places 'controller' to the end, it shouldnt do that?
     public static function matchUri($uri = null)
     {
         $className = false;
@@ -53,116 +69,7 @@ final class Core_Bootstrap
             $inst->$function();
 
         }
-        echo $className;
         return $className;
-    }
-
-    public static function setIncludePaths(){
-
-        $_paths = array('lib', 'app');
-
-        $includePath = '';
-
-        foreach($_paths as $value){
-            $includePath = $includePath . getcwd() . DS . $value . ':';
-        }
-        set_include_path($includePath);
-
-    }
-
-    public static function getConfig()
-    {
-        if (null === static::$_config) {
-            //static::$_config = '';//read file
-            static::$_config = self::readInXmlConfigFile();
-        }
-
-        return static::$_config;
-    }
-
-    public static function readInXmlConfigFile($source = null)
-    {
-        if($source === null)
-        {
-            $source = getcwd() . DS . 'lib' . DS . 'core' . DS . 'Config.xml';
-        }
-
-
-        $xml = false;
-
-        if(file_exists($source))
-        {
-            //load xml file as a simple xml and into $xml
-            $xml = simplexml_load_file($source);
-        }
-        else
-        {
-            echo 'failed to open file!!!!';
-        }
-
-        return $xml;
-    }
-
-    public static function setRegisteredModules()
-    {
-        //below will read stuff out of the xml file , can change to show the specific children of the <tag>. (so you can throw children into the include path.)
-
-        $xml = self::$_config;
-
-        //var_dump($xml);
-
-        foreach ($xml->children() as $child)
-        {
-            if($child->getName() == 'registered_modules')
-            {
-                foreach($child->children() as $module)
-                {
-                    //var_dump($module);
-                    foreach($module->children() as $key => $value)
-                    {
-                        //echo $key;
-                        //echo '.' . $value . "...";
-                        //echo $array[$key] . ".....";
-                        self::$_registered_modules[$module->getName()][$key] = (string)$value;
-                        //var_dump(self::$_registered_modules);
-                        //echo self::$_registered_modules[$module][$array[$key]];
-                        //TODO: Maybe use the self::addModuleToRegisteredModules() method here instead of hardcoding it...
-
-                    }
-                }
-            }
-        }
-
-        //var_dump(self::$_registered_modules);
-        //echo self::$_registered_modules['task']['namespace'];
-
-    }
-
-    public static function getRegisteredModules()
-    {
-        return self::$_registered_modules;
-    }
-
-    public static function addModuleToRegisteredModules($moduleName = null, $moduleNameSpace = null, $moduleFilePath = null)
-    {
-
-        if(
-            self::validateName($moduleName) &&
-            self::validateName($moduleNameSpace) &&
-            self::validateName($moduleFilePath)
-        ) {
-            self::$_registered_modules[$moduleName]['namespace'] = $moduleNameSpace;
-            self::$_registered_modules[$moduleName]['file_path'] = $moduleFilePath;
-        } else {
-            //ThrowException
-            return;
-        }
-
-    }
-
-    //validation for addModuleToRegisteredModules, to make sure the passed in values are valid. (maybe change name or something?)
-    public static function validateName($name = null){
-        return (!is_null($name) && is_string($name));
     }
 
     //can change this to completely set up the class, location_class::function, kind of thing in the future.
@@ -193,6 +100,7 @@ final class Core_Bootstrap
         }
         return $moduleName;
     }
+
 
 
 

@@ -8,7 +8,7 @@ ini_set('display_errors', 1);
 include_once 'lib/core/Functions.php';
 include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'Bootstrap.php';
 include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'Autoloader.php';
-
+include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'XMLConfig.php';
 
 $loader = new Core_Autoloader();
 $loader -> registerAutoloader();

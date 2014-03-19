@@ -5,11 +5,12 @@
 <?php $this->getHead() ?>
 
 <body>
+
 <?php $this->getHeader() ?>
+
 <br />
 
 <h1>YOLO THIS BE THAT TEMPLATE TASK SWAG...</h1>
-
 
 
 <?php
@@ -23,20 +24,21 @@
     $this->setUpPage('page/footer.php');
 
     $this->loadPagePieces();
-*/?>
+*/
+?>
 
 
-<?php $this->getTemplate(false, 'page/todoListPanel.php')?>
+<?php $this->getTemplate(false, 'todoListPanel.php')?>
 
-<?php $this->getTemplate(false, 'page/backToHomeBtn.php') ?>
-<?php $this->getTemplate(false, '../task/add/addBtn.php') ?>
-<?php $this->getTemplate(false, '../task/delete/deleteBtn.php') ?>
+<?php $this->getTemplate(false, 'backToHomeBtn.php') ?>
+<?php $this->getTemplate(false, 'addBtn.php') ?>
+<?php $this->getTemplate(false, 'deleteBtn.php') ?>
 
-<?php $this->getTemplate(false, 'page/bootstrapJs.php') ?>
-<?php $this->getTemplate(false, 'page/compiledPlugins.php')?>
-<?php $this->getTemplate(false, 'page/individualIncludeFiles.php')?>
+<?php $this->getTemplate(false, 'bootstrapJs.php') ?>
+<?php $this->getTemplate(false, 'compiledPlugins.php')?>
+<?php $this->getTemplate(false, 'individualIncludeFiles.php')?>
 
-<?php $this->getTemplate(false, 'page/footer.php')?>
+<?php $this->getTemplate(false, 'footer.php')?>
 
 </body>
 </html>
