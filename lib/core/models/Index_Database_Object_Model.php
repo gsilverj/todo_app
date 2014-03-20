@@ -38,11 +38,11 @@ class Core_Index_Database_Object_Model
 
 
 
-    protected function index()
+    public function index()
     {
 
     }
-    protected function __construct($host = null, $user = null, $pass = null, $dbName = null)
+    public function __construct($host = null, $user = null, $pass = null, $dbName = null)
     {
         if($host === null || $user === null || $pass === null || $dbName === null)
         {
@@ -57,28 +57,33 @@ class Core_Index_Database_Object_Model
         }
     }
 
-    protected function connectToDb($host = null, $user = null, $pass = null, $dbName = null)
+    public function connectToDb($host = null, $user = null, $pass = null, $dbName = null)
     {
-        if($host === null || $user === null || $pass === null || $dbName === null)
+        //if they ALL are null = do connection,
+        //if SOME are null, throw exception,
+        //otherwise, open connection with inputted info...
+
+        if($host === null && $user === null && $pass === null && $dbName === null)
+        {
+            $this->_connection = mysqli_connect($this->getHost(), $this->getUser(), $this->getPass(), $this->getDbName());  //set up connection
+        }
+        elseif($host === null || $user === null || $pass === null || $dbName === null)
         {
             //todo: throw need more db info to connect to database Exception here
         }
         else
         {
-            $this->_connection = mysqli_connect($this->getHost(),$this->getUser(),$this->getPass(),$this->getDbName());  //set up connection
-
-            if(mysqli_connect_errno())
-            {
-                //todo: throw exception about error connecting to MySQL database ?
-                echo "Couldn't connect to the MySQL database: " . mysqli_connect_error();
-            }
+            $this->_connection = mysqli_connect($host, $user, $pass, $dbName);  //set up connection
         }
 
-
-
-
+        //test for error...
+        if(mysqli_connect_errno())
+        {
+            //todo: throw exception about error connecting to MySQL database ?
+            echo "Couldn't connect to the MySQL database: " . mysqli_connect_error();
+        }
     }
-    protected function disconnectFromDb($connection = null)
+    public function disconnectFromDb($connection = null)
     {
         if($connection !== null || $connection != $this->_connection)
         {
@@ -95,19 +100,32 @@ class Core_Index_Database_Object_Model
 
 
 
-    protected function performQuery($queryReceived, $connection = null)
+    public function performQuery($queryReceived, $connection = null)
     {
-        if($connection !== null || $connection != $this->_connection)
+        //if user puts something that is not null in as connection = use it.
+        if($connection !== null)
         {
-            mysqli_query($connection, $queryReceived);
+           $result = mysqli_query($connection, $queryReceived);
         }
         else
         {
-            mysqli_query($this->_connection, $queryReceived);
+           $result = mysqli_query($this->_connection, $queryReceived);
         }
+
+        return $result;
+
     }
-    protected function validateDataFromChanges($column,$row,$newValue){}
-    protected function checkForChanges($dbQueryResult){}
+
+
+    public function returnResults()
+    {
+
+
+    }
+
+
+    public function validateDataFromChanges($column,$row,$newValue){}
+    public function checkForChanges($dbQueryResult){}
 
 
 

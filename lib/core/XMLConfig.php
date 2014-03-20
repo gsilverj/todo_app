@@ -17,11 +17,7 @@ class Core_XMLConfig {
 
     public function __construct($configFile = null)
     {
-        //if user passed a filename in, read in that xmlConfig file into $_config.
-        if($configFile !== null)
-        {
             self::readInXmlConfigFile($configFile);
-        }
     }
 
     public static function getConfig()
@@ -36,22 +32,19 @@ class Core_XMLConfig {
 
     public static function readInXmlConfigFile($source = null)
     {
+        $xml = false;
+
         if($source === null)
         {
             $source = getcwd() . DS . 'lib' . DS . 'core' . DS . 'Config.xml';
+            $xml = simplexml_load_file($source);
         }
-
-        $xml = false;
-
-        if(file_exists($source))
+        elseif(file_exists($source))
         {
             //load xml file as a simple xml and into $xml
             $xml = simplexml_load_file($source);
         }
-        else
-        {
-            echo 'failed to open file!!!!';
-        }
+
 
         self::$_config = $xml;
     }

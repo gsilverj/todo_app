@@ -28,52 +28,98 @@ class Core_Index_Database_Services_Model
 {
 
     //maybe hardcode default MySQL statements for functions to default to...
-
-    protected function index()
+    public function __construct()
     {
 
     }
 
-    protected function __construct()
+    public function displayTableQuery($tableName = null)
     {
+        if($tableName === null)
+        {
+            //todo: throw the no table name put in exception here...
+        }
 
+        $query = "SELECT * FROM test.Todo_List";
+        return $query;
     }
 
-    protected function addNewTask($taskDescription = null, $customQuery = null)
+    public function getNumberOfRows($tableName = null)
+    {
+         if($tableName === null)
+         {
+             //todo: throw exception here...
+         }
+
+        $query = "SELECT * FROM test.Todo_List";
+
+        return $query;
+    }
+
+    public function addNewTask($taskDescription = null, $rowNumber)
     {
         if($taskDescription === null)
         {
             //todo: throw a "you need to have a task description" exception
         }
 
+        //ask for table information from the mapper, mapper gets and gives requested information, perform getRowNumbers() query to get $rowNumbers
+        /*
+          or maybe get rowNumber after running the query seperately and then pass it into this function...
+        */
 
         //todo: you need to find a way to quickly get the highest row number from the table and increment by one when adding a row...
-        $query = ($customQuery !== null) ? $customQuery : "INSERT INTO test.Todo_List VALUES (" . rowNumberHere .  ", " . $taskDescription . ", 0)";   //*(false, it needs to be a number for some reason?)
+        $query = "INSERT INTO test.Todo_List VALUES (" . ($rowNumber + 1) .  ", " . $taskDescription . ", 0)";   //*(0 = false, it needs to be a number for some reason?)
 
 
         return $query;
     }
 
     //TODO: you need to find a way to make the table renumber itself after deleting a task row...
-    protected function deleteTask($customQuery = null)
+    public function deleteOneTask($taskNumberToDelete = null)
+    {
+        if($taskNumberToDelete === null)
+        {
+             //todo: throw a "you need to have a task description" exception
+        }
+        $query = "DELETE FROM test.Todo_List WHERE Task_Number = " . $taskNumberToDelete;
+        return $query;
+    }
+
+    public function deleteMultipleTasks($taskNumbersToDeleteArray)
+    {
+        //just incase?...
+        $queryList = null;
+
+        if(is_array($taskNumbersToDeleteArray))
+        {
+            for($i = 0; $i < count($taskNumbersToDeleteArray); $i++)
+            {
+              $queryList[$i] = "DELETE FROM test.Todo_List WHERE Task_Number = " . $taskNumbersToDeleteArray[$i];
+            }
+        }
+        else
+        {
+            $queryList = $this->deleteOneTask($taskNumbersToDeleteArray);
+        }
+
+        return $queryList;
+    }
+
+
+
+
+/*possibly usefull functions...
+ *
+    public function updateTaskToCompleted($customQuery = null)
     {
 
     }
 
-    protected function updateTaskList($customQuery = null)
+    public function getTaskList($customQuery = null)
     {
 
     }
-
-    protected function setTaskToCompleted($customQuery = null)
-    {
-
-    }
-
-    protected function getTaskList($customQuery = null)
-    {
-
-    }
-
+*/
 
 } 

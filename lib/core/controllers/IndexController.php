@@ -23,11 +23,17 @@ class Core_IndexController
 
     public function index(){
 
-        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
-            $class = new $class;
-            $class->render();
-        }
-        die('Died in Core_IndexController::index()');
+        $dbMapper = new Core_Index_Database_Data_Mapper_Model();
+        $dbMapper->displayTableFromDatabase('task.TodoList');
+
+        die('yay you made it and it workeded.');
+
+//
+//        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
+//            $class = new $class;
+//            $class->render();
+//        }
+//        die('Died in Core_IndexController::index()');
     }
 
 
