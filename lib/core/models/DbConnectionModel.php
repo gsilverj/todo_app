@@ -33,6 +33,7 @@ class Core_DbConnectionModel
                 Core_XMLConfig::getDatabaseInfoPass(),
                 Core_XMLConfig::getDatabaseInfoDbName());  //set up connection
 
+
             if(mysqli_connect_errno())
             {
                 //todo: throw exception about error connecting to MySQL database ?

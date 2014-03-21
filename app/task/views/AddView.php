@@ -6,8 +6,8 @@
  * Time: 1:20 PM
  */
 
-class Task_AddView extends Core_IndexView {
-
+class Task_AddView extends Core_IndexView
+{
     public function __construct()
     {
         parent::__construct();

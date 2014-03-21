@@ -86,13 +86,13 @@ class Core_XMLConfig
             {
                 if($child->getName() == 'current_theme')
                 {
-                    self::$_current_theme = $child;
+                    self::$_current_theme = (string)$child;
                 }
             }
         }
         else
         {
-            self::$_current_theme = $themeName;
+            self::$_current_theme = (string)$themeName;
         }
     }
 
@@ -112,7 +112,7 @@ class Core_XMLConfig
             {
                 foreach($child as $part => $value)
                 {
-                    self::$_database_info[$part] = $value;
+                    self::$_database_info[$part] = (string)$value;
                 }
             }
         }

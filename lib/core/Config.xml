@@ -4,8 +4,8 @@
     <current_theme>task_theme</current_theme>
     <database>
         <host>localhost</host>
-        <user></user>
-        <pass></pass>
+        <user>root</user>
+        <pass>root</pass>
         <dbname>MySQL</dbname>
     </database>
     <registered_modules>

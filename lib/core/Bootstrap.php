@@ -36,6 +36,7 @@ final class Core_Bootstrap
             $xmlConfigObj = new Core_XMLConfig();
             $xmlConfigObj->setBaseUrlFromConfig();
             $xmlConfigObj->setCurrentTheme();
+            $xmlConfigObj->setDatabaseInfo();
             $xmlConfigObj->setRegisteredModules();
             $xmlConfigObj->setRegisteredThemes();
         }
