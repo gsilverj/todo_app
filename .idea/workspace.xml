@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Bootstrap.php" afterPath="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" afterPath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php" afterPath="$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php" afterPath="$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php" afterPath="$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php" afterPath="$PROJECT_DIR$/lib/core/models/DbDataMapperModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php" afterPath="$PROJECT_DIR$/lib/core/models/DbObjectModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php" afterPath="$PROJECT_DIR$/lib/core/models/DbServicesModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Config.xml" afterPath="$PROJECT_DIR$/lib/core/Config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/XMLConfig.php" afterPath="$PROJECT_DIR$/lib/core/XMLConfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/task_theme/add/addBtn.php" afterPath="$PROJECT_DIR$/themes/task_theme/add/addBtn.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,31 +37,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Index_Database_Data_Mapper_Model.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php">
+      <file leaf-file-name="DbDataMapperModel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/task/models/DbDataMapperModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="3609" selection-end="3609" vertical-scroll-proportion="0.75722545" vertical-offset="561" max-vertical-offset="1224">
+            <state line="10" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="324">
               <folding>
-                <element signature="e#94#608#0" expanded="false" />
-                <element signature="n#handleRequest#0;n#Core_Index_Database_Data_Mapper_Model#0;n#!!top" expanded="false" />
-                <element signature="n#getRowNumberFromDatabase#0;n#Core_Index_Database_Data_Mapper_Model#0;n#!!top" expanded="false" />
-                <element signature="n#addTaskToDatabase#0;n#Core_Index_Database_Data_Mapper_Model#0;n#!!top" expanded="false" />
-                <element signature="n#deleteTasksFromDatabase#0;n#Core_Index_Database_Data_Mapper_Model#0;n#!!top" expanded="false" />
-                <element signature="e#2582#2704#0" expanded="false" />
+                <element signature="e#6#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.Todo_List" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/6eea60e3/2684e5a6-5584-48a9-b551-0d17d93b3f31/test..Todo_List">
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-              <folding />
+      <file leaf-file-name="DbDataMapperModel.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/core/models/DbDataMapperModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="0" selection-start="2296" selection-end="2296" vertical-scroll-proportion="0.7268623" vertical-offset="40" max-vertical-offset="1440">
+              <folding>
+                <element signature="n#__construct#0;n#Core_DbDataMapperModel#0;n#!!top" expanded="false" />
+                <element signature="n#getRowNumberFromDatabase#0;n#Core_DbDataMapperModel#0;n#!!top" expanded="false" />
+                <element signature="n#deleteTasksFromDatabase#0;n#Core_DbDataMapperModel#0;n#!!top" expanded="false" />
+                <element signature="e#2471#2593#0" expanded="false" />
+              </folding>
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -80,18 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/ViewController.php" />
-        <option value="$PROJECT_DIR$/lib/core/controllers/TaskController.php" />
-        <option value="$PROJECT_DIR$/app/task/controllers/ViewController.php" />
-        <option value="$PROJECT_DIR$/templates/four_oh_four/four_oh_four/four_oh_four.php" />
-        <option value="$PROJECT_DIR$/templates/core/add/add.php" />
-        <option value="$PROJECT_DIR$/templates/core/delete/delete.php" />
-        <option value="$PROJECT_DIR$/templates/task/add/add.php" />
-        <option value="$PROJECT_DIR$/templates/task/delete/delete.php" />
-        <option value="$PROJECT_DIR$/app/task/views/AddView.php" />
-        <option value="$PROJECT_DIR$/app/task/controllers/TaskController.php" />
-        <option value="$PROJECT_DIR$/app/task/views/DeleteView.php" />
-        <option value="$PROJECT_DIR$/app/task/views/IndexView.php" />
         <option value="$PROJECT_DIR$/app/task/views/ReloadView.php" />
         <option value="$PROJECT_DIR$/templates/core/page/footer.php" />
         <option value="$PROJECT_DIR$/templates/core/page/header.php" />
@@ -121,16 +104,28 @@
         <option value="$PROJECT_DIR$/lib/core/views/IndexView.php" />
         <option value="$PROJECT_DIR$/themes/task_theme/index/index.php" />
         <option value="$PROJECT_DIR$/themes/core_theme/index/index.php" />
-        <option value="$PROJECT_DIR$/lib/core/Config.xml" />
         <option value="$PROJECT_DIR$/lib/core/models/IndexModel.php" />
         <option value="$PROJECT_DIR$/lib/core/Exception_Handler.php" />
-        <option value="$PROJECT_DIR$/lib/core/XMLConfig.php" />
         <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-        <option value="$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php" />
         <option value="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/themes/task_theme/add/addBtn.php" />
+        <option value="$PROJECT_DIR$/app/task/models/Task_ServiceModel.php" />
+        <option value="$PROJECT_DIR$/app/task/models/dbObjectModel.php" />
+        <option value="$PROJECT_DIR$/app/task/models/DbObjectModel.php" />
         <option value="$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php" />
+        <option value="$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php" />
+        <option value="$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php" />
+        <option value="$PROJECT_DIR$/app/task/models/DbServiceModel.php" />
+        <option value="$PROJECT_DIR$/lib/core/models/DbConnectionHandlerModel.php" />
+        <option value="$PROJECT_DIR$/lib/core/Config.xml" />
+        <option value="$PROJECT_DIR$/lib/core/XMLConfig.php" />
+        <option value="$PROJECT_DIR$/lib/core/models/DbConnectionModel.php" />
+        <option value="$PROJECT_DIR$/lib/core/models/DbObjectModel.php" />
+        <option value="$PROJECT_DIR$/app/task/models/DbDataMapperModel.php" />
+        <option value="$PROJECT_DIR$/lib/core/models/DbServicesModel.php" />
+        <option value="$PROJECT_DIR$/app/task/models/DbServicesModel.php" />
+        <option value="$PROJECT_DIR$/lib/core/models/DbDataMapperModel.php" />
       </list>
     </option>
   </component>
@@ -200,11 +195,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,10 +214,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -262,15 +249,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,11 +297,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/task_theme/delete" />
       <recent name="$PROJECT_DIR$/themes/task_theme" />
       <recent name="$PROJECT_DIR$/themes/core_theme" />
       <recent name="$PROJECT_DIR$/themes/four_oh_four_theme" />
       <recent name="$PROJECT_DIR$/templates/task/index" />
-      <recent name="$PROJECT_DIR$/templates/core/page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/core" />
@@ -381,42 +386,22 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32845187" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11045891" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39748955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20277481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39748955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39751554" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11045891" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -445,7 +430,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/lib/core/XMLConfig.php</url>
-          <line>157</line>
+          <line>217</line>
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -467,7 +452,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="134" />
+      <option name="time" value="136" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -565,11 +550,6 @@
         <state line="13" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.2868526" vertical-offset="0" max-vertical-offset="502">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="137" selection-end="258" vertical-scroll-proportion="0.17928287" vertical-offset="0" max-vertical-offset="502" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/task/views/IndexView.php">
@@ -682,27 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/XMLConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="2671" selection-end="2671" vertical-scroll-proportion="0.33333334" vertical-offset="295" max-vertical-offset="1026">
-          <folding>
-            <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getBaseUrl#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="e#3706#4159#0" expanded="false" />
-            <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/views/IndexView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="207" column="23" selection-start="8258" selection-end="8258" vertical-scroll-proportion="1.9768786" vertical-offset="0" max-vertical-offset="1278">
@@ -716,37 +675,6 @@
             <element signature="n#getThemeTemplatePiece#0;n#Core_IndexView#0;n#!!top" expanded="false" />
             <element signature="n#setUpPage#0;n#Core_IndexView#0;n#!!top" expanded="false" />
             <element signature="n#loadPagePieces#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="237" selection-end="237" vertical-scroll-proportion="0.23076923" vertical-offset="0" max-vertical-offset="738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Object_Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="32" selection-start="3341" selection-end="3341" vertical-scroll-proportion="-2.5925925" vertical-offset="578" max-vertical-offset="3078">
-          <folding>
-            <element signature="e#192#792#0" expanded="false" />
-            <element signature="n#index#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
-            <element signature="n#__construct#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
-            <element signature="n#connectToDb#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
-            <element signature="e#2115#2295#0" expanded="false" />
-            <element signature="n#disconnectFromDb#0;n#Core_Index_Database_Object_Model#0;n#!!top" expanded="false" />
-            <element signature="e#3824#3863#0" expanded="false" />
-            <element signature="e#3954#3986#0" expanded="false" />
-            <element signature="e#4067#4104#0" expanded="false" />
-            <element signature="e#4187#4219#0" expanded="false" />
-            <element signature="e#4296#4340#0" expanded="false" />
-            <element signature="e#4451#4483#0" expanded="false" />
-            <element signature="e#4574#4611#0" expanded="false" />
-            <element signature="e#4694#4726#0" expanded="false" />
-            <element signature="e#4803#4840#0" expanded="false" />
-            <element signature="e#4923#4955#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -781,22 +709,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Services_Model.php">
+    <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.5632411" vertical-offset="147" max-vertical-offset="882">
-          <folding>
-            <element signature="e#95#792#0" expanded="false" />
-            <element signature="n#__construct#0;n#Core_Index_Database_Services_Model#0;n#!!top" expanded="false" />
-            <element signature="n#getNumberOfRows#0;n#Core_Index_Database_Services_Model#0;n#!!top" expanded="false" />
-            <element signature="n#addNewTask#0;n#Core_Index_Database_Services_Model#0;n#!!top" expanded="false" />
-            <element signature="e#2002#2122#0" expanded="false" />
-            <element signature="n#deleteOneTask#0;n#Core_Index_Database_Services_Model#0;n#!!top" expanded="false" />
-            <element signature="n#deleteMultipleTasks#0;n#Core_Index_Database_Services_Model#0;n#!!top" expanded="false" />
-            <element signature="e#3081#3279#0" expanded="false" />
-            <element signature="e#3435#3615#0" expanded="false" />
-            <marker date="1395350092565" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Todo_List..." />
-            <marker date="1395350092565" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Todo_List..." />
-          </folding>
+        <state line="10" column="0" selection-start="137" selection-end="258" vertical-scroll-proportion="0.10011123" vertical-offset="0" max-vertical-offset="899">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/task_theme/add/addBtn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="168" selection-start="274" selection-end="274" vertical-scroll-proportion="0.040044494" vertical-offset="0" max-vertical-offset="899">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -810,16 +733,138 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/models/Index_Database_Data_Mapper_Model.php">
+    <entry file="file://$PROJECT_DIR$/lib/core/models/DbConnectionHandlerModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="3609" selection-end="3609" vertical-scroll-proportion="0.75722545" vertical-offset="561" max-vertical-offset="1224">
+        <state line="11" column="2" selection-start="136" selection-end="136" vertical-scroll-proportion="0.22024472" vertical-offset="0" max-vertical-offset="899">
           <folding>
-            <element signature="e#94#608#0" expanded="false" />
-            <element signature="n#handleRequest#0;n#Core_Index_Database_Data_Mapper_Model#0;n#!!top" expanded="false" />
-            <element signature="n#getRowNumberFromDatabase#0;n#Core_Index_Database_Data_Mapper_Model#0;n#!!top" expanded="false" />
-            <element signature="n#addTaskToDatabase#0;n#Core_Index_Database_Data_Mapper_Model#0;n#!!top" expanded="false" />
-            <element signature="n#deleteTasksFromDatabase#0;n#Core_Index_Database_Data_Mapper_Model#0;n#!!top" expanded="false" />
-            <element signature="e#2582#2704#0" expanded="false" />
+            <element signature="e#6#93#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="24" selection-start="293" selection-end="293" vertical-scroll-proportion="0.19438446" vertical-offset="0" max-vertical-offset="926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/task_theme/delete/submitQueryBtn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="91" selection-end="91" vertical-scroll-proportion="0.123569794" vertical-offset="0" max-vertical-offset="874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/task_theme/add/submitQueryBtn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="91" selection-end="91" vertical-scroll-proportion="0.12013348" vertical-offset="0" max-vertical-offset="899">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/XMLConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="21" selection-start="3352" selection-end="3352" vertical-scroll-proportion="0.62979686" vertical-offset="0" max-vertical-offset="1152">
+          <folding>
+            <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getBaseUrl#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setDatabaseInfo#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoHost#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoUser#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoPass#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoDbName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="e#5310#5763#0" expanded="false" />
+            <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/models/DbConnectionModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="2" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.46051168" vertical-offset="0" max-vertical-offset="899">
+          <folding>
+            <element signature="e#6#93#0" expanded="true" />
+            <element signature="n#__construct#0;n#Core_DbConnectionModel#0;n#!!top" expanded="false" />
+            <element signature="n#getInstance#0;n#Core_DbConnectionModel#0;n#!!top" expanded="false" />
+            <element signature="n#__clone#0;n#Core_DbConnectionModel#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/models/DbServicesModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="2" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.50790066" vertical-offset="0" max-vertical-offset="886">
+          <folding>
+            <element signature="e#95#792#0" expanded="false" />
+            <element signature="n#__construct#0;n#Core_DbServicesModel#0;n#!!top" expanded="false" />
+            <element signature="n#displayTableQuery#0;n#Core_DbServicesModel#0;n#!!top" expanded="false" />
+            <element signature="n#getNumberOfRowsQuery#0;n#Core_DbServicesModel#0;n#!!top" expanded="false" />
+            <element signature="e#1630#1810#0" expanded="false" />
+            <marker date="1395422338979" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Todo_List..." />
+            <marker date="1395422338979" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Todo_List..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/models/DbServicesModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="71" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.36568847" vertical-offset="0" max-vertical-offset="886">
+          <folding>
+            <element signature="e#6#93#0" expanded="true" />
+            <element signature="n#addNewTaskQuery#0;n#Task_DbServicesModel#0;n#!!top" expanded="false" />
+            <element signature="n#deleteOneTaskQuery#0;n#Task_DbServicesModel#0;n#!!top" expanded="false" />
+            <element signature="n#deleteMultipleTasksQuery#0;n#Task_DbServicesModel#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/models/DbDataMapperModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="324">
+          <folding>
+            <element signature="e#6#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/models/DbObjectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="54" selection-end="54" vertical-scroll-proportion="0.06006674" vertical-offset="0" max-vertical-offset="899">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/models/DbObjectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="132" selection-end="132" vertical-scroll-proportion="0.08008899" vertical-offset="0" max-vertical-offset="899">
+          <folding>
+            <element signature="e#192#792#0" expanded="false" />
+            <element signature="n#index#0;n#Core_DbObjectModel#0;n#!!top" expanded="false" />
+            <element signature="n#__construct#0;n#Core_DbObjectModel#0;n#!!top" expanded="false" />
+            <element signature="n#performQuery#0;n#Core_DbObjectModel#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/models/DbDataMapperModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="2296" selection-end="2296" vertical-scroll-proportion="0.7268623" vertical-offset="40" max-vertical-offset="1440">
+          <folding>
+            <element signature="n#__construct#0;n#Core_DbDataMapperModel#0;n#!!top" expanded="false" />
+            <element signature="n#getRowNumberFromDatabase#0;n#Core_DbDataMapperModel#0;n#!!top" expanded="false" />
+            <element signature="n#deleteTasksFromDatabase#0;n#Core_DbDataMapperModel#0;n#!!top" expanded="false" />
+            <element signature="e#2471#2593#0" expanded="false" />
           </folding>
         </state>
       </provider>

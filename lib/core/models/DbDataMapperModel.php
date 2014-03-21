@@ -18,7 +18,7 @@
 
 
 
-class Core_Index_Database_Data_Mapper_Model
+class Core_DbDataMapperModel
 {
 
     private $_dbObject;
@@ -27,9 +27,8 @@ class Core_Index_Database_Data_Mapper_Model
     public function __construct()
     {
         //create new objects for the database object and database service models
-        $this->_dbObject = new Core_Index_Database_Object_Model('localhost', '', '', 'test');
-        $this->_dbObject->connectToDb();
-        $this->_dbService = new Core_Index_Database_Services_Model();
+        $this->_dbObject = new Core_DbObjectModel();
+        $this->_dbService = new Core_DbServicesModel();
     }
 
     public function handleRequest($request)

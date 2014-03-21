@@ -2,6 +2,12 @@
 <application>
     <url>http://tasks.dev/</url>
     <current_theme>task_theme</current_theme>
+    <database>
+        <host>localhost</host>
+        <user></user>
+        <pass></pass>
+        <dbname>MySQL</dbname>
+    </database>
     <registered_modules>
         <task>
             <namespace>app</namespace>
