@@ -24,7 +24,7 @@ class Task_DbServicesModel extends Core_DbServicesModel
         */
 
         //todo: you need to find a way to quickly get the highest row number from the table and increment by one when adding a row...
-        $query = "INSERT INTO test.Todo_List VALUES (" . ($rowNumber + 1) .  ", " . $taskDescription . ", 0)";   //*(0 = false, it needs to be a number for some reason?)
+        $query = "INSERT INTO test.Todo_List VALUES (" . ($rowNumber) .  ", " . $taskDescription . ", 0)";   //*(0 = false, it needs to be a number for some reason?)
 
 
         return $query;
@@ -37,7 +37,7 @@ class Task_DbServicesModel extends Core_DbServicesModel
         {
             //todo: throw a "you need to have a task description" exception
         }
-        $query = "DELETE FROM test.Todo_List WHERE Task_Number = " . $taskNumberToDelete;
+        $query = "DELETE FROM Todo_List WHERE Task_Number = " . $taskNumberToDelete;
         return $query;
     }
 
@@ -50,7 +50,7 @@ class Task_DbServicesModel extends Core_DbServicesModel
         {
             for($i = 0; $i < count($taskNumbersToDeleteArray); $i++)
             {
-                $queryList[$i] = "DELETE FROM test.Todo_List WHERE Task_Number = " . $taskNumbersToDeleteArray[$i];
+                $queryList[$i] = "DELETE FROM Todo_List WHERE Task_Number = " . $taskNumbersToDeleteArray[$i];
             }
         }
         else

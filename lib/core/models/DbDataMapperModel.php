@@ -37,12 +37,10 @@ class Core_DbDataMapperModel
         //handle request that was received from the user/view/controller...
     }
 
-    public function getRowNumberFromDatabase()
+    public function getRowNumberFromTable()
     {
-        $query = $this->_dbService->getNumberOfRowsQuery('test.Todo_List');          //get the query from services to find the number of rows...
-        $this->_dbObject->performQuery($query);                       //tell db object to do the query and return the results
-
-        $result = mysqli_store_result(Core_DbConnectionModel::getInstance());
+        $query = $this->_dbService->getNumberOfRowsQuery('Todo_List');          //get the query from services to find the number of rows...
+        $result = $this->_dbObject->performQuery($query);                       //tell db object to do the query and return the results
 
         if($result === true || $result === false)                               //if the query failed or returned a non-object (mysqli object)
         {

@@ -35,17 +35,16 @@ class Core_DbObjectModel
 
     }
 
-    public function performQuery($connection = null, $queryReceived = null)
+    //returns the result set after performing the query...
+    public function performQuery($queryReceived = null)
     {
         //if user puts something that is not null in as connection = use it.
-        if($connection === null || $queryReceived === null)
+        if($queryReceived === null)
         {
            //todo: throw a no connection/query were given to perform exception
         }
-        else
-        {
-           mysqli_query(Core_DbConnectionModel::getInstance(), $queryReceived);
-        }
+
+           return mysqli_query(Core_DbConnectionModel::getInstance(), $queryReceived);
     }
 
 

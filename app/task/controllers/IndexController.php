@@ -21,7 +21,7 @@ class Task_IndexController extends Core_IndexController
     public function index()
     {
         $dbMapper = new Task_DbDataMapperModel();
-        $dbMapper->displayTableFromDatabase('task.TodoList');
+        $dbMapper->displayTableFromDatabase('Todo_List');
 
         $this->render();
     }

@@ -6,7 +6,7 @@
         <host>localhost</host>
         <user>root</user>
         <pass>root</pass>
-        <dbname>MySQL</dbname>
+        <dbname>mysql</dbname>
     </database>
     <registered_modules>
         <task>

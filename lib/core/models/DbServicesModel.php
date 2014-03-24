@@ -40,7 +40,8 @@ class Core_DbServicesModel
             //todo: throw the no table name put in exception here...
         }
 
-        $query = "SELECT * FROM test.Todo_List";
+        $query = "SELECT * FROM " . $tableName;
+        //$query = "SELECT * FROM " . $tableName;
         return $query;
     }
 
@@ -51,7 +52,7 @@ class Core_DbServicesModel
              //todo: throw exception here...
          }
 
-        $query = "SELECT * FROM test.Todo_List";
+        $query = "SELECT * FROM " . $tableName;
 
         return $query;
     }

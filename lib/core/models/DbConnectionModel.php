@@ -28,11 +28,10 @@ class Core_DbConnectionModel
         if(!isset(static::$_dbConnection))
         {
             static::$_dbConnection = mysqli_connect(
-                Core_XMLConfig::getDatabaseInfoHost(),
-                Core_XMLConfig::getDatabaseInfoUser(),
-                Core_XMLConfig::getDatabaseInfoPass(),
-                Core_XMLConfig::getDatabaseInfoDbName());  //set up connection
-
+                    Core_XMLConfig::getDatabaseInfoHost(),
+                    Core_XMLConfig::getDatabaseInfoUser(),
+                    Core_XMLConfig::getDatabaseInfoPass(),
+                    Core_XMLConfig::getDatabaseInfoDbName());  //set up connection
 
             if(mysqli_connect_errno())
             {
@@ -42,7 +41,7 @@ class Core_DbConnectionModel
             }
         }
 
-        return self::$_dbConnection;
+        return static::$_dbConnection;
     }
 
     private function __clone()
