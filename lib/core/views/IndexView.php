@@ -183,9 +183,6 @@ class Core_IndexView
 
 
 
-
-
-
     // v-- below hasn't been tested but it should work theoretically.
     public function setUpPage($pieceDirToAdd = false)
     {
@@ -219,7 +216,6 @@ class Core_IndexView
             }
         }
     }
-
 
 
 

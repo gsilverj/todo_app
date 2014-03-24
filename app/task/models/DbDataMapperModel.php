@@ -99,5 +99,19 @@ class Task_DbDataMapperModel extends Core_DbDataMapperModel
         }
     }
 
+    public function getTableAsArray($tableName)
+    {
+        $query = $this->_dbService->displayTableQuery($tableName);
+        //var_dump($query);
+        $result = $this->_dbObject->performQuery($query);
+
+        if($result === true || $result === false)               //if the query failed or returned a non-object
+        {
+            //todo: throw query failed exception here...        //throw the exception
+        }
+
+
+        return $result;
+    }
 
 } 
