@@ -21,23 +21,37 @@ class Task_DbDataMapperModel extends Core_DbDataMapperModel
         $this->_dbService = new Task_DbServicesModel();
     }
 
-    public function addTaskToDatabase($taskDescription)
+    public function addTaskToTable($taskDescription)
     {
         //get number of rows from function/db and then pass that into the addNewTask service function which then returns the desired query.
-        $query = $this->_dbService->addNewTaskQuery($taskDescription, $this->getRowNumberFromTable());
+        $query = $this->_dbService->addNewTaskQuery($taskDescription, ($this->getRowNumberFromTable() + 1));
 
         //tell db to perform query
-        $this->_dbObject->performQuery($query);
+        $result = $this->_dbObject->performQuery($query);
+
+        if($result === false)
+        {
+            //todo: throw a , you passed in an already used task_number & task_numbers must be unique, exception.
+        }
     }
 
-    public function deleteTasksFromDatabase($taskNumbersToDeleteArray)
+    public function deleteTasksFromTable($taskNumbersToDeleteArray)
     {
         $queryList = $this->_dbService->deleteMultipleTasksQuery($taskNumbersToDeleteArray);
 
-        for($i = 0; $i < count($queryList); $i ++)
+        //If I dont check if there is only one element here, the for loop will only pass in the $i'th letter in the query...
+        if(count($queryList) == 1)
         {
-            $this->_dbObject->performQuery($queryList[$i]);
+            $this->_dbObject->performQuery($queryList);
         }
+        else
+        {
+            for($i = 0; $i < count($queryList); $i ++)
+            {
+                $this->_dbObject->performQuery($queryList[$i]);
+            }
+        }
+
     }
 
     public function displayTableFromDatabase($tableName)
@@ -70,7 +84,20 @@ class Task_DbDataMapperModel extends Core_DbDataMapperModel
         echo("<br \>");
     }
 
+    public function reorderTableIndex($tableName)
+    {
+        $selectQuery = 'SELECT * FROM ' . $tableName;
+        $result = $this->_dbObject->performQuery($selectQuery);
 
+        $index = 1;
+
+        while($row = mysqli_fetch_array($result))
+        {
+            $query = $this->_dbService->updateRowQuery($row['Task_Number'], $index, $row['Task_Description'], $row['Task_Is_Completed']);
+            $this->_dbObject->performQuery($query);
+            $index ++;
+        }
+    }
 
 
 } 

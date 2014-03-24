@@ -24,7 +24,8 @@ class Task_DbServicesModel extends Core_DbServicesModel
         */
 
         //todo: you need to find a way to quickly get the highest row number from the table and increment by one when adding a row...
-        $query = "INSERT INTO test.Todo_List VALUES (" . ($rowNumber) .  ", " . $taskDescription . ", 0)";   //*(0 = false, it needs to be a number for some reason?)
+        //you need to use ' right before the ending " directly before putting the description so that it is read as a string into the db.
+        $query = "INSERT INTO Todo_List VALUES (" . ($rowNumber) .  ", '" . $taskDescription . "', 0)";   //*(0 = false, it needs to be a number for some reason?)
 
 
         return $query;
@@ -61,4 +62,28 @@ class Task_DbServicesModel extends Core_DbServicesModel
         return $queryList;
     }
 
+    public function updateRowQuery($rowNumberToUpdate, $task_number = null, $task_description = null, $task_is_completed = 0)
+    {
+        if($rowNumberToUpdate < 0)
+        {
+            //todo: throw a, you put an negative number row to update, exception.
+        }
+        elseif($task_number == null)
+        {
+            //todo: throw a, you need to put in a task_number for the row to update to change to.
+        }
+        elseif($task_is_completed > -1 && $task_is_completed < 2)
+        {
+            //todo: throw a, you need to pass either a one(1) or zero(0) for the task_is_completed Bool Value, exception.
+        }
+
+        $query = "UPDATE Todo_List
+                  SET Task_Number = " . $task_number . ",
+                      Task_Description = '" . $task_description . "',
+                      Task_Is_Completed = " . $task_is_completed . "
+                  WHERE Task_Number = " . $rowNumberToUpdate;
+
+        return $query;
+
+    }
 } 

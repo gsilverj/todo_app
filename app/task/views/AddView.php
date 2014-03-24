@@ -13,5 +13,4 @@ class Task_AddView extends Core_IndexView
         parent::__construct();
         $this->setTargetTemplate(__CLASS__);
     }
-
-} 
+}
