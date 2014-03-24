@@ -17,12 +17,8 @@
 
 class Core_IndexController
 {
-
-    //this may not be needed...
-    protected $_view = 'DefaultView';
-
-    public function index(){
-
+    public function index()
+    {
         if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
             $class = new $class;
             $class->render();

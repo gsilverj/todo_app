@@ -6,22 +6,20 @@
  * Time: 12:59 PM
  */
 
-class Core_XMLConfig {
+class Core_XMLConfig
+{
 
-    protected static $_current_theme ='';
-    protected static $_base_url = '';
     protected static $_config;  //the loaded xml file
+    protected static $_base_url = '';
+    protected static $_current_theme ='';
+    protected static $_database_info = array();
     protected static $_registered_modules = array(); //will hold a 2-dimensional associative array. (ex. registered_modules['lib(namespace)']['core(file_path)'];
     protected static $_registered_themes = array(); //will hold a multi-dim. array of all the themes placed in the config file.
 
 
     public function __construct($configFile = null)
     {
-        //if user passed a filename in, read in that xmlConfig file into $_config.
-        if($configFile !== null)
-        {
             self::readInXmlConfigFile($configFile);
-        }
     }
 
     public static function getConfig()
@@ -36,22 +34,19 @@ class Core_XMLConfig {
 
     public static function readInXmlConfigFile($source = null)
     {
+        $xml = false;
+
         if($source === null)
         {
             $source = getcwd() . DS . 'lib' . DS . 'core' . DS . 'Config.xml';
+            $xml = simplexml_load_file($source);
         }
-
-        $xml = false;
-
-        if(file_exists($source))
+        elseif(file_exists($source))
         {
             //load xml file as a simple xml and into $xml
             $xml = simplexml_load_file($source);
         }
-        else
-        {
-            echo 'failed to open file!!!!';
-        }
+
 
         self::$_config = $xml;
     }
@@ -79,6 +74,64 @@ class Core_XMLConfig {
     public static function getBaseUrl()
     {
         return self::$_base_url;
+    }
+
+    public static function setCurrentTheme($themeName = null)
+    {
+        if($themeName === null)
+        {
+            $xml = self::getConfig();
+            //loop through the config to find what the 'current_theme' is... (so it can dynamically locate it)
+            foreach($xml->children() as $child)
+            {
+                if($child->getName() == 'current_theme')
+                {
+                    self::$_current_theme = (string)$child;
+                }
+            }
+        }
+        else
+        {
+            self::$_current_theme = (string)$themeName;
+        }
+    }
+
+    public static function getCurrentTheme()
+    {
+        return self::$_current_theme;
+    }
+
+    public static function setDatabaseInfo()
+    {
+        $xml = self::getConfig();
+
+        //loop through the config to find the database area in the xml
+        foreach($xml->children() as $child)
+        {
+            if($child->getName() == 'database')
+            {
+                foreach($child as $part => $value)
+                {
+                    self::$_database_info[$part] = (string)$value;
+                }
+            }
+        }
+    }
+    public static function getDatabaseInfoHost()
+    {
+        return self::$_database_info['host'];
+    }
+    public static function getDatabaseInfoUser()
+    {
+        return self::$_database_info['user'];
+    }
+    public static function getDatabaseInfoPass()
+    {
+        return self::$_database_info['pass'];
+    }
+    public static function getDatabaseInfoDbName()
+    {
+        return self::$_database_info['dbname'];
     }
 
     public static function setRegisteredModules()
@@ -170,30 +223,7 @@ class Core_XMLConfig {
         return self::$_registered_themes;
     }
 
-    public static function setCurrentTheme($themeName = null)
-    {
-        if($themeName === null)
-        {
-            $xml = self::getConfig();
-            //loop through the config to find what the 'current_theme' is... (so it can dynamically locate it)
-            foreach($xml->children() as $child)
-            {
-                if($child->getName() == 'current_theme')
-                {
-                    self::$_current_theme = $child;
-                }
-            }
-        }
-        else
-        {
-            self::$_current_theme = $themeName;
-        }
-    }
 
-    public static function getCurrentTheme()
-    {
-        return self::$_current_theme;
-    }
 
 
 

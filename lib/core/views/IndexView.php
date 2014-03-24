@@ -6,14 +6,15 @@
  * Time: 1:23 PM
  */
 
-class Core_IndexView {
+class Core_IndexView
+{
 
     protected $_pagePieces; //is an array...
     protected $_templateDir;
     protected $_themeDir;
     ######you need to change this!!!!!!!!!!!!!!!!!!!   (can probably set to ~ core_theme/index/index.php or 404_theme/404/404.php etc...)
-    protected $_defaultTemplate = 'index/index.php';
-    protected $_errorTemplate = "four_oh_four/four_oh_four.php";
+    protected $_defaultTemplate = 'index.php';
+    protected $_errorTemplate = "four_oh_four.php";
     protected $_targetTemplate;
 
 
@@ -61,7 +62,7 @@ class Core_IndexView {
                 //cut off 'view'
                 $className = str_replace('view', '', $className);
 
-                $this->_targetTemplate = $className . DS . $className . '.php';
+                $this->_targetTemplate =  $className . '.php';
             }
             else
             {
@@ -76,34 +77,15 @@ class Core_IndexView {
     public function render()
     {
         //todo: SUPER IMPORTANT, THIS SHOULD NOT BE HARDCODED, IT DOESNT MAKE ANY SENSE, JUST MAKE ANOTHER METHOD FOR IT...
-        $this->getTemplate(false, 'index.php');
+        $this->getTemplate(false, $this->_targetTemplate);
     }
 
 
     //possibly change to getTemplate(template = false, module = false) so I wont have to always include a module when I call function...
-    public function getTemplate($module = false, $template = false){
-        //include_once $this->_templateDir . strtolower(Core_Bootstrap::getModuleNameFromClass(__CLASS__)) . DS .  'index' . DS . $this->_template;
-        //set the _targetTemplate;
-
-
-        /*  old version to pull up the templates when they were in a templates folder instead...
-        $view = $this->_templateDir . (($module) ? $module : strtolower(Core_Bootstrap::getModuleNameFromClass(get_class($this)))) . DS;
-        $template = ($template) ? $template : $this->_targetTemplate;
-        $viewTemplate = $view . $template;
-        */
+    public function getTemplate($module = false, $template = false)
+    {
         self::getThemeTemplatePiece($template);
-//        if(!file_exists($viewTemplate))
-//        {
-//            $view = $this->_templateDir . 'four_oh_four' . DS;
-//            $template = $this->_errorTemplate;
-//            $viewTemplate = $view . $template;
-//
-//            //if even the 404 cant be found throw exception and default back to index?
-//        }
-//
-//        include_once $viewTemplate;
-
-      }
+    }
 
     public function getHeader()
     {

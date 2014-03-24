@@ -25,7 +25,6 @@ final class Core_Bootstrap
         {
             //maybe throw an exception here...
             $xmlConfigObj = new Core_XMLConfig($configFile);
-            $xmlConfigObj->readInXmlConfigFile();
             $xmlConfigObj->setBaseUrlFromConfig();
             $xmlConfigObj->setCurrentTheme();
             $xmlConfigObj->setRegisteredModules();
@@ -35,9 +34,9 @@ final class Core_Bootstrap
         {
             //may want to do a try-catch here, just in-case of somehow getting an error?
             $xmlConfigObj = new Core_XMLConfig();
-            $xmlConfigObj->readInXmlConfigFile();
             $xmlConfigObj->setBaseUrlFromConfig();
             $xmlConfigObj->setCurrentTheme();
+            $xmlConfigObj->setDatabaseInfo();
             $xmlConfigObj->setRegisteredModules();
             $xmlConfigObj->setRegisteredThemes();
         }
@@ -53,6 +52,9 @@ final class Core_Bootstrap
             //Convert: '' => IndexController::index()
 
             $uri = explode(' ' , trim(str_replace('/' , ' ' ,$uri) , ' '));
+            // possible to do this instead and bump up by one for checks
+            // $uri = explode('/' , trim($uri , ' '));
+
 
             if(array_key_exists(0, $uri) && empty($uri[0]))
             {
