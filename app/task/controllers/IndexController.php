@@ -24,10 +24,17 @@ class Task_IndexController extends Core_IndexController
     }
     public function add()
     {
+        $dbObj = new Task_DbDataMapperModel();
+        $dbObj->reorderTableIndex('Todo_List');
+        $dbObj->addTaskToTable($_POST['taskDescriptionTbox']);
         $this->render(__FUNCTION__);
     }
     public function delete()
     {
+        $dbObj = new Task_DbDataMapperModel();
+        $dbObj->reorderTableIndex('Todo_List');
+        //you need to put the $_POST stuff here into an array...
+        $dbObj->deleteTasksFromTable(array());
         $this->render(__FUNCTION__);
     }
     public function reload()

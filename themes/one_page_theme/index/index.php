@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php $this->getHead() ?>
-
 <body>
 
+<h1 onload="hide()">cat </h1>
 <br />
 
 <h1>One Page Theme</h1>

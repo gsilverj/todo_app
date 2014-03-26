@@ -23,15 +23,22 @@ class Task_DbDataMapperModel extends Core_DbDataMapperModel
 
     public function addTaskToTable($taskDescription)
     {
-        //get number of rows from function/db and then pass that into the addNewTask service function which then returns the desired query.
-        $query = $this->_dbService->addNewTaskQuery($taskDescription, ($this->getRowNumberFromTable() + 1));
-
-        //tell db to perform query
-        $result = $this->_dbObject->performQuery($query);
-
-        if($result === false)
+        if(!is_null($taskDescription))
         {
-            //todo: throw a , you passed in an already used task_number & task_numbers must be unique, exception.
+            //get number of rows from function/db and then pass that into the addNewTask service function which then returns the desired query.
+            $query = $this->_dbService->addNewTaskQuery($taskDescription, ($this->getRowNumberFromTable() + 1));
+
+            //tell db to perform query
+            $result = $this->_dbObject->performQuery($query);
+
+            if($result === false)
+            {
+                //todo: throw a , you passed in an already used task_number & task_numbers must be unique, exception.
+            }
+        }
+        else
+        {
+            //todo: throw a, you need to put something into the textbox, exception.
         }
     }
 

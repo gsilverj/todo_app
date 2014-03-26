@@ -1,6 +1,6 @@
 <div class="container" id="deleteTaskPanel" >
 
-    <form role="form" action="task/delete\" method="get">
+    <form role="form" action="<?php echo Core_XMLConfig::getBaseUrl() . 'task/delete';?>" method="post">
         <fieldset>
         <div class="form-group">
             <h2>DELETE</h2>

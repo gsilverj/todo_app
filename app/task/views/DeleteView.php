@@ -11,7 +11,6 @@ class Task_DeleteView extends Task_IndexView {
     public function __construct()
     {
         parent::__construct();
-        $this->setTargetTemplate(__CLASS__);
+        //$this->setTargetTemplate(__CLASS__);
     }
-
 } 
