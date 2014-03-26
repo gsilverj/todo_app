@@ -8,9 +8,6 @@
 
 class Task_IndexView extends Core_IndexView {
 
-
-
-
     public function __construct()
     {
         parent::__construct();

@@ -6,7 +6,7 @@
  * Time: 1:20 PM
  */
 
-class Task_ReloadView extends Core_IndexView {
+class Task_ReloadView extends Task_IndexView {
 
     public function __construct()
     {

@@ -2,7 +2,8 @@
 /* With css, '#idname' = change anything with that id name, '.catagory' where catagory is body or container = change where that catagory is used.*/
 #cat { border:2px solid #ccc; width:600px; height: 200px; overflow-y: scroll; }
 
-body{
+body
+{
     background-color: #31b0d5;
 }
 

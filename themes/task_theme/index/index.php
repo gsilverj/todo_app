@@ -5,6 +5,13 @@
 
 <body>
 
+<?php $this->getHeader() ?>
+
+<br />
+
+<h1>YOLO THIS BE THAT TEMPLATE TASK SWAG...</h1>
+
+
 <?php
 /*    $this->setUpPage('page/todoListPanel.php');
     $this->setUpPage('page/backToHomeBtn.php');
@@ -23,8 +30,11 @@
 
 
 
-<?php $this->getTemplate(false, 'populatedTodoListPanel.php')?>
+<?php $this->getTemplate(false, 'todoListPanel.php')?>
 
+<?php $this->getTemplate(false, 'backToHomeBtn.php') ?>
+<?php $this->getTemplate(false, 'addBtn.php') ?>
+<?php $this->getTemplate(false, 'deleteBtn.php') ?>
 
 <?php $this->getTemplate(false, 'bootstrapJs.php') ?>
 <?php $this->getTemplate(false, 'compiledPlugins.php')?>

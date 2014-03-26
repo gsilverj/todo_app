@@ -6,7 +6,7 @@
  * Time: 1:20 PM
  */
 
-class Task_DeleteView extends Core_IndexView {
+class Task_DeleteView extends Task_IndexView {
 
     public function __construct()
     {
