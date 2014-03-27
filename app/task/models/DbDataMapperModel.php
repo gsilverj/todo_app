@@ -26,7 +26,7 @@ class Task_DbDataMapperModel extends Core_DbDataMapperModel
         if(!is_null($taskDescription))
         {
             //get number of rows from function/db and then pass that into the addNewTask service function which then returns the desired query.
-            $query = $this->_dbService->addNewTaskQuery($taskDescription, ($this->getRowNumberFromTable() + 1));
+            $query = $this->_dbService->addNewTaskQuery($taskDescription, ($this->getMaxRowNumberFromTable() + 1));
 
             //tell db to perform query
             $result = $this->_dbObject->performQuery($query);
@@ -121,4 +121,69 @@ class Task_DbDataMapperModel extends Core_DbDataMapperModel
         return $result;
     }
 
+    public function deleteAllTasksFromTable()
+    {
+        $maxRowNumber = $this->getMaxRowNumberFromTable();
+
+        for($i = 0; $i <= $maxRowNumber; $i++ )
+        {
+            $this->deleteTasksFromTable($i);
+        }
+    }
+
+    public function getTaskCompletionStatusFromTable($taskNumber = null)
+    {
+        $taskCompletionStatus = null;
+
+        if($taskNumber !== null)
+        {
+            $query = $this->_dbService->getSpecificTaskNumberRow($taskNumber);
+            $result = $this->_dbObject->performQuery($query);
+
+            if($result === true || $result === false)               //if the query failed or returned a non-object
+            {
+                //todo: throw query failed exception here...        //throw the exception
+            }
+
+
+            $row = mysqli_fetch_array($result);
+
+            $taskCompletionStatus = $row['Task_Is_Completed'];
+        }
+        else
+        {
+            //todo: throw exception for no taskNumber Passed to method.
+        }
+
+        return $taskCompletionStatus;
+    }
+
+    public function updateSetTaskCompletionStatus($taskNumber)
+    {
+        $taskCompletionStatus = $this->getTaskCompletionStatusFromTable($taskNumber);
+
+        if($taskCompletionStatus !== null)
+        {
+            //if taskCompletionStatus is 1(true) set it to false
+            if($taskCompletionStatus)
+                $query = $this->_dbService->updateTaskIsCompletedQuery($taskNumber, 0);
+            else
+                $query = $this->_dbService->updateTaskIsCompletedQuery($taskNumber, 1);
+
+
+            $result = $this->_dbObject->performQuery($query);
+
+
+            if($result === false || mysqli_affected_rows(Core_DbConnectionModel::getInstance()) < 1)
+            {
+                //todo: throw an exception stating that there was no update that happend or the query failed...
+            }
+        }
+        else
+        {
+          //todo: throw exception about taskCompletion Status Not Being Found;
+        }
+
+
+    }
 } 

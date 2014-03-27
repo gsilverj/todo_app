@@ -27,9 +27,16 @@ class Task_IndexController extends Core_IndexController
     {
         if(isset($_POST['taskDescriptionTbox']))
         {
-            $dbObj = new Task_DbDataMapperModel();
-            $dbObj->reorderTableIndex('Todo_List');
-            $dbObj->addTaskToTable($_POST['taskDescriptionTbox']);
+            if($_POST['taskDescriptionTbox'] != null)
+            {
+                $dbObj = new Task_DbDataMapperModel();
+                $dbObj->reorderTableIndex('Todo_List');
+                $dbObj->addTaskToTable($_POST['taskDescriptionTbox']);
+            }
+            else
+            {
+                //todo: throw, you must put something into the textbox, exception.
+            }
         }
         else
         {
@@ -38,28 +45,40 @@ class Task_IndexController extends Core_IndexController
         $this->render(__FUNCTION__);
     }
 
+    //todo: Be aware that this method doesnt check to see if that TaskId actually exists or not, its just a happy accident that it does not break. You can probably just check if the task id exists in the table with a query (prob. select * where taskid = blah) and if it returns a result set it means it exists, otherwise it doesnt and either throw exception or do nothing to the database.
     public function delete($taskToDelete = null)
     {
         if($taskToDelete !== null)
         {
             if(count($taskToDelete) == 1)
             {
-                foreach($taskToDelete as $key => $value)
+                if(is_assoc($taskToDelete))
                 {
-                    $taskToDelete = $value;
-                }
+                    foreach($taskToDelete as $key => $value)
+                    {
+                        $taskToDelete = $value;
+                    }
 
-                if($taskToDelete == '*')
+                    if($taskToDelete == '*')
+                    {
+                        $dbObj = new Task_DbDataMapperModel();
+                        $dbObj->reorderTableIndex('Todo_List');
+                        $dbObj->deleteAllTasksFromTable();
+                    }
+                    else
+                    {
+                        $dbObj = new Task_DbDataMapperModel();
+                        $dbObj->reorderTableIndex('Todo_List');
+                        $dbObj->deleteTasksFromTable($taskToDelete);
+                    }
+                }
+                elseif(is_numeric($taskToDelete))
                 {
-                    $dbObj = new Task_DbDataMapperModel();
-                    $dbObj->reorderTableIndex('Todo_List');
-                    $dbObj->deleteAllasksFromTable($taskToDelete);
+                    //todo: array passed in is not an associative array
                 }
                 else
                 {
-                    $dbObj = new Task_DbDataMapperModel();
-                    $dbObj->reorderTableIndex('Todo_List');
-                    $dbObj->deleteTasksFromTable($taskToDelete);
+                    //todo: the array passed in is not associative or a number, throw passed in thing is incorrect error.
                 }
             }
             else
@@ -74,22 +93,32 @@ class Task_IndexController extends Core_IndexController
         $this->render(__FUNCTION__);
     }
 
-    //todo: update query and this function...
+    //todo: update query and this function...       (this function may break if a string of numbers and symbols is passed in, need to check for symbols?)
     public function update($taskToUpdate = null)
     {
-        if($taskToUpdate !== null)
-        {
-            if(count($taskToUpdate) == 1)
-            {
-                foreach($taskToUpdate as $key => $value)
-                {
-                    $taskToDelete = $value;
-                }
-                $dbObj = new Task_DbDataMapperModel();
-                $dbObj->reorderTableIndex('Todo_List');
-                //you need to put the $_POST stuff here into an array...
-                $dbObj->updateTasksFromTable($taskToUpdate);
 
+        if($taskToUpdate !== null)                                                          //if: Task to update has been passed in and not null
+        {
+            if(count($taskToUpdate) == 1)                                                   //  if: # of elements in $taskToUpdate is = 1
+            {
+                if(is_assoc($taskToUpdate))                                                 //      if: if the $taskToUpdate is an associative array (ex. 'cat' => 2)
+                {
+                    foreach($taskToUpdate as $key => $value)
+                    {
+                        $taskToUpdate = $value;
+                    }
+                    $dbObj = new Task_DbDataMapperModel();
+                    $dbObj->reorderTableIndex('Todo_List');
+                    $dbObj->updateSetTaskCompletionStatus($taskToUpdate);
+                }
+                elseif(is_numeric($taskToUpdate))                                           //  elseif: is the inputted value numeric?
+                {
+                    //todo: array passed in is not an associative array
+                }
+                else
+                {
+                    //todo: the array passed in is not associative or a number, throw passed in thing is incorrect error.
+                }
             }
             else
             {
@@ -102,6 +131,4 @@ class Task_IndexController extends Core_IndexController
         }
         $this->render(__FUNCTION__);
     }
-
-
 }

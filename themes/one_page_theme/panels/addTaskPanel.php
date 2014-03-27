@@ -6,10 +6,10 @@
         </div>
         <div class="form-group">
             <label for="taskDescriptionTbox">Task Description</label>
-            <input type="text" class="form-control" name="taskDescriptionTbox" placeholder="Please Enter A Task Description..."/>
+            <input type="text" class="form-control" id="taskDescriptionTbox" name="taskDescriptionTbox" placeholder="Please Enter A Task Description..." autofocus="autofocus"/>
             <p class="help-block">Please Enter A Task Description, Then Press The Submit Button.</p>
             <br />
-            <input type="submit" value="Submit"  >
+            <input type="submit" class="btn btn-success btn-lg" value="Submit">
         </div>
     </form>
 </div>
