@@ -8,11 +8,6 @@
 
 <h1>One Page Theme</h1>
 <h3>Welcome Back!</h3>
-<a href="<?php echo Core_XMLConfig::getBaseUrl() . 'task/delete/1'?>" onclick="return '1'"> <span class="glyphicon glyphicon-trash"></span> </a>
-
-<button type="submit" formaction="<?php echo Core_XMLConfig::getBaseUrl() . 'task/delete/1'?>" formmethod="post">
-    <span class="glyphicon glyphicon-trash"></span>
-</button>
 
 <?php $this->getTemplate(false, 'populatedTodoListPanel.php')?>
 
