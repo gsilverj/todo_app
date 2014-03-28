@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/themes/one_page_theme/panels/infoPanel.php" afterPath="$PROJECT_DIR$/themes/one_page_theme/panels/informationPanel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php" afterPath="$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/one_page_theme/delete/deleteAllBtn.php" afterPath="$PROJECT_DIR$/themes/one_page_theme/delete/deleteAllBtn.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/one_page_theme/index/index.php" afterPath="$PROJECT_DIR$/themes/one_page_theme/index/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/core_theme/css/styles.css" afterPath="$PROJECT_DIR$/themes/core_theme/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tasks.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,24 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Bootstrap.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="55" selection-start="5464" selection-end="5464" vertical-scroll-proportion="-15.333333" vertical-offset="162" max-vertical-offset="1818">
-              <folding>
-                <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="e#1376#1477#0" expanded="false" />
-                <element signature="e#3228#3934#0" expanded="false" />
-                <element signature="e#3560#3934#0" expanded="false" />
-                <element signature="e#4049#5348#0" expanded="false" />
-                <element signature="e#6222#6755#0" expanded="false" />
-                <element signature="e#6516#6755#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,24 +50,24 @@
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="92" selection-start="568" selection-end="568" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="504">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/one_page_theme/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="7" selection-start="6634" selection-end="6634" vertical-scroll-proportion="0.47477064" vertical-offset="0" max-vertical-offset="872">
+            <state line="10" column="33" selection-start="301" selection-end="301" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="522">
               <folding>
                 <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#a#0;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addTaskPanel.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="14" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.39813736" vertical-offset="0" max-vertical-offset="859">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/core/models/IndexModel.php" />
         <option value="$PROJECT_DIR$/lib/core/Exception_Handler.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/task/models/Task_ServiceModel.php" />
@@ -134,7 +119,6 @@
         <option value="$PROJECT_DIR$/app/task/views/DeleteView.php" />
         <option value="$PROJECT_DIR$/themes/core_theme/page/populatedTodoListPanel.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/delete/deleteBtn.php" />
-        <option value="$PROJECT_DIR$/themes/one_page_theme/delete/deleteAllBtn.php" />
         <option value="$PROJECT_DIR$/themes/core_theme/page/head.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/panels/infoPanel.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/add/addBtn.php" />
@@ -146,9 +130,11 @@
         <option value="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-        <option value="$PROJECT_DIR$/themes/core_theme/css/styles.css" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/panels/populatedTodoListPanel.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/index/index.php" />
+        <option value="$PROJECT_DIR$/themes/core_theme/css/styles.css" />
+        <option value="$PROJECT_DIR$/themes/one_page_theme/panels/informationPanel.php" />
+        <option value="$PROJECT_DIR$/themes/one_page_theme/delete/deleteAllBtn.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php" />
       </list>
     </option>
@@ -242,28 +228,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="panels" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="one_page_theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -440,6 +404,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32831" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32723358" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15581644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -452,7 +417,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -734,11 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/delete/deleteAllBtn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="227" selection-end="227" vertical-scroll-proportion="0.061784897" vertical-offset="0" max-vertical-offset="874" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/core_theme/page/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="21" selection-start="726" selection-end="726" vertical-scroll-proportion="0.22024472" vertical-offset="0" max-vertical-offset="899" />
@@ -875,53 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/deleteTaskPanel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="526" selection-end="526" vertical-scroll-proportion="0.30963302" vertical-offset="0" max-vertical-offset="872">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/infoPanel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="77" selection-start="236" selection-end="236" vertical-scroll-proportion="0.061926607" vertical-offset="0" max-vertical-offset="872">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/core_theme/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.08008899" vertical-offset="0" max-vertical-offset="899">
-          <folding>
-            <element signature="e#264#356#0" expanded="false" />
-            <element signature="e#373#412#0" expanded="false" />
-            <element signature="e#419#453#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/populatedTodoListPanel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="4" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.24770643" vertical-offset="0" max-vertical-offset="872">
-          <folding>
-            <element signature="e#408#1596#0" expanded="false" />
-            <element signature="e#591#1596#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="357" selection-end="357" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="486">
-          <folding>
-            <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="156" column="55" selection-start="5464" selection-end="5464" vertical-scroll-proportion="-15.333333" vertical-offset="162" max-vertical-offset="1818">
@@ -938,32 +850,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/populatedTodoListPanel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="92" selection-start="568" selection-end="568" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="504">
+        <state line="50" column="0" selection-start="1597" selection-end="1597" vertical-scroll-proportion="1.0321101" vertical-offset="0" max-vertical-offset="1062">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php">
+    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/informationPanel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.44004658" vertical-offset="0" max-vertical-offset="859">
+        <state line="5" column="107" selection-start="513" selection-end="513" vertical-scroll-proportion="0.10321101" vertical-offset="0" max-vertical-offset="872">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="92" selection-start="568" selection-end="568" vertical-scroll-proportion="0.24770643" vertical-offset="0" max-vertical-offset="872">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/core_theme/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="455" selection-end="455" vertical-scroll-proportion="0.24026696" vertical-offset="0" max-vertical-offset="899">
           <folding>
-            <element signature="tag#div#0;tag#div#1;tag#form#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#1;tag#form#0" expanded="false" />
+            <element signature="e#264#356#0" expanded="false" />
+            <element signature="e#373#412#0" expanded="false" />
+            <element signature="e#419#453#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="1" selection-start="357" selection-end="357" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="486">
+          <folding>
+            <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/deleteTaskPanel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="6" selection-start="526" selection-end="526" vertical-scroll-proportion="0.30963302" vertical-offset="0" max-vertical-offset="872">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/delete/deleteAllBtn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="45" selection-start="383" selection-end="383" vertical-scroll-proportion="0.08256881" vertical-offset="0" max-vertical-offset="872">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/one_page_theme/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="7" selection-start="6634" selection-end="6634" vertical-scroll-proportion="0.47477064" vertical-offset="0" max-vertical-offset="872">
+        <state line="10" column="33" selection-start="301" selection-end="301" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="522">
           <folding>
             <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#a#0;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="14" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.39813736" vertical-offset="0" max-vertical-offset="859">
+          <folding />
         </state>
       </provider>
     </entry>

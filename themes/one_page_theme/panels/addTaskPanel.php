@@ -16,8 +16,7 @@
         </div>
 
         <div class="form-group" id="addTaskHelpBlockFormGroupBody">
-            <p class="help-block">Please Enter A Task Description, Then Press The Submit Button.</p>
-            <br />
+            <p class="text-success"><strong>Please Enter A Task Description, Then Press The Submit Button.</strong></p>
         </div>
     </div>
 </form>

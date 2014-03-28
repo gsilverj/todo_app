@@ -22,7 +22,7 @@
         <br />
         <h3>Here Is your Current Todo List:</h3>
         <?php $this->getTemplate(false, 'populatedTodoListPanel.php')?>
-        <?php $this->getTemplate(false, 'infoPanel.php')?>
+        <?php $this->getTemplate(false, 'informationPanel.php')?>
         <?php $this->getTemplate(false, 'deleteAllBtn.php') ?>
     </div>
 
