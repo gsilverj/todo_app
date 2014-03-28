@@ -9,9 +9,13 @@
 
 const DS = '/';
 
-//Will probably do at a later date...
-//
-//public function is_null_or_starts_with_a_number($input)
-//{
-//    if($input)
-//}
+//this function is not my work (gabriell J.)
+/*
+ * source          : http://stackoverflow.com/questions/173400/php-arrays-a-good-way-to-check-if-an-array-is-associative-or-sequential
+ * creator(assumed): 'Captain KurO'
+ *
+ * purpose         : this function checks if an array is associative. returns a bool.
+ */
+function is_assoc($array) {
+    return (bool)count(array_filter(array_keys($array), 'is_string'));
+}

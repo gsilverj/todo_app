@@ -6,12 +6,12 @@
  * Time: 1:20 PM
  */
 
-class Task_ReloadView extends Core_IndexView {
+class Task_UpdateView extends Task_IndexView {
 
     public function __construct()
     {
         parent::__construct();
-        $this->setTargetTemplate(__CLASS__);
+        //$this->setTargetTemplate(__CLASS__);
     }
 
 } 

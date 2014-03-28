@@ -11,6 +11,7 @@
 class Task_DbServicesModel extends Core_DbServicesModel
 {
 
+
     public function addNewTaskQuery($taskDescription = null, $rowNumber)
     {
         if($taskDescription === null)
@@ -46,6 +47,7 @@ class Task_DbServicesModel extends Core_DbServicesModel
     {
         //just incase?...
         $queryList = null;
+
 
         if(is_array($taskNumbersToDeleteArray))
         {
@@ -85,5 +87,26 @@ class Task_DbServicesModel extends Core_DbServicesModel
 
         return $query;
 
+    }
+
+    //query returns a table row for the passed in taskNumber.
+    public function getSpecificTaskNumberRow($taskNumber)
+    {
+        $query = "SELECT *
+                  FROM Todo_List
+                  WHERE Task_Number = " . $taskNumber;
+
+        return $query;
+    }
+
+    //A loose bool is needed so either a one/zero (1/0), a true/false might work, for the $taskCompletedStatus.
+    // method sets the task as whatever the completion status passed in is.
+    public function updateTaskIsCompletedQuery($taskNumber, $taskCompletedStatus)
+    {
+        $query = "UPDATE Todo_List
+                  SET Task_Is_Completed = " . $taskCompletedStatus . "
+                  WHERE Task_Number = " . $taskNumber;
+
+        return $query;
     }
 } 

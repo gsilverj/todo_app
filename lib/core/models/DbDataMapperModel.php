@@ -37,7 +37,7 @@ class Core_DbDataMapperModel
         //handle request that was received from the user/view/controller...
     }
 
-    public function getRowNumberFromTable()
+    public function getMaxRowNumberFromTable()
     {
         $query = $this->_dbService->getNumberOfRowsQuery('Todo_List');          //get the query from services to find the number of rows...
         $result = $this->_dbObject->performQuery($query);                       //tell db object to do the query and return the results

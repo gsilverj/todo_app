@@ -5,9 +5,8 @@
     <title>Todo Application - By: Gabriell ?!</title>
 
     <!-- Bootstrap   ***NOTE THAT THE BASE URL PART CAN BE DONE BETTER....LOCATED IN BOOTSTRAP... -->
-    <link href="<?php Core_XMLConfig::getBaseUrl();?>assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php Core_XMLConfig::getBaseUrl();?>themes/core_theme/css/styles.css"  rel="stylesheet">
-    <?php echo'piece = head & styles.css ,  source = themes/core_theme/.../head.php'; ?>
+    <link href="<?php echo Core_XMLConfig::getBaseUrl();?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo Core_XMLConfig::getBaseUrl();?>themes/core_theme/css/styles.css"  rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

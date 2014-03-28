@@ -44,8 +44,111 @@ final class Core_Bootstrap
 
     public static function matchUri($uri = null)
     {
-        $className = false;
-        if($uri){
+        if($uri)
+        {
+            //            var_dump($_SERVER);
+//            echo ($_SERVER['HTTP_HOST']);
+//            echo ($_SERVER['REQUEST_URI']);
+//            echo "<br />";
+//            echo "<br />";
+//            echo ($_SERVER['REQUEST_URI']);
+//            echo "<br />";
+//            echo "<br />";
+//            echo ($_SERVER['QUERY_STRING']);
+//            echo "<br />";
+//            echo "<br />";
+//            $noSymbols = str_replace(array('?', '&'), ' ', $uri);
+//            echo $uri;
+//            echo "<br />";
+//            echo "<br />";
+//            echo $noSymbols;
+//            echo "<br />";
+//            echo "<br />";
+//            $urlPieces = explode(' ', $noSymbols);
+//
+//            var_dump($urlPieces);
+//
+//            $uri = $urlPieces[0];
+//            echo $uri;
+//            echo "<br />";
+//            echo "<br />";
+//
+//            for($i = 0; $i < count($urlPieces); $i++)
+//            {
+//                if($i == 0)
+//                {
+//                    $uri = $urlPieces[$i];
+//                }
+//                else
+//                {
+//                    $query[$i] = $urlPieces[$i];
+//                }
+//            }
+//
+//            var_dump($query);
+
+            $params = null;
+            //ex.       uri = /tasks/add?quote=15&hamburger=1
+            $noSymbols = str_replace(array('?', '&'), ' ', $uri);       //    noSymbols = /tasks/add quote=15 hamburger=1
+            $urlPieces = explode(' ', $noSymbols);                      //    urlPieces = array(/tasks/add, quote=15, hamburger=1)
+            $urlPieces = array_filter($urlPieces);
+
+
+            if(count($urlPieces) <= 2)
+            {
+                if(count($urlPieces) == 1)
+                {
+                    $uri = $urlPieces[0];
+                }
+                else
+                {
+                    $uri = $urlPieces[0];
+                    $params = $urlPieces[1];
+                }
+            }
+            else
+            {
+                for($i = 0; $i < count($urlPieces); $i++)
+                {
+                    if($i == 0)
+                    {
+                        $uri = $urlPieces[$i];
+                    }
+                    else
+                    {
+                        $params[$i-1] = $urlPieces[$i];
+                    }
+                }
+            }
+
+            if($params !== null)
+            {
+                if(count($params) == 1)
+                {
+                    $paramsParts = explode('=', $params);
+                    if(count($paramsParts) == 1)                    //***** if the user tried to pass in a url instead of a button and the key=>value pair is not there, make the param what ever is there and pass it in as the value for the function.
+                    {
+                        $params = $paramsParts;
+                    }
+                    else
+                    {
+                        $paramID = $paramsParts[0];
+                        $paramValue = $paramsParts[1];
+                        $params = array($paramID => $paramValue);
+                    }
+                }
+                else
+                {
+                    for($i = 0; $i < count($params); $i ++)
+                    {
+                        $paramsParts = explode('=', $params[$i]);
+                        $paramID = $paramsParts[0];
+                        $paramValue = $paramsParts[1];
+                        $params[$i] = array($paramID => $paramValue);
+                    }
+                }
+            }
+
 
             //Convert: task/add/ => TaskController::add()
             //Convert: task/ => TaskController::index()
@@ -68,10 +171,16 @@ final class Core_Bootstrap
 
             $className = self::getValidClassName($className);
             $inst = new $className;
-            $inst->$function();
 
+            if($params !== null)
+                $inst->$function($params);
+            else
+                $inst->$function();
         }
-        return $className;
+        else
+        {
+            //todo: throw error about no uri being passed in...
+        }
     }
 
     //can change this to completely set up the class, location_class::function, kind of thing in the future.

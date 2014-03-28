@@ -23,7 +23,6 @@ class Core_IndexController
             $class = new $class;
             $class->render();
         }
-        die('Died in Core_IndexController::index()');
     }
 
 

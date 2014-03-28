@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<h5>piece = CORE index page, source = core/.../index.php</h5>
 
+<!-- maybe have <head> here>
+
+<!--  make a getPreHead() ? -->
 <?php $this->getHead() ?>
+<!--  make a getPostHead() ? -->
+
+<!-- maybe have </head> here-->
+
 
 <body>
 
 <?php $this->getHeader() ?>
 
 <br />
-
-<h1>YOLO THIS BE THAT TEMPLATE TASK SWAG...</h1>
 
 
 <?php
@@ -23,23 +29,12 @@
     $this->setUpPage('page/footer.php');
 
     $this->loadPagePieces();
-*/
-?>
+*/?>
 
-
-
-
-
-<?php $this->getTemplate(false, 'todoListPanel.php')?>
-
-<?php $this->getTemplate(false, 'backToHomeBtn.php') ?>
-<?php $this->getTemplate(false, 'addBtn.php') ?>
-<?php $this->getTemplate(false, 'deleteBtn.php') ?>
 
 <?php $this->getTemplate(false, 'bootstrapJs.php') ?>
 <?php $this->getTemplate(false, 'compiledPlugins.php')?>
 <?php $this->getTemplate(false, 'individualIncludeFiles.php')?>
-
 <?php $this->getTemplate(false, 'footer.php')?>
 
 </body>
