@@ -171,6 +171,7 @@ final class Core_Bootstrap
 
             $className = self::getValidClassName($className);
             $inst = new $className;
+
             if($params !== null)
                 $inst->$function($params);
             else
