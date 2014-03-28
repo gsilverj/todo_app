@@ -10,7 +10,7 @@
     overflow-y: scroll;
 }
 
-#centeredContainer
+#bodyContainer
 {
     width: 800px;
     margin: auto;
