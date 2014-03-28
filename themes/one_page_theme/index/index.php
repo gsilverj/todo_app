@@ -5,6 +5,9 @@
 <?php $this->getHead() ?>
 
 <body>
+
+    <?php $this->getTemplate(false, 'one_page_theme_javascript.js') ?>
+
     <br />
 
     <!-- This container will hold any HEADER code wanted on this page.-->
@@ -15,8 +18,8 @@
     <!-- this will be the container for all of the pieces of the body (besides body header & footer) of the page (style.css'd)-->
     <div id="bodyContainer" class="container">
         <h1>Todo List Application</h1>
-        <h2>One Page Theme</h2>
         <h3>Welcome Back!</h3>
+        <?php $this->getTemplate(false, 'messagePanel.php')?>
         <br />
         <?php $this->getTemplate(false, 'addTaskPanel.php')?>
         <br />

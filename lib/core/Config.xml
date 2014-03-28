@@ -22,6 +22,7 @@
         <one_page_theme>
             <folderList>
                 <name>add</name>
+                <name>assets</name>
                 <name>delete</name>
                 <name>panels</name>
                 <name>index</name>
