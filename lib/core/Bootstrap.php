@@ -46,6 +46,7 @@ final class Core_Bootstrap
     {
         if($uri)
         {
+            //testing step by step to make sure below code works and so i can see the values all the way through.
             //            var_dump($_SERVER);
 //            echo ($_SERVER['HTTP_HOST']);
 //            echo ($_SERVER['REQUEST_URI']);
@@ -93,7 +94,7 @@ final class Core_Bootstrap
             $urlPieces = explode(' ', $noSymbols);                      //    urlPieces = array(/tasks/add, quote=15, hamburger=1)
             $urlPieces = array_filter($urlPieces);
 
-
+            //if the url pieces is less then 2 then url = urlPieces otherwise  url = piece 1 and params = the rest of the pieces.
             if(count($urlPieces) <= 2)
             {
                 if(count($urlPieces) == 1)
@@ -121,6 +122,7 @@ final class Core_Bootstrap
                 }
             }
 
+            //if params are passed in count it and if its incorrect key=>value pair, throw exception
             if($params !== null)
             {
                 if(count($params) == 1)
@@ -128,7 +130,8 @@ final class Core_Bootstrap
                     $paramsParts = explode('=', $params);
                     if(count($paramsParts) == 1)                    //***** if the user tried to pass in a url instead of a button and the key=>value pair is not there, make the param what ever is there and pass it in as the value for the function.
                     {
-                        $params = $paramsParts;
+                        //todo: throw exception here for user passing something incorrectly into the url.
+                        die('Incorrect params passed into the uri...');
                     }
                     else
                     {
@@ -172,10 +175,18 @@ final class Core_Bootstrap
             $className = self::getValidClassName($className);
             $inst = new $className;
 
-            if($params !== null)
-                $inst->$function($params);
-            else
-                $inst->$function();
+            if(method_exists($inst, $function))             //if:   the function(method) that is grabbed from uri exists
+            {
+                if($params !== null)
+                    $inst->$function($params);
+                else
+                    $inst->$function();
+            }
+            else                                            //else: throw exception and 404 page
+            {
+                die('This Program Died Because The function(Method) ' . $function . ' Does Not Exist In Class ' . $className);
+            }
+
         }
         else
         {

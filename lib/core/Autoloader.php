@@ -100,8 +100,9 @@ class Core_Autoloader
         //class not found...
         if($classFound === false)
         {
-            //throw exception here
+            //todo: throw exception here
             echo'class not found exception here...';
+
             return;
         }
 
