@@ -72,25 +72,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/one_page_theme/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="10" selection-start="313" selection-end="313" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="486">
+            <state line="43" column="7" selection-start="6634" selection-end="6634" vertical-scroll-proportion="0.47477064" vertical-offset="0" max-vertical-offset="872">
               <folding>
                 <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#a#0;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addTaskPanel.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="203" selection-end="203" vertical-scroll-proportion="0.08256881" vertical-offset="0" max-vertical-offset="872">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -898,29 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="55" selection-start="5464" selection-end="5464" vertical-scroll-proportion="-15.333333" vertical-offset="162" max-vertical-offset="1818">
-          <folding>
-            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="e#1376#1477#0" expanded="false" />
-            <element signature="e#3228#3934#0" expanded="false" />
-            <element signature="e#3560#3934#0" expanded="false" />
-            <element signature="e#4049#5348#0" expanded="false" />
-            <element signature="e#6222#6755#0" expanded="false" />
-            <element signature="e#6516#6755#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="92" selection-start="568" selection-end="568" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="504">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/core_theme/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.08008899" vertical-offset="0" max-vertical-offset="899">
@@ -954,22 +922,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="55" selection-start="5464" selection-end="5464" vertical-scroll-proportion="-15.333333" vertical-offset="162" max-vertical-offset="1818">
+          <folding>
+            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="e#1376#1477#0" expanded="false" />
+            <element signature="e#3228#3934#0" expanded="false" />
+            <element signature="e#3560#3934#0" expanded="false" />
+            <element signature="e#4049#5348#0" expanded="false" />
+            <element signature="e#6222#6755#0" expanded="false" />
+            <element signature="e#6516#6755#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="92" selection-start="568" selection-end="568" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.44004658" vertical-offset="0" max-vertical-offset="859">
+          <folding>
+            <element signature="tag#div#0;tag#div#1;tag#form#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#form#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/one_page_theme/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="313" selection-end="313" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="486">
+        <state line="43" column="7" selection-start="6634" selection-end="6634" vertical-scroll-proportion="0.47477064" vertical-offset="0" max-vertical-offset="872">
           <folding>
             <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#a#0;tag#div#2;tag#body#0;tag#html#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="203" selection-end="203" vertical-scroll-proportion="0.08256881" vertical-offset="0" max-vertical-offset="872">
-          <folding />
         </state>
       </provider>
     </entry>
