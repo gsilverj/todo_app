@@ -71,10 +71,22 @@ class Task_IndexController extends Core_IndexController
                         $dbObj->reorderTableIndex('Todo_List');
                         $dbObj->deleteTasksFromTable($taskToDelete);
                     }
+
                 }
-                elseif(is_numeric($taskToDelete))
+                elseif($taskToDelete == '*' || is_numeric($taskToDelete))       //if the array is not associative but is a '*' symbol or numeric, use that instead.
                 {
-                    //todo: array passed in is not an associative array
+                    if($taskToDelete == '*')
+                    {
+                        $dbObj = new Task_DbDataMapperModel();
+                        $dbObj->reorderTableIndex('Todo_List');
+                        $dbObj->deleteAllTasksFromTable();
+                    }
+                    else
+                    {
+                        $dbObj = new Task_DbDataMapperModel();
+                        $dbObj->reorderTableIndex('Todo_List');
+                        $dbObj->deleteTasksFromTable($taskToDelete);
+                    }
                 }
                 else
                 {
@@ -113,7 +125,9 @@ class Task_IndexController extends Core_IndexController
                 }
                 elseif(is_numeric($taskToUpdate))                                           //  elseif: is the inputted value numeric?
                 {
-                    //todo: array passed in is not an associative array
+                    $dbObj = new Task_DbDataMapperModel();
+                    $dbObj->reorderTableIndex('Todo_List');
+                    $dbObj->updateSetTaskCompletionStatus($taskToUpdate);
                 }
                 else
                 {

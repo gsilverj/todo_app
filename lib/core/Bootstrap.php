@@ -126,9 +126,16 @@ final class Core_Bootstrap
                 if(count($params) == 1)
                 {
                     $paramsParts = explode('=', $params);
-                    $paramID = $paramsParts[0];
-                    $paramValue = $paramsParts[1];
-                    $params = array($paramID => $paramValue);
+                    if(count($paramsParts) == 1)                    //***** if the user tried to pass in a url instead of a button and the key=>value pair is not there, make the param what ever is there and pass it in as the value for the function.
+                    {
+                        $params = $paramsParts;
+                    }
+                    else
+                    {
+                        $paramID = $paramsParts[0];
+                        $paramValue = $paramsParts[1];
+                        $params = array($paramID => $paramValue);
+                    }
                 }
                 else
                 {
