@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- <head> tag is located in 'head.php' file (located in core_theme) that is displayed after doing getHead().-->
 <?php $this->getHead() ?>
 
 <body>
     <br />
-    <!-- this will be the container for all of the pieces of the body of the page (style.css'd)-->
 
     <div id="BodyHeaderContainer" class="container">
         <!-- place holder for the body header code. -->
     </div>
 
+    <!-- this will be the container for all of the pieces of the body (besides body header & footer) of the page (style.css'd)-->
     <div id="bodyContainer" class="container">
         <h1>Todo List Application</h1>
         <h2>One Page Theme</h2>
@@ -36,7 +37,6 @@
     <?php $this->getTemplate(false, 'bootstrapJs.php') ?>
     <?php $this->getTemplate(false, 'compiledPlugins.php')?>
     <?php $this->getTemplate(false, 'individualIncludeFiles.php')?>
-
 </body>
 
 </html>
