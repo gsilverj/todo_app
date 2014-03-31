@@ -3,8 +3,7 @@
 <a href="<?php echo Core_XMLConfig::getBaseUrl() . 'task/delete?id=*';?>">
     <button name="deleteAllBtn" type="button" class="btn btn-danger">DELETE ALL</button>
 </a>
-<h5 class="text-danger"><strong>****THIS WILL DELETE ALL TASKS</strong></h5>
-
-<p class="alert-success">Todo-List tasks have now been deleted</p>
-<label class="alert alert-danger">im sofa king we tard dead.</label>
+<!--The original idea was to put the message after pressing a button at the bottom of the screen...-->
+<!--<p class="alert-success">Todo-List tasks have now been deleted</p>-->
+<!--<label class="alert alert-danger">im sofa king we tard dead.</label>-->
 

@@ -20,11 +20,16 @@ class Task_IndexController extends Core_IndexController
      */
     public function index()
     {
+        //reset the Registry's last_task value back to null
+        Task_Registry::set('last_task', null);
         $this->render();
     }
 
     public function add()
     {
+        //reset the Registry's last_task value back to null
+        Task_Registry::set('last_task', null);
+
         if(isset($_POST['taskDescriptionTbox']))
         {
             if($_POST['taskDescriptionTbox'] != null)
@@ -32,6 +37,8 @@ class Task_IndexController extends Core_IndexController
                 $dbObj = new Task_DbDataMapperModel();
                 $dbObj->reorderTableIndex('Todo_List');
                 $dbObj->addTaskToTable($_POST['taskDescriptionTbox']);
+                //tell the registry what the last task was if the task worked
+                Task_Registry::set('last_task', __FUNCTION__);
             }
             else
             {
@@ -48,6 +55,9 @@ class Task_IndexController extends Core_IndexController
     //todo: Be aware that this method doesnt check to see if that TaskId actually exists or not, its just a happy accident that it does not break. You can probably just check if the task id exists in the table with a query (prob. select * where taskid = blah) and if it returns a result set it means it exists, otherwise it doesnt and either throw exception or do nothing to the database.
     public function delete($taskToDelete = null)
     {
+        //reset the Registry's last_task value back to null
+        Task_Registry::set('last_task', null);
+
         if($taskToDelete !== null)
         {
             if(count($taskToDelete) == 1)
@@ -64,12 +74,14 @@ class Task_IndexController extends Core_IndexController
                         $dbObj = new Task_DbDataMapperModel();
                         $dbObj->reorderTableIndex('Todo_List');
                         $dbObj->deleteAllTasksFromTable();
+                        Task_Registry::set('last_task', 'deleteAll');
                     }
                     else
                     {
                         $dbObj = new Task_DbDataMapperModel();
                         $dbObj->reorderTableIndex('Todo_List');
                         $dbObj->deleteTasksFromTable($taskToDelete);
+                        Task_Registry::set('last_task', __FUNCTION__);
                     }
 
                 }
@@ -80,12 +92,14 @@ class Task_IndexController extends Core_IndexController
                         $dbObj = new Task_DbDataMapperModel();
                         $dbObj->reorderTableIndex('Todo_List');
                         $dbObj->deleteAllTasksFromTable();
+                        Task_Registry::set('last_task', 'deleteAll');
                     }
                     else
                     {
                         $dbObj = new Task_DbDataMapperModel();
                         $dbObj->reorderTableIndex('Todo_List');
                         $dbObj->deleteTasksFromTable($taskToDelete);
+                        Task_Registry::set('last_task', __FUNCTION__);
                     }
                 }
                 else
@@ -108,6 +122,8 @@ class Task_IndexController extends Core_IndexController
     //todo: update query and this function...       (this function may break if a string of numbers and symbols is passed in, need to check for symbols?)
     public function update($taskToUpdate = null)
     {
+        //reset the Registry's last_task value back to null
+        Task_Registry::set('last_task', null);
 
         if($taskToUpdate !== null)                                                          //if: Task to update has been passed in and not null
         {
@@ -122,12 +138,14 @@ class Task_IndexController extends Core_IndexController
                     $dbObj = new Task_DbDataMapperModel();
                     $dbObj->reorderTableIndex('Todo_List');
                     $dbObj->updateSetTaskCompletionStatus($taskToUpdate);
+                    Task_Registry::set('last_task', __FUNCTION__);
                 }
                 elseif(is_numeric($taskToUpdate))                                           //  elseif: is the inputted value numeric?
                 {
                     $dbObj = new Task_DbDataMapperModel();
                     $dbObj->reorderTableIndex('Todo_List');
                     $dbObj->updateSetTaskCompletionStatus($taskToUpdate);
+                    Task_Registry::set('last_task', __FUNCTION__);
                 }
                 else
                 {

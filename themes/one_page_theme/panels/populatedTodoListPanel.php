@@ -1,5 +1,4 @@
 <!-- this will be the panel that holds the to-do list that is pulled from the database...-->
-
 <div class="container">
     <?php
 
@@ -22,14 +21,14 @@
         {
             ?>
 
-            <div class="h3">
+            <div class="h3 col-md-10" style="overflow-wrap: break-word">
                 <?php
 
-                    //if true, strike through the task description... (<del> is the strike-through tag)
+                    //if true, strike through the task description... (<del> is also a strike-through tag)
                     if($task['Task_Is_Completed'])
                     {
                         ?>
-                        <del><?php echo $task['Task_Description']; ?></del>
+                            <del><?php echo $task['Task_Description']; ?></del>
                         <?
                     }
                     else
