@@ -6,7 +6,7 @@
 
 <body>
 
-    <?php $this->getTemplate(false, 'one_page_theme_javascript.js');?>
+    <?php //$this->getTemplate(false, 'one_page_theme_javascript.js');?>
 
     <div class="row" name="bodyRowHead">
         <div name="bodyHeaderContainer" class="container">
@@ -19,7 +19,7 @@
         <div name="bodyContainer" class="container col-md-offset-2 col-md-6">
             <h1>Todo List Application</h1>
             <h3>Welcome Back!</h3>
-            <!--    <?php //$this->getTemplate(false, 'messagePanel.php');?> -->
+            <?php $this->getTemplate(false, 'messagePanel.php');?>
             <br />
             <?php $this->getTemplate(false, 'addTaskPanel.php');?>
             <h3>Here Is your Current Todo List:</h3>
@@ -43,5 +43,7 @@
     <?php $this->getTemplate(false, 'bootstrapJs.php') ?>
     <?php $this->getTemplate(false, 'compiledPlugins.php')?>
     <?php $this->getTemplate(false, 'individualIncludeFiles.php')?>
+
+<h1> end of document</h1>
 </body>
 </html>

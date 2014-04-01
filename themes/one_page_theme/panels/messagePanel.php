@@ -1,41 +1,43 @@
-<!-- This panel will hold all of the messages that will display after running a query. -->
 <script type="text/javascript">
-    function showStuff(id)
-    {
-        document.getElementById(id).style.display = 'block';
+
+    function showStuff(id) {
+        alert('before');
+        document.getElementById(id).style.display = "none";
+        alert('after');
     }
+
 
     function checkForLastTask()
     {
         var task = null;
-        task = <?php echo (Task_Registry::get('last_task'));?>;
+        task = "<?php echo (Task_Registry::get('last_task'));?>";
         return task;
     }
 
     function handleMessageVisibility()
     {
-        var itemShowing = checkForLastTask();
+        var taskToShow = checkForLastTask();
 
-        switch(itemShowing)
+        switch(taskToShow)
         {
             case 'add':
             {
-                showStuff('addTaskMessage');
+                showMessage('addTaskMessage');
                 break;
             }
             case 'delete':
             {
-                showStuff('deleteTaskMessage');
+                showMessage('deleteTaskMessage');
                 break;
             }
             case 'deleteAll':
             {
-                showStuff('deleteAllTaskMessage');
+                showMessage('deleteAllTaskMessage');
                 break;
             }
             case 'update':
             {
-                showStuff('updateTaskMessage');
+                showMessage('updateTaskMessage');
                 break;
             }
             default:
@@ -47,42 +49,38 @@
 </script>
 
 
-<div class="container" name="defineMessagePanel" onload="handleMessageVisibility()">
 
-    <p class="hidden alert-success" name="addTaskMessage">A task has now been ADDED.</p>
-    <p class="hidden alert-danger" name="deleteTaskMessage">A task has now been DELETED.</p>
-    <p class="hidden alert-danger" name="deleteAllTaskMessage">All of the tasks have now been DELETED.</p>
-    <p class="hidden alert-info" name="updateTaskMessage">That task have now been UPDATED.</p>
 
-    <div onload"">
+<div class="container" name="messagePanel" onload="showStuff('addTaskMessage')">
 
+    <div class="alert alert-success fade in" id="addTaskMessage" name="addTaskMessage" onload="alert('cat');" >
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4>A task has now been ADDED.</h4>
     </div>
 
-    <?php  echo 'cat';?>
 
+    <div class="alert alert-danger fade in" name="deleteTaskMessage">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4>A task has now been DELETED.</h4>
+    </div>
 
-    <?php  echo 'dog';?>
+    <div class="alert alert-danger fade in" name="deleteAllTaskMessage">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4>All of the tasks have now been DELETED.</h4>
+    </div>
+
+    <div class="alert alert-info fade in" name="updateTaskMessage">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4>That task has now been UPDATED.</h4>
+    </div>
 </div>
 
 
 
-    <p class="show alert-success" name="addTaskMessage">A task has now been ADDED.</p>
-    <p class="getVisibilityStatus() alert-danger" name="deleteTaskMessage">A task has now been DELETED.</p>
-    <p class="getVisibilityStatus() alert-danger" name="deleteAllTaskMessage">All of the tasks have now been DELETED.</p>
-    <p class="getVisibilityStatus() alert-info" name="updateTaskMessage">That task have now been UPDATED.</p>
+<!---->
+<!--        <p class="alert-success" id="addTaskMessage" style="display: none">A task has now been ADDED.</p>-->
+<!--        <p class="alert-danger" id="deleteTaskMessage">A task has now been DELETED.</p>-->
+<!--        <p class="alert-danger" id="deleteAllTaskMessage">All of the tasks have now been DELETED.</p>-->
+<!--        <p class="alert-info" id="updateTaskMessage">That task has now been UPDATED.</p>-->
 
-<!--    --><?php
-//
-//        $uri = $_SERVER['REQUEST_URI'];
-//
-//        $lastUriPiece = array_pop(explode(DS, trim($uri, DS)));
-//
-//        if($lastUriPiece == 'add')
-//
-//        elseif($lastUriPiece == 'delete')
-//
-//    elseif($lastUriPiece == )
-//
-//        //$wasQueryRun =
-//
-//    ?>
+
