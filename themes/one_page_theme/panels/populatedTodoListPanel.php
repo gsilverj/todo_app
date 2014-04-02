@@ -37,8 +37,8 @@
                     }
 
                 ?>
-                <a href="<?php echo Core_XMLConfig::getBaseUrl() . 'task/update?id=' . $taskNumber?>"> <span class="glyphicon glyphicon-ok"></span> </a>
-                <a href="<?php echo Core_XMLConfig::getBaseUrl() . 'task/delete?id=' . $taskNumber?>"> <span class="glyphicon glyphicon-trash"></span> </a>
+                <a href="<?php echo Core_XMLConfig::getBaseUrl() . 'task/update?id=' . $taskNumber?>" style="color:#FF0000;"> <span class="glyphicon glyphicon-ok"></span> </a>
+                <a href="<?php echo Core_XMLConfig::getBaseUrl() . 'task/delete?id=' . $taskNumber?>" style="color:#FF0000;"> <span class="glyphicon glyphicon-trash"></span> </a>
             </div>
 
             <br />

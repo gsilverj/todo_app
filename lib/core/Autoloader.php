@@ -91,7 +91,7 @@ class Core_Autoloader
                         $classFound = true;
                         require_once $fileLocation;
                         //return $obj1 = new Task_IndexController;
-                        //break;
+                        break;
                     }                                                                               //  end if: file exists
                 }                                                                                   //end if: relative path has filetype
             }                                                                                       //end inner foreach

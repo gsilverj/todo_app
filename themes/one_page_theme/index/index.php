@@ -8,13 +8,6 @@
 
     <?php //$this->getTemplate(false, 'one_page_theme_javascript.js');?>
 
-    <div class="row" name="bodyRowHead">
-        <div name="bodyHeaderContainer" class="container">
-            <!-- place holder for the body header code. -->
-            <br />
-        </div>
-    </div>
-
     <div class="row" name="bodyRowBody">
         <div name="bodyContainer" class="container col-md-offset-2 col-md-6">
             <h1>Todo List Application</h1>
