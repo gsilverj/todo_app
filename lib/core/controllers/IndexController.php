@@ -56,10 +56,23 @@ class Core_IndexController
 
 
 
+
+
+//
+//    protected function getParamValue($paramNameToGet)
+//    {
+//        check get and post if not exist, return null.
+//
+//    }
+
+
+    //****THESE TWO FUNCTIONS ARE THE OLD FUNCTIONS, IT WAS BEFORE I FOUND OUT THAT YOU CAN GET URL QUERY VALUES IN THE $_GET ARRAY.
+
     //Super important, this function will get the the PARAM ***OR*** PARAMS!!! depending on where you get the param from.
     //(ex. post/get will return just the param value while uri will return the param KEY=>VALUE pair.
     //Expected to return NULL on false, although it is possible to get a param of null, should test after using this function if the value is what your looking for.
-    //
+    //***Also note that this function will only return ***1(one)*** key=>value pair and not all/more and will only grab the first instance of that paramNameToGet.
+    //todo: I think this function will break if somehow an array gets searched through in the uri area.(idk how that would happen but should probably make sure it cant happen)
     protected function getParam($paramNameToGet, $paramLocation, $uri = null)
     {
         $param = null;
@@ -97,9 +110,7 @@ class Core_IndexController
         return $param;
     }
 
-
-
-
+    //****THIS IS THE OLD FUNCTION, IT WAS BEFORE I FOUND OUT THAT YOU CAN GET URL QUERY VALUES IN THE $_GET ARRAY.
     //this function will break if the user passes in a key=>value pair like this 'key=*blank*' or vice versa... (can probably check after exploding the '=' by filtering the arrays and check if both paramId and paramKey have the same number of elements.)
     protected function getParamPairFromUrl($url, $paramNameToGet)
     {
@@ -154,6 +165,11 @@ class Core_IndexController
             }
             else
             {
+                $paramParts = explode('=', $param[0]);
+                $paramID = $paramParts[0];
+                $paramValue = $paramParts[1];
+                $param = array($paramID => $paramValue);
+
                 if(array_key_exists($paramNameToGet, $param))       //check if the $paramNameToGet is in the assoc. array and if found set $paramPair.
                 {
                     $paramPair[$paramNameToGet] = $param[$paramNameToGet];
