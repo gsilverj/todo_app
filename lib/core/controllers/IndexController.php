@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: incubator
+ * User: Gabriell J.
  * Date: 3/10/14
  * Time: 12:49 PM
  */
@@ -58,12 +58,32 @@ class Core_IndexController
 
 
 
-//
-//    protected function getParamValue($paramNameToGet)
-//    {
-//        check get and post if not exist, return null.
-//
-//    }
+    //Newer function to grab param Values from $_REQUEST, which holds all $_GET AND $_POST (as well as $_COOKIES)
+    //  **BUT** it only holds the information of that page load, meaning if you change GET or POST on this page AFTER loading the page,
+    //              $_REQUEST will not have that changed information.(or so the manual says: http://www.php.net/manual/en/reserved.variables.request.php)
+    //  On a side note, I rejected the option to look for the param 'code' because it seems to hold the actual php code of everything after it?
+    protected function getParamValue($paramNameToGet)
+    {
+        $paramValue = null;
+
+        if($paramNameToGet != 'code')
+        {
+            if(array_key_exists($paramNameToGet, $_REQUEST))
+            {
+                $paramValue = $_REQUEST[$paramNameToGet];
+            }
+            else
+            {
+                //todo: throw exception that the paramNameToGet was not found.
+            }
+        }
+        else
+        {
+            //todo: throw exception about the user not being aloud to request the 'code' param.
+        }
+
+        return $paramValue;
+    }
 
 
     //****THESE TWO FUNCTIONS ARE THE OLD FUNCTIONS, IT WAS BEFORE I FOUND OUT THAT YOU CAN GET URL QUERY VALUES IN THE $_GET ARRAY.
@@ -144,7 +164,7 @@ class Core_IndexController
                     $paramParts = explode('=', $param[$i]);
                     $paramID = $paramParts[0];
                     $paramValue = $paramParts[1];
-                    $param[$i] = array($paramID => $paramValue);
+                    $param[$i] = array($paramID => $paramValue);                //todo: this is incorrect, it grabs the id and value and puts it into an element, it should actually put the id into param[id] = key as opposed to param[#] = array(id => key);
                 }
 
                 $found = false;

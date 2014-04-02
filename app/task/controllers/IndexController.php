@@ -30,14 +30,16 @@ class Task_IndexController extends Core_IndexController
         //reset the Registry's last_task value back to null
         Task_Registry::set('last_task', null);
 
+        //This is an example of the getParam(function) to show its use, it is now deprecated and the getParamValue() should be used.
         //it is expected to get only the value of the $_Post['taskDescriptionTbox'].
-        $param = $this->getParam('taskDescriptionTbox', 'post');
+        $paramValue = $this->getParam('taskDescriptionTbox', 'post');
 
-        if($param != null)
+        //check if paramValue is null or a white space character.
+        if($paramValue != ' ' && $paramValue != null)
         {
             $dbMapper = new Task_DbDataMapperModel();
             $dbMapper->reorderTableIndex('Todo_List');
-            $dbMapper->addTaskToTable($param);
+            $dbMapper->addTaskToTable($paramValue);
             //tell the registry what the last task was if the task worked
             Task_Registry::set('last_task', __FUNCTION__);
         }
@@ -52,99 +54,65 @@ class Task_IndexController extends Core_IndexController
     //todo: Be aware that this method doesnt check to see if that TaskId actually exists or not, its just a happy accident that it does not break. You can probably just check if the task id exists in the table with a query (prob. select * where taskid = blah) and if it returns a result set it means it exists, otherwise it doesnt and either throw exception or do nothing to the database.
     public function delete($taskIDToDelete = null)
     {
-        //reset the Registry's last_task value back to null
         Task_Registry::set('last_task', null);
 
-        //check to see if a parameter is passed in, if so use it, otherwise search for 'id'.
-        if($taskIDToDelete != null)
+        $paramValue = $this->getParamValue( ($taskIDToDelete != null) ? $taskIDToDelete : 'id' );   //if a taskId is passed in, use it, otherwise search for id
+
+        if($paramValue != null)
         {
-            $paramPair = $this->getParam($taskIDToDelete, 'uri', $_SERVER['REQUEST_URI']);
+            $dbMapper = new Task_DbDataMapperModel();
+            $dbMapper->reorderTableIndex('Todo_List');
+
+            if($paramValue == '*')
+            {
+                $dbMapper->deleteAllTasksFromTable();
+                Task_Registry::set('last_task', 'deleteAll');
+            }
+            elseif(is_numeric($paramValue))
+            {
+                $dbMapper->deleteTasksFromTable($paramValue);
+                Task_Registry::set('last_task', 'deleteAll');
+            }
+            else
+            {
+                //todo: throw exception about incorrect param value grabbed
+            }
         }
         else
         {
-            $paramPair = $this->getParam('id', 'uri', $_SERVER['REQUEST_URI']);
-        }
-
-
-        if($paramPair != null)                                              //if: the paramaters obtained are not null
-        {
-            if(is_assoc($paramPair))                                        //  if: the paramPair obtained is an assoc. array
-            {
-                $dbMapper = new Task_DbDataMapperModel();                   //      create the db mapper model class
-
-                foreach($paramPair as $key => $value)                       //      foreach(): get the value of key in the assoc. array (it would have to be the task id #)
-                {
-                    $dbMapper->reorderTableIndex('Todo_List');              //          reorder the table
-
-                    if($value == '*')                                       //          if: the value is '*'
-                    {
-                        $dbMapper->deleteAllTasksFromTable();               //              delete all the tasks from the table
-                        Task_Registry::set('last_task', 'deleteAll');       //              set the registry for the last task performed to 'deleteAll'
-                    }
-                    elseif(is_numeric($value))                              //          elseif: is the value numeric
-                    {
-                        $dbMapper->deleteTasksFromTable($value);            //              delete $value number task from the table
-                        Task_Registry::set('last_task', __FUNCTION__);      //              set the registry to the function name(delete).
-                    }                                                       //          end if what is $value
-                }                                                           //      end foreach to get $value
-            }
-            else                                                            //  else: paramPair is not assoc. array, throw exception
-            {
-                //todo: throw exception that the paramaters being passed in are supposed to be an assoc. array.(key=>value pair) and the passed in params are not correct.
-            }                                                               //  end if to see if paramPair is an Assoc. Array
-        }
-        else                                                                //else: the paramPair passed in is null, throw exception
-        {
             //todo: throw exception because the task ID to delete is null, so it cant delete it...
-        }                                                                   //end if  is paramPair null
+        }
 
         $this->render(__FUNCTION__);                                        //render the page(function name); (delete)
     }
 
-    //todo: update query and this function...       (this function may break if a string of numbers and symbols is passed in, need to check for symbols?)
+    //todo: (this function may break if a string of numbers and symbols is passed in, need to check for symbols?)
     public function update($taskIDToUpdate = null)
     {
         //reset the Registry's last_task value back to null
         Task_Registry::set('last_task', null);
 
+        $paramValue = $this->getParamValue( ($taskIDToUpdate != null) ? $taskIDToUpdate : 'id' ); //if a taskID is passed in, use it, otherwise use 'id'
 
-        //check to see if a parameter is passed in, if so use it, otherwise search for 'id'.
-        if($taskIDToUpdate != null)
+        if($paramValue != null)
         {
-            $paramPair = $this->getParam($taskIDToUpdate, 'uri', $_SERVER['REQUEST_URI']);
-        }
-        else
-        {
-            $paramPair = $this->getParam('id', 'uri', $_SERVER['REQUEST_URI']);
-        }
-
-
-        if($paramPair != null)                                                          //if: Task to update has been passed in and not null
-        {
-            if(is_assoc($paramPair))                                                    //  if: if the $taskToUpdate is an associative array (ex. 'cat' => 2)
+            if(is_numeric($paramValue))
             {
-                $dbObj = new Task_DbDataMapperModel();
-
-                foreach($paramPair as $key => $value)
-                {
-                    $dbObj->reorderTableIndex('Todo_List');
-
-                    if(is_numeric($value))
-                    {
-                        $dbObj->updateSetTaskCompletionStatus($value);
-                        Task_Registry::set('last_task', __FUNCTION__);
-                    }
-                }
+                $dbMapper = new Task_DbDataMapperModel();
+                $dbMapper->reorderTableIndex('Todo_List');
+                $dbMapper->updateSetTaskCompletionStatus($paramValue);
+                Task_Registry::set('last_task', 'update');
             }
             else
             {
-                //todo: the array passed in is not associative array, throw paramater grabbed is incorrect error.
+                //todo: throw exception about an incorrect paramValue being passed in, it must be a number.
             }
         }
         else
         {
-            //todo: throw error about the parameterPair being null, so it either doesnt exist or is invalid.
+            //todo: throw exception about the paramValue passed in being null, so I cant update it.
         }
+
 
         $this->render(__FUNCTION__);
     }

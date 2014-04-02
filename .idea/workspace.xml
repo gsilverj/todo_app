@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Bootstrap.php" afterPath="$PROJECT_DIR$/lib/core/Bootstrap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" afterPath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tasks.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,12 +44,16 @@
       <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="38" selection-start="6043" selection-end="6043" vertical-scroll-proportion="-16.037037" vertical-offset="1385" max-vertical-offset="2286">
+            <state line="86" column="0" selection-start="2245" selection-end="2245" vertical-scroll-proportion="-19.148148" vertical-offset="131" max-vertical-offset="1044">
               <folding>
+                <element signature="e#6#93#0" expanded="true" />
                 <element signature="n#index#0;n#Core_IndexController#0;n#!!top" expanded="false" />
                 <element signature="n#getViewClass#0;n#Core_IndexController#0;n#!!top" expanded="false" />
                 <element signature="n#render#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+                <element signature="n#getParamValue#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+                <element signature="e#2385#2502#0" expanded="false" />
                 <element signature="n#getParam#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+                <element signature="n#getParamPairFromUrl#0;n#Core_IndexController#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -58,13 +62,41 @@
       <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="0" selection-start="4970" selection-end="4970" vertical-scroll-proportion="0.6700611" vertical-offset="409" max-vertical-offset="900">
+            <state line="118" column="1" selection-start="4313" selection-end="4313" vertical-scroll-proportion="0.44004658" vertical-offset="0" max-vertical-offset="859">
               <folding>
                 <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
                 <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-                <element signature="e#888#1327#0" expanded="false" />
-                <element signature="e#2290#4749#0" expanded="false" />
+                <element signature="n#delete#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+                <element signature="e#2930#3053#0" expanded="false" />
                 <element signature="n#update#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XMLConfig.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/core/XMLConfig.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1224">
+              <folding>
+                <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#getBaseUrl#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#getCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#setDatabaseInfo#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#getDatabaseInfoHost#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#getDatabaseInfoUser#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#getDatabaseInfoPass#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#getDatabaseInfoDbName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#getRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+                <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -73,7 +105,7 @@
       <file leaf-file-name="Bootstrap.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="20" selection-start="3128" selection-end="3128" vertical-scroll-proportion="-17.333334" vertical-offset="0" max-vertical-offset="2484">
+            <state line="82" column="20" selection-start="3128" selection-end="3128" vertical-scroll-proportion="-9.259259" vertical-offset="218" max-vertical-offset="2484">
               <folding>
                 <element signature="e#6#204#0" expanded="true" />
                 <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
@@ -465,7 +497,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3036286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39612487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39612487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -548,7 +580,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="180" />
+      <option name="time" value="181" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -816,32 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/XMLConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="33" selection-start="334" selection-end="334" vertical-scroll-proportion="0.20954598" vertical-offset="0" max-vertical-offset="1224">
-          <folding>
-            <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getBaseUrl#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setDatabaseInfo#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoHost#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoUser#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoPass#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoDbName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="310" selection-end="310" vertical-scroll-proportion="0.20642202" vertical-offset="0" max-vertical-offset="872">
@@ -870,9 +876,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Registry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="1844" selection-end="1844" vertical-scroll-proportion="1.0" vertical-offset="535" max-vertical-offset="1188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="20" selection-start="3128" selection-end="3128" vertical-scroll-proportion="-17.333334" vertical-offset="0" max-vertical-offset="2484">
+        <state line="82" column="20" selection-start="3128" selection-end="3128" vertical-scroll-proportion="-9.259259" vertical-offset="218" max-vertical-offset="2484">
           <folding>
             <element signature="e#6#204#0" expanded="true" />
             <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
@@ -890,33 +903,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Registry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1844" selection-end="1844" vertical-scroll-proportion="1.0" vertical-offset="535" max-vertical-offset="1188">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="38" selection-start="6043" selection-end="6043" vertical-scroll-proportion="-16.037037" vertical-offset="1385" max-vertical-offset="2286">
+        <state line="86" column="0" selection-start="2245" selection-end="2245" vertical-scroll-proportion="-19.148148" vertical-offset="131" max-vertical-offset="1044">
           <folding>
+            <element signature="e#6#93#0" expanded="true" />
             <element signature="n#index#0;n#Core_IndexController#0;n#!!top" expanded="false" />
             <element signature="n#getViewClass#0;n#Core_IndexController#0;n#!!top" expanded="false" />
             <element signature="n#render#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#getParamValue#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="e#2385#2502#0" expanded="false" />
             <element signature="n#getParam#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#getParamPairFromUrl#0;n#Core_IndexController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/XMLConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1224">
+          <folding>
+            <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getBaseUrl#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setDatabaseInfo#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoHost#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoUser#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoPass#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoDbName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="0" selection-start="4970" selection-end="4970" vertical-scroll-proportion="0.6700611" vertical-offset="409" max-vertical-offset="900">
+        <state line="118" column="1" selection-start="4313" selection-end="4313" vertical-scroll-proportion="0.44004658" vertical-offset="0" max-vertical-offset="859">
           <folding>
             <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
             <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-            <element signature="e#888#1327#0" expanded="false" />
-            <element signature="e#2290#4749#0" expanded="false" />
+            <element signature="n#delete#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="e#2930#3053#0" expanded="false" />
             <element signature="n#update#0;n#Task_IndexController#0;n#!!top" expanded="false" />
           </folding>
         </state>
