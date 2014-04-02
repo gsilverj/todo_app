@@ -34,7 +34,7 @@ class Core_IndexController
         return $viewClass;
     }
 
-    protected function render($function = null)
+    protected function passToRender($function = null)
     {
         if($function !== null)
         {

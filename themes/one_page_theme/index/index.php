@@ -44,6 +44,5 @@
     <?php $this->getTemplate(false, 'compiledPlugins.php')?>
     <?php $this->getTemplate(false, 'individualIncludeFiles.php')?>
 
-<h1> end of document</h1>
 </body>
 </html>

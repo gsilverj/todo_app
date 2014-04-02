@@ -43,13 +43,15 @@ abstract class Core_Registry
 
         foreach(self::$storedValues as $id => $value)
         {
+            //echo $id;
+            //echo $value;
             if($id == $key)
             {
                 $found = true;
             }
         }
 
-        if($found === false)
+        if($found == false)
         {
             //todo: throw exception here about not being able to find the requested value;
             return null;

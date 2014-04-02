@@ -9,7 +9,6 @@
  * @package     Core_IndexController
  */
 
-//Todo: Maybe include validation for the  _setCurrentRequest() & public getTaskRequest() functions.
 
 
 class Task_IndexController extends Core_IndexController
@@ -22,7 +21,7 @@ class Task_IndexController extends Core_IndexController
     {
         //reset the Registry's last_task value back to null
         Task_Registry::set('last_task', null);
-        $this->render();
+        $this->passToRender();
     }
 
     public function add()
@@ -48,7 +47,7 @@ class Task_IndexController extends Core_IndexController
             //todo: throw, you must put something into the textbox, exception.
         }
 
-        $this->render(__FUNCTION__);
+        $this->passToRender(__FUNCTION__);
     }
 
     //todo: Be aware that this method doesnt check to see if that TaskId actually exists or not, its just a happy accident that it does not break. You can probably just check if the task id exists in the table with a query (prob. select * where taskid = blah) and if it returns a result set it means it exists, otherwise it doesnt and either throw exception or do nothing to the database.
@@ -71,7 +70,7 @@ class Task_IndexController extends Core_IndexController
             elseif(is_numeric($paramValue))
             {
                 $dbMapper->deleteTasksFromTable($paramValue);
-                Task_Registry::set('last_task', 'deleteAll');
+                Task_Registry::set('last_task', __FUNCTION__);
             }
             else
             {
@@ -83,7 +82,7 @@ class Task_IndexController extends Core_IndexController
             //todo: throw exception because the task ID to delete is null, so it cant delete it...
         }
 
-        $this->render(__FUNCTION__);                                        //render the page(function name); (delete)
+        $this->passToRender(__FUNCTION__);                                        //render the page(function name); (delete)
     }
 
     //todo: (this function may break if a string of numbers and symbols is passed in, need to check for symbols?)
@@ -101,7 +100,7 @@ class Task_IndexController extends Core_IndexController
                 $dbMapper = new Task_DbDataMapperModel();
                 $dbMapper->reorderTableIndex('Todo_List');
                 $dbMapper->updateSetTaskCompletionStatus($paramValue);
-                Task_Registry::set('last_task', 'update');
+                Task_Registry::set('last_task', __FUNCTION__);
             }
             else
             {
@@ -114,6 +113,6 @@ class Task_IndexController extends Core_IndexController
         }
 
 
-        $this->render(__FUNCTION__);
+        $this->passToRender(__FUNCTION__);
     }
 }
