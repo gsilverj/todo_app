@@ -53,7 +53,14 @@ class Core_IndexController
         }
     }
 
-    protected function getParam($paramNameToGet, $paramLocation, $url = null)
+
+
+
+    //Super important, this function will get the the PARAM ***OR*** PARAMS!!! depending on where you get the param from.
+    //(ex. post/get will return just the param value while uri will return the param KEY=>VALUE pair.
+    //Expected to return NULL on false, although it is possible to get a param of null, should test after using this function if the value is what your looking for.
+    //
+    protected function getParam($paramNameToGet, $paramLocation, $uri = null)
     {
         $param = null;
 
@@ -71,22 +78,15 @@ class Core_IndexController
                 $param = $_GET[$paramNameToGet];
             }
         }
-        elseif($paramLocation == 'url')
+        elseif($paramLocation == 'uri')
         {
-            if($url == null)
+            if($uri != null)
             {
-                $query = parse_url($url, PHP_URL_QUERY);            //get the query from the inputted url
-                if($query !== null)                                 //if there is a query
-                {
-
-                    $paramArray = explode(' ', $query);             // explode the query by spaces.
-
-
-                }
+              $param = $this ->getParamPairFromUrl($uri, $paramNameToGet);
             }
             else
             {
-
+                //todo: throw exception b/c you need a url to use get the params from.
             }
         }
         else
@@ -100,6 +100,72 @@ class Core_IndexController
 
 
 
+    //this function will break if the user passes in a key=>value pair like this 'key=*blank*' or vice versa... (can probably check after exploding the '=' by filtering the arrays and check if both paramId and paramKey have the same number of elements.)
+    protected function getParamPairFromUrl($url, $paramNameToGet)
+    {
+
+
+        $paramPair = null;
+        $query = parse_url($url, PHP_URL_QUERY);            //get the query from the inputted url
+        if($query != null)                                  //if: there is a query
+        {
+            $query = str_replace(array('?', '&'), ' ', $query);       //query now looks like -> quote=15 hamburger=1
+            $queryPieces = explode(' ', $query);                      //explode the query by spaces.
+            array_filter($queryPieces);                               //remove any blank array elements
+
+            if(count($queryPieces) <= 2)                              //if: there is only one element in the queryPieces array
+            {
+                $param = $queryPieces;                            //    make the param = queryPieces  (means there is only one key value pair in the query from the url)
+            }
+            else                                                      //else: there are more then one element
+            {
+                for($i = 0; $i < count($queryPieces); $i++)           //    for each element, copy into params();
+                {
+                    $param[$i] = $queryPieces[$i];
+                }
+            }
+
+
+            if(count($param) > 1)                                     // if there are more than 1 element in $param, meaning alot of paramaters in a key=>value pair
+            {
+                for($i = 0; $i < count($param); $i ++)
+                {
+                    $paramParts = explode('=', $param[$i]);
+                    $paramID = $paramParts[0];
+                    $paramValue = $paramParts[1];
+                    $param[$i] = array($paramID => $paramValue);
+                }
+
+                $found = false;
+
+                foreach($param as $key => $value)                     //check if the $paramNameToGet is in the assoc. array, and if found set $paramPair.
+                {
+                    if($key == $paramNameToGet)
+                    {
+                        $paramPair[$key] = $value;
+                        $found = true;
+                    }
+                }
+
+                if($found == false)
+                {
+                    //todo: throw exception because a lot of code was ran through but the paramNameToGet Wasnt Even There!
+                }
+            }
+            else
+            {
+                if(array_key_exists($paramNameToGet, $param))       //check if the $paramNameToGet is in the assoc. array and if found set $paramPair.
+                {
+                    $paramPair[$paramNameToGet] = $param[$paramNameToGet];
+                }
+            }
+        }
+        else
+        {
+            //todo: throw exception from the lack of query in the inputted url.
+        }
+        return $paramPair;
+    }
 
 
 

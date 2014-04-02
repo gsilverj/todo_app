@@ -100,7 +100,6 @@ final class Core_Bootstrap
 
     }
 
-
     public static function getModuleNameFromClass($class = false)
     {
         $moduleName = false;
@@ -162,32 +161,32 @@ final class Core_Bootstrap
      *             //if params are passed in count it and if its incorrect key=>value pair, throw exception
      *             if($params !== null)
      *             {
-     *                 if(count($params) == 1)
-     *                 {
-     *                     $paramsParts = explode('=', $params);
-     *                     if(count($paramsParts) == 1)                    //***** if the user tried to pass in a url instead of a button and the key=>value pair is not there, make the param what ever is there and pass it in as the value for the function.
-     *                     {
-     *                         //todo: throw exception here for user passing something incorrectly into the url.
-     *                         die('Incorrect params passed into the uri...');
-     *                     }
-     *                     else
-     *                     {
-     *                         $paramID = $paramsParts[0];
-     *                         $paramValue = $paramsParts[1];
-     *                         $params = array($paramID => $paramValue);
-     *                     }
-     *                 }
-     *                 else
-     *                 {
-     *                     for($i = 0; $i < count($params); $i ++)
-     *                     {
-     *                         $paramsParts = explode('=', $params[$i]);
-     *                         $paramID = $paramsParts[0];
-     *                         $paramValue = $paramsParts[1];
-     *                         $params[$i] = array($paramID => $paramValue);
-     *                     }
-     *                 }
-     *             }
+     *                if(count($params) == 1)
+     *                {
+     *                    $paramsParts = explode('=', $params);
+     *                    if(count($paramsParts) == 1)                    //***** if the user tried to pass in a url instead of a button and the key=>value pair is not there, make the param what ever is there and pass it in as the value for the function.
+     *                    {
+     *                        //todo: throw exception here for user passing something incorrectly into the url.
+     *                        die('Incorrect params passed into the uri...');
+     *                    }
+     *                   else
+     *                   {
+     *                       $paramID = $paramsParts[0];
+     *                       $paramValue = $paramsParts[1];
+     *                       $params = array($paramID => $paramValue);
+     *                   }
+     *               }
+     *               else
+     *               {
+     *                   for($i = 0; $i < count($params); $i ++)
+     *                   {
+     *                       $paramsParts = explode('=', $params[$i]);
+     *                       $paramID = $paramsParts[0];
+     *                       $paramValue = $paramsParts[1];
+     *                       $params[$i] = array($paramID => $paramValue);
+     *                   }
+     *               }
+     *           }
      *
      *
      *
@@ -199,6 +198,6 @@ final class Core_Bootstrap
      *
      *
      *
-     *                                                                                                                                                    //if the url pieces is less then 2 then url = urlPieces otherwise  url = piece 1 and params = the rest of the pieces.                                                                                                                                                  //if the url pieces is less then 2 then url = urlPieces otherwise  url = piece 1 and params = the rest of the pieces.                                                                                                                                                  //if the url pieces is less then 2 then url = urlPieces otherwise  url = piece 1 and params = the rest of the pieces.                                                                                                                                                  //if the url pieces is less then 2 then url = urlPieces otherwise  url = piece 1 and params = the rest of the pieces.                                                                                                                                                  //if the url pieces is less then 2 then url = urlPieces otherwise  url = piece 1 and params = the rest of the pieces.
+     *
      */
 }

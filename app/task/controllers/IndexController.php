@@ -30,25 +30,22 @@ class Task_IndexController extends Core_IndexController
         //reset the Registry's last_task value back to null
         Task_Registry::set('last_task', null);
 
-        if(isset($_POST['taskDescriptionTbox']))
+        //it is expected to get only the value of the $_Post['taskDescriptionTbox'].
+        $param = $this->getParam('taskDescriptionTbox', 'post');
+
+        if($param != null)
         {
-            if($_POST['taskDescriptionTbox'] != null)
-            {
-                $dbObj = new Task_DbDataMapperModel();
-                $dbObj->reorderTableIndex('Todo_List');
-                $dbObj->addTaskToTable($_POST['taskDescriptionTbox']);
-                //tell the registry what the last task was if the task worked
-                Task_Registry::set('last_task', __FUNCTION__);
-            }
-            else
-            {
-                //todo: throw, you must put something into the textbox, exception.
-            }
+            $dbObj = new Task_DbDataMapperModel();
+            $dbObj->reorderTableIndex('Todo_List');
+            $dbObj->addTaskToTable($param);
+            //tell the registry what the last task was if the task worked
+            Task_Registry::set('last_task', __FUNCTION__);
         }
         else
         {
-            //todo: throw error about the user not adding anything into the textbox.
+            //todo: throw, you must put something into the textbox, exception.
         }
+
         $this->render(__FUNCTION__);
     }
 
