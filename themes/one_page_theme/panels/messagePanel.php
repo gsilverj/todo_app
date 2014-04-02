@@ -1,9 +1,5 @@
 
 
-
-
-
-
 <div id="messagePanel" name="messagePanel">
 
     <div class="alert alert-success fade in" id="addTaskMessage" name="addTaskMessage" style="display: none">
@@ -35,6 +31,11 @@
     function showMessage(id)
     {
         document.getElementById(id).style.display = 'block';
+    }
+
+    function hideMessage(id)
+    {
+        document.getElementById(id).style.display = 'none';
     }
 
     function checkForLastTask()
@@ -82,6 +83,9 @@
         if(messageToShow != null)
         {
             showMessage(messageToShow);
+
+            var lifeTime = 5000; // 5000 MS = 5 seconds
+            setTimeout(function(){document.getElementById(messageToShow).style.display = 'none';}, lifeTime);  //after waiting 5 seconds, hide the message.
         }
     }
 

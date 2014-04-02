@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/one_page_theme/panels/deleteTaskPanel.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Bootstrap.php" afterPath="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" afterPath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Registry.php" afterPath="$PROJECT_DIR$/lib/core/Registry.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/one_page_theme/index/index.php" afterPath="$PROJECT_DIR$/themes/one_page_theme/index/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/one_page_theme/panels/messagePanel.php" afterPath="$PROJECT_DIR$/themes/one_page_theme/panels/messagePanel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tasks.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,29 +30,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="57" selection-start="3686" selection-end="3686" vertical-scroll-proportion="-15.814815" vertical-offset="113" max-vertical-offset="972">
+            <state line="99" column="57" selection-start="3686" selection-end="3686" vertical-scroll-proportion="0.49708962" vertical-offset="113" max-vertical-offset="972">
               <folding>
                 <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
                 <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
                 <element signature="n#delete#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messagePanel.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/messagePanel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.5986239" vertical-offset="0" max-vertical-offset="872">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="tag#script#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -880,26 +858,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="57" selection-start="3686" selection-end="3686" vertical-scroll-proportion="-15.814815" vertical-offset="113" max-vertical-offset="972">
-          <folding>
-            <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#Task_IndexController#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/messagePanel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.5986239" vertical-offset="0" max-vertical-offset="872">
+        <state line="24" column="0" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.49541286" vertical-offset="0" max-vertical-offset="1008">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="tag#script#0" expanded="false" />
+            <element signature="e#1530#2769#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/task/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="57" selection-start="3686" selection-end="3686" vertical-scroll-proportion="0.49708962" vertical-offset="113" max-vertical-offset="972">
+          <folding>
+            <element signature="n#index#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#add#0;n#Task_IndexController#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#Task_IndexController#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
