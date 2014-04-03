@@ -58,6 +58,7 @@ class Core_Autoloader
 {
 
     private $_fileTypes = array(
+        '' => '',
         'Controller' => 'controllers',
         'Model' => 'models',
         'View' => 'views'
@@ -79,7 +80,7 @@ class Core_Autoloader
         {
             foreach($this->_fileTypes as $fileType => $folderName)                                  //loop through each fileType as the type and its folderName.
             {
-                if(strpos($relativePath, $fileType) !== false)                                      //if: the relative path contains the fileType string
+                if(empty($fileType))
                 {
                     $newPath = getcwd() . DS . $modName['namespace'] . DS . $relativePath;          //  make the new path
                     $newPath = explode(DS,  $newPath);                                              //  explode it so you can grab the "filename.php"
@@ -91,8 +92,26 @@ class Core_Autoloader
                         $classFound = true;
                         require_once $fileLocation;
                         //return $obj1 = new Task_IndexController;
-                        //break;
-                    }                                                                               //  end if: file exists
+                        break;
+                    }
+                }
+                else
+                {
+                    if(strpos($relativePath, $fileType) !== false)                                      //if: the relative path contains the fileType string
+                    {
+                        $newPath = getcwd() . DS . $modName['namespace'] . DS . $relativePath;          //  make the new path
+                        $newPath = explode(DS,  $newPath);                                              //  explode it so you can grab the "filename.php"
+                        $fileName = array_pop($newPath);                                                //  grab filename
+                        $fileLocation = implode(DS, $newPath) . DS . $folderName . DS . $fileName;      //  implode it, and make the correct new path.
+
+                        if(file_exists($fileLocation))                                                  //  if: that file exists, require it once.
+                        {
+                            $classFound = true;
+                            require_once $fileLocation;
+                            //return $obj1 = new Task_IndexController;
+                            break;
+                        }                                                                               //  end if: file exists
+                    }
                 }                                                                                   //end if: relative path has filetype
             }                                                                                       //end inner foreach
         }                                                                                           //end outer foreach
@@ -100,8 +119,9 @@ class Core_Autoloader
         //class not found...
         if($classFound === false)
         {
-            //throw exception here
+            //todo: throw exception here
             echo'class not found exception here...';
+
             return;
         }
 

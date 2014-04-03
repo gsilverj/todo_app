@@ -32,21 +32,30 @@ class Core_XMLConfig
         return static::$_config;
     }
 
+
+
+    //todo: check with Mr. Thomas about the correctness of the config.xml loading...
     public static function readInXmlConfigFile($source = null)
     {
         $xml = false;
 
-        if($source === null)
-        {
-            $source = getcwd() . DS . 'lib' . DS . 'core' . DS . 'Config.xml';
-            $xml = simplexml_load_file($source);
-        }
-        elseif(file_exists($source))
+
+        if(file_exists($source))
         {
             //load xml file as a simple xml and into $xml
             $xml = simplexml_load_file($source);
         }
+        else
+        {
+            $source = getcwd() . DS . 'lib' . DS . 'core' . DS . 'Config.xml';
+            $xml = simplexml_load_file($source);
+        }
 
+
+        if($xml == false)
+        {
+           //todo throw exception and close program here if the config file was unable to be read...
+        }
 
         self::$_config = $xml;
     }
@@ -117,6 +126,7 @@ class Core_XMLConfig
             }
         }
     }
+
     public static function getDatabaseInfoHost()
     {
         return self::$_database_info['host'];
