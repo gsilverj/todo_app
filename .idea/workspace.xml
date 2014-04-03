@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Autoloader.php" afterPath="$PROJECT_DIR$/lib/core/Autoloader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/one_page_theme/index/index.php" afterPath="$PROJECT_DIR$/themes/one_page_theme/index/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/one_page_theme/panels/populatedTodoListPanel.php" afterPath="$PROJECT_DIR$/themes/one_page_theme/panels/populatedTodoListPanel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tasks.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,35 +32,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/one_page_theme/index/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="12" selection-start="160" selection-end="160" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="450">
-              <folding>
-                <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Autoloader.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="38" selection-start="2794" selection-end="2794" vertical-scroll-proportion="-7.0740743" vertical-offset="745" max-vertical-offset="2502">
+            <state line="78" column="0" selection-start="3174" selection-end="3174" vertical-scroll-proportion="-6.037037" vertical-offset="1097" max-vertical-offset="2844">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="populatedTodoListPanel.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/populatedTodoListPanel.php">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.61811924" vertical-offset="127" max-vertical-offset="1026">
+            <state line="8" column="31" selection-start="190" selection-end="190" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="576">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bootstrap.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="32" selection-start="269" selection-end="269" vertical-scroll-proportion="0.26834863" vertical-offset="0" max-vertical-offset="872">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#6#204#0" expanded="true" />
+                <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+                <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+                <element signature="n#matchUri#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+                <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+                <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -129,16 +129,16 @@
         <option value="$PROJECT_DIR$/themes/core_theme/css/styles.css" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/assets/one_page_theme_javascript.js" />
         <option value="$PROJECT_DIR$/themes/core_theme/page/compiledPlugins.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/lib/core/XMLConfig.php" />
-        <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
         <option value="$PROJECT_DIR$/lib/core/Registry.php" />
         <option value="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/panels/messagePanel.php" />
         <option value="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/index/index.php" />
-        <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/panels/populatedTodoListPanel.php" />
+        <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
+        <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -223,46 +223,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="one_page_theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="panels" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="one_page_theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -286,28 +246,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -510,7 +448,7 @@
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/index.php</url>
-          <line>25</line>
+          <line>22</line>
           <option name="timeStamp" value="137" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -537,7 +475,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="184" />
+      <option name="time" value="187" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -616,13 +554,6 @@
     <entry file="file://$PROJECT_DIR$/lib/core/models/DbConnectionModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="33" selection-start="405" selection-end="405" vertical-scroll-proportion="0.13302752" vertical-offset="64" max-vertical-offset="936" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="279" selection-end="279" vertical-scroll-proportion="0.27504244" vertical-offset="0" max-vertical-offset="1008">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/task/views/IndexView.php">
@@ -724,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.18577981" vertical-offset="0" max-vertical-offset="872">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/task/views/AddView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="310" selection-end="310" vertical-scroll-proportion="0.37578288" vertical-offset="0" max-vertical-offset="479">
@@ -791,44 +715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/XMLConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="0" selection-start="4516" selection-end="4516" vertical-scroll-proportion="-5.888889" vertical-offset="651" max-vertical-offset="1386">
-          <folding>
-            <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getBaseUrl#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setDatabaseInfo#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoHost#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoUser#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoPass#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoDbName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/task/models/DbDataMapperModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="162" column="0" selection-start="4912" selection-end="4912" vertical-scroll-proportion="-5.888889" vertical-offset="2667" max-vertical-offset="3402">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="3969" selection-end="3969" vertical-scroll-proportion="-6.4074073" vertical-offset="1375" max-vertical-offset="1854">
-          <folding>
-            <element signature="e#6#204#0" expanded="true" />
-            <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,9 +785,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/populatedTodoListPanel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="5" selection-start="741" selection-end="741" vertical-scroll-proportion="0.34977064" vertical-offset="127" max-vertical-offset="1026">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/one_page_theme/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="160" selection-end="160" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="450">
+        <state line="23" column="0" selection-start="849" selection-end="849" vertical-scroll-proportion="0.22706422" vertical-offset="0" max-vertical-offset="872">
           <folding>
             <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
@@ -905,20 +806,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
+    <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="38" selection-start="2794" selection-end="2794" vertical-scroll-proportion="-7.0740743" vertical-offset="745" max-vertical-offset="2502">
+        <state line="9" column="15" selection-start="279" selection-end="279" vertical-scroll-proportion="0.18020022" vertical-offset="0" max-vertical-offset="1008">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/panels/populatedTodoListPanel.php">
+    <entry file="file://$PROJECT_DIR$/lib/core/XMLConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.61811924" vertical-offset="127" max-vertical-offset="1026">
+        <state line="166" column="13" selection-start="4473" selection-end="4473" vertical-scroll-proportion="0.82568806" vertical-offset="0" max-vertical-offset="1224">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getBaseUrl#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setDatabaseInfo#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoHost#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoUser#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoPass#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getDatabaseInfoDbName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+            <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="3174" selection-end="3174" vertical-scroll-proportion="-6.037037" vertical-offset="1097" max-vertical-offset="2844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="190" selection-end="190" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="32" selection-start="269" selection-end="269" vertical-scroll-proportion="0.26834863" vertical-offset="0" max-vertical-offset="872">
+          <folding>
+            <element signature="e#6#204#0" expanded="true" />
+            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#matchUri#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
