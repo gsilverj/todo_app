@@ -14,9 +14,9 @@
 
 
 
+<?php $this->getTemplate(false, 'btnChangeThemeToOnePageTheme.php');?>
 
-
-
+<br />
 
 
 

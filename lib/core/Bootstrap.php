@@ -8,13 +8,16 @@
  */
 
 
+// *** I made a quick change to MatchURI to change the current theme to core_theme if the url isnt url/task
+
 final class Core_Bootstrap
 {
-
     public static function initialize()
     {
         //Initialize App
         self::quickHandleConfig();
+
+        self::runInstallScripts();
 
         //Match URI to Controller
         self::matchUri($_SERVER['REQUEST_URI']);
@@ -48,6 +51,13 @@ final class Core_Bootstrap
             if(array_key_exists(0, $uri) && empty($uri[0]))                         //if the uri is empty, replace it with 'Core_Index'.
             {
                 $uri[0] = 'Core_Index';
+                //just for testing if this will switch the current theme or not.
+                Core_XMLConfig::setCurrentTheme('core_theme');
+            }
+            elseif($uri[0] == 'core')
+            {
+                //another just for testing
+                Core_XMLConfig::setCurrentTheme('core_theme');
             }
 
 
@@ -61,8 +71,17 @@ final class Core_Bootstrap
             //check if the className is only one word and append _IndexController if it is.
             //create a 'className object.
             //Todo: do this in a try catch, if it doesnt exist, throw up 404 page.
-            $className = self::getValidClassName($className);
-            $inst = new $className;
+            try
+            {
+                $className = self::getValidClassName($className);
+                $inst = new $className;
+            }
+            catch(Exception $e)
+            {
+                echo 'Non-flashy 404 page';
+                echo "<br />";
+                die('This Program Died Because The Class Name ' . $className . 'Does Not Exist Or Was Not Found.');
+            }
 
             if(method_exists($inst, $function))             //if:   the function(method) that is grabbed from uri exists
             {
@@ -70,6 +89,8 @@ final class Core_Bootstrap
             }
             else                                            //else: throw exception and 404 page
             {
+                $inst->index(true);
+
                 die('This Program Died Because The function(Method) ' . $function . ' Does Not Exist In Class ' . $className);
             }
 
@@ -111,12 +132,9 @@ final class Core_Bootstrap
         return $moduleName;
     }
 
-
-
-
-
-
-
-
+    public static function runInstallScripts()
+    {
+        return Core_Install::runInstallScripts();
+    }
 
 }
