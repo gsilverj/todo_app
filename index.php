@@ -29,7 +29,7 @@ include_once getcwd() . DS . 'app' . DS . 'code' . DS .  'core' . DS . 'core' . 
 include_once getcwd() . DS . 'app' . DS . 'code' . DS .  'core' . DS . 'core' . DS . 'Autoloader.php';
 include_once getcwd() . DS . 'app' . DS . 'code' . DS .  'core' . DS . 'core' . DS . 'XMLConfig.php';
 include_once getcwd() . DS . 'app' . DS . 'code' . DS .  'core' . DS . 'core' . DS . 'Registry.php';
-include_once getcwd() . DS . 'app' . DS . 'task' . DS . 'Registry.php';
+include_once getcwd() . DS . 'app' . DS . 'code' . DS . 'local' . DS . 'task' . DS . 'Registry.php';
 
 include_once getcwd() . DS . 'app' . DS . 'code' . DS .  'core' . DS . 'core' . DS . 'models' . DS . 'DbDataMapperModel.php';
 include_once getcwd() . DS . 'app' . DS . 'code' . DS .  'core' . DS . 'core' . DS . 'models' . DS .  'DbObjectModel.php';
