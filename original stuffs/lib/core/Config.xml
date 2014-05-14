@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
-    <url>http://todo_app.dev/</url>
+    <url>http://tasks.dev/</url>
     <current_theme>one_page_theme</current_theme>
     <database>
         <host>localhost</host>

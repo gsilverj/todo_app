@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
-    <url>http://tasks.dev/</url>
+    <url>http://todo_app.dev/</url>
     <current_theme>one_page_theme</current_theme>
+
+
     <database>
         <host>localhost</host>
         <user>root</user>
         <pass>root</pass>
         <dbname>test</dbname>
     </database>
+
+
     <registered_modules>
-        <task>
-            <namespace>app</namespace>
-            <file_path>task</file_path>
-        </task>
-        <core>
-            <namespace>lib</namespace>
-            <file_path>core</file_path>
-        </core>
+        <code_pool>
+            <local>
+                <task>
+                    <namespace>task</namespace>
+                    <file_path>local</file_path>
+                </task>
+            </local>
+
+            <community>
+            </community>
+
+            <core>
+                <core>
+                    <namespace>core</namespace>
+                    <file_path>core</file_path>
+                </core>
+            </core>
+        </code_pool>
     </registered_modules>
+
+
     <registered_themes>
         <one_page_theme>
             <folderList>
@@ -30,9 +46,9 @@
         </one_page_theme>
         <task_theme>
             <folderList>
-               <name>add</name>
-               <name>delete</name>
-               <name>index</name>
+                <name>add</name>
+                <name>delete</name>
+                <name>index</name>
             </folderList>
         </task_theme>
         <core_theme>

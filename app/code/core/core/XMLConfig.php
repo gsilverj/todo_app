@@ -47,7 +47,7 @@ class Core_XMLConfig
         }
         else
         {
-            $source = getcwd() . DS . 'lib' . DS . 'core' . DS . 'Config.xml';
+            $source = getcwd() . DS . 'app' . DS . 'code' . DS . 'core' . DS . 'core' . DS . 'Config.xml';
             $xml = simplexml_load_file($source);
         }
 
@@ -148,16 +148,22 @@ class Core_XMLConfig
     {
         $xml = self::getConfig();
 
-        foreach ($xml->children() as $child)
+        foreach ($xml->children() as $child)                                //get children of xml file
         {
-            if($child->getName() == 'registered_modules')
+            if($child->getName() == 'registered_modules')                   //get the name of the current child and compare
             {
-                foreach($child->children() as $module)
+                foreach($child->children() as $modules)                      //get children of the registered_modules child
                 {
-                    foreach($module->children() as $key => $value)
+                    foreach($modules->children() as $code_pool)              //get the children of the $module (registered_modules tag) as a code_pool
                     {
-                        self::$_registered_modules[$module->getName()][$key] = (string)$value;
-                        //TODO: Maybe use the self::addModuleToRegisteredModules() method here instead of hardcoding it...
+                        foreach($code_pool as $module_name)
+                        {
+                            foreach($module_name as $key => $value)
+                            {
+                                self::$_registered_modules[$code_pool->getName()][$key] = (string)$value;
+                                //TODO: Maybe use the self::addModuleToRegisteredModules() method here instead of hardcoding it...
+                            }
+                        }
                     }
                 }
             }

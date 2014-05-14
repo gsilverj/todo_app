@@ -82,7 +82,7 @@ class Core_Autoloader
             {
                 if(empty($fileType))
                 {
-                    $newPath = getcwd() . DS . $modName['namespace'] . DS . $relativePath;          //  make the new path
+                    $newPath = getcwd() . DS . 'app' . DS . 'code' . DS . $modName['file_path'] . $relativePath;          //  make the new path
                     $newPath = explode(DS,  $newPath);                                              //  explode it so you can grab the "filename.php"
                     $fileName = array_pop($newPath);                                                //  grab filename
                     $fileLocation = implode(DS, $newPath) . DS . $folderName . DS . $fileName;      //  implode it, and make the correct new path.
@@ -99,7 +99,7 @@ class Core_Autoloader
                 {
                     if(strpos($relativePath, $fileType) !== false)                                      //if: the relative path contains the fileType string
                     {
-                        $newPath = getcwd() . DS . $modName['namespace'] . DS . $relativePath;          //  make the new path
+                        $newPath = getcwd() . DS . 'app'. DS . 'code' . DS . $modName['file_path'] . DS . $relativePath;          //  make the new path
                         $newPath = explode(DS,  $newPath);                                              //  explode it so you can grab the "filename.php"
                         $fileName = array_pop($newPath);                                                //  grab filename
                         $fileLocation = implode(DS, $newPath) . DS . $folderName . DS . $fileName;      //  implode it, and make the correct new path.
