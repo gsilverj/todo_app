@@ -2,19 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Autoloader.php" afterPath="$PROJECT_DIR$/lib/core/Autoloader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Bootstrap.php" afterPath="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/models/DbDataMapperModel.php" afterPath="$PROJECT_DIR$/app/task/models/DbDataMapperModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/task/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/task/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" afterPath="$PROJECT_DIR$/lib/core/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/views/IndexView.php" afterPath="$PROJECT_DIR$/lib/core/views/IndexView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/core_theme/page/footer.php" afterPath="$PROJECT_DIR$/themes/core_theme/page/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/four_oh_four_theme/four_oh_four/four_oh_four.php" afterPath="$PROJECT_DIR$/themes/four_oh_four_theme/four_oh_four/four_oh_four.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/core_theme/page/header.php" afterPath="$PROJECT_DIR$/themes/core_theme/page/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/core_theme/index/index.php" afterPath="$PROJECT_DIR$/themes/core_theme/index/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Todo_List/views/AddView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/Autoloader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/Bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/Config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/models/DbConnectionModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/models/DbDataMapperModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Todo_List/models/DbDataMapperModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/models/DbObjectModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Todo_List/models/DbObjectModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/models/DbServicesModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Todo_List/models/DbServicesModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Todo_List/views/DeleteView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/Exception_Handler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/Functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/controllers/IndexController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Todo_List/controllers/IndexController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/views/IndexView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Todo_List/views/IndexView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/Install.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/Registry.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Todo_List/Registry.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Todo_List/views/UpdateView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/core/core/XMLConfig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/core/Config.xml" afterPath="$PROJECT_DIR$/lib/core/Config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tasks.dev.iws" />
@@ -46,23 +57,52 @@
       <file leaf-file-name="Bootstrap.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="576" selection-end="576" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="756">
-              <folding>
-                <element signature="e#6#204#0" expanded="true" />
-                <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="n#matchUri#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="n#runInstallScripts#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-              </folding>
+            <state line="9" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="2502">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IndexView.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/core/views/IndexView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="51" selection-start="459" selection-end="459" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="4014">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Todo_List/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="20" selection-start="385" selection-end="385" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="2340">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/core/Config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="20" selection-start="257" selection-end="257" vertical-scroll-proportion="0.15550756" vertical-offset="0" max-vertical-offset="1008">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="70" selection-start="880" selection-end="880" vertical-scroll-proportion="0.621881" vertical-offset="0" max-vertical-offset="612">
+            <state line="22" column="31" selection-start="947" selection-end="947" vertical-scroll-proportion="-14.666667" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -71,13 +111,8 @@
       <file leaf-file-name="Autoloader.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="27" selection-start="6422" selection-end="6422" vertical-scroll-proportion="-26.148148" vertical-offset="1292" max-vertical-offset="2322">
-              <folding>
-                <element signature="e#2749#2873#0" expanded="false" />
-                <element signature="n#buildRelativePath#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
-                <element signature="e#6540#7088#0" expanded="false" />
-                <element signature="n#registerAutoloader#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
-              </folding>
+            <state line="129" column="27" selection-start="6475" selection-end="6475" vertical-scroll-proportion="0.0" vertical-offset="2322" max-vertical-offset="2988">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,7 +153,6 @@
         <option value="$PROJECT_DIR$/app/task/views/UpdateView.php" />
         <option value="$PROJECT_DIR$/app/task/views/IndexView.php" />
         <option value="$PROJECT_DIR$/lib/core/Functions.php" />
-        <option value="$PROJECT_DIR$/lib/core/Config.xml" />
         <option value="$PROJECT_DIR$/lib/core/models/DbConnectionModel.php" />
         <option value="$PROJECT_DIR$/app/task/Registry.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/panels/addTaskPanel.php" />
@@ -144,8 +178,9 @@
         <option value="$PROJECT_DIR$/lib/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/lib/core/MySQLTableInstallerScript.php" />
         <option value="$PROJECT_DIR$/lib/core/Bootstrap.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/lib/core/Install.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/lib/core/Config.xml" />
       </list>
     </option>
   </component>
@@ -201,7 +236,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemId" value="todo_app.dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,21 +246,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemId" value="todo_app.dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -243,103 +264,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemId" value="todo_app.dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,18 +323,18 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="SearchEverywhereHistory" value="&#10;'&#10;h1&#10;&gt;&#10;i" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../games.dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise7.dev" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/code/local/Todo_List" />
+      <recent name="$PROJECT_DIR$/app/code/core" />
       <recent name="$PROJECT_DIR$/themes/one_page_theme/delete" />
       <recent name="$PROJECT_DIR$/themes/one_page_theme/add" />
       <recent name="$PROJECT_DIR$/themes/task_theme/index" />
-      <recent name="$PROJECT_DIR$/themes/core_theme/index" />
-      <recent name="$PROJECT_DIR$/themes/task_theme/delete" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/themes/one_page_theme/panels" />
@@ -461,10 +430,10 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32831" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15741728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39539748" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15901814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39530134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -495,9 +464,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15741728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -539,11 +508,6 @@
           <url>file://$PROJECT_DIR$/lib/core/views/IndexView.php</url>
           <line>201</line>
           <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint type="php">
-          <url>file://$PROJECT_DIR$/index.php</url>
-          <line>24</line>
-          <option name="timeStamp" value="137" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/app/task/views/AddView.php</url>
@@ -725,37 +689,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/core_theme/page/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="820" selection-end="820" vertical-scroll-proportion="0.26028922" vertical-offset="0" max-vertical-offset="899">
-          <folding />
-        </state>
+        <state line="13" column="8" selection-start="820" selection-end="820" vertical-scroll-proportion="0.26028922" vertical-offset="0" max-vertical-offset="899" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/core_theme/page/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="51" selection-end="51" vertical-scroll-proportion="0.020022247" vertical-offset="0" max-vertical-offset="899">
-          <folding />
-        </state>
+        <state line="1" column="18" selection-start="51" selection-end="51" vertical-scroll-proportion="0.020022247" vertical-offset="0" max-vertical-offset="899" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/core_theme/page/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="29" selection-start="84" selection-end="84" vertical-scroll-proportion="0.040044494" vertical-offset="0" max-vertical-offset="899">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/core_theme/page/btnChangeThemeToOnePageTheme.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="142" selection-start="626" selection-end="626" vertical-scroll-proportion="0.10011123" vertical-offset="0" max-vertical-offset="899">
-          <folding />
-        </state>
+        <state line="2" column="29" selection-start="84" selection-end="84" vertical-scroll-proportion="0.040044494" vertical-offset="0" max-vertical-offset="899" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/core_theme/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.3003337" vertical-offset="0" max-vertical-offset="899">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.3003337" vertical-offset="0" max-vertical-offset="899" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/XMLConfig.php">
@@ -781,13 +730,6 @@
             <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
             <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="279" selection-end="279" vertical-scroll-proportion="0.17494601" vertical-offset="0" max-vertical-offset="1008">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,9 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/four_oh_four_theme/four_oh_four/four_oh_four.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/views/IndexView.php">
@@ -895,25 +835,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/6eea60e3/2684e5a6-5584-48a9-b551-0d17d93b3f31/test..Todo_List">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/core/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="27" selection-start="6422" selection-end="6422" vertical-scroll-proportion="-26.148148" vertical-offset="1292" max-vertical-offset="2322">
-          <folding>
-            <element signature="e#2749#2873#0" expanded="false" />
-            <element signature="n#buildRelativePath#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
-            <element signature="e#6540#7088#0" expanded="false" />
-            <element signature="n#registerAutoloader#0;n#Core_Autoloader#0;n#!!top" expanded="false" />
-          </folding>
+        <state line="129" column="27" selection-start="6475" selection-end="6475" vertical-scroll-proportion="0.0" vertical-offset="2322" max-vertical-offset="2988">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -927,35 +852,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="576" selection-end="576" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="756">
-          <folding>
-            <element signature="e#6#204#0" expanded="true" />
-            <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#matchUri#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#runInstallScripts#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/core/Install.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="509" selection-end="509" vertical-scroll-proportion="0.6732283" vertical-offset="0" max-vertical-offset="1080">
-          <folding>
-            <element signature="n#__construct#0;n#Core_Install#0;n#!!top" expanded="false" />
-            <element signature="n#createTodoListTable#0;n#Core_Install#0;n#!!top" expanded="false" />
-            <marker date="1396630555297" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..Todo_List..." />
-            <marker date="1396630555297" expanded="true" signature="-1:-1" placeholder="SELECT 1 FRO..Todo_List..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="70" selection-start="880" selection-end="880" vertical-scroll-proportion="0.621881" vertical-offset="0" max-vertical-offset="612">
+        <state line="22" column="31" selection-start="947" selection-end="947" vertical-scroll-proportion="-14.666667" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="2502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/core/views/IndexView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="51" selection-start="459" selection-end="459" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="4014">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Todo_List/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="20" selection-start="385" selection-end="385" vertical-scroll-proportion="-9.333333" vertical-offset="0" max-vertical-offset="2340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/core/Config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/core/Config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="257" selection-end="257" vertical-scroll-proportion="0.15550756" vertical-offset="0" max-vertical-offset="1008">
           <folding />
         </state>
       </provider>
