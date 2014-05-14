@@ -3,6 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+//these were the original includes before switching to magento style file structure.
 //includes, that could probably be put into bootstrap...
 //
 //include_once 'lib/core/Functions.php';

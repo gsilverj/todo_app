@@ -2,16 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/task/Registry.php" afterPath="$PROJECT_DIR$/original stuffs/task/Registry.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/task/controllers/IndexController.php" afterPath="$PROJECT_DIR$/original stuffs/task/controllers/IndexController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/task/models/DbDataMapperModel.php" afterPath="$PROJECT_DIR$/original stuffs/task/models/DbDataMapperModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/task/models/DbObjectModel.php" afterPath="$PROJECT_DIR$/original stuffs/task/models/DbObjectModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/task/models/DbServicesModel.php" afterPath="$PROJECT_DIR$/original stuffs/task/models/DbServicesModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/task/views/AddView.php" afterPath="$PROJECT_DIR$/original stuffs/task/views/AddView.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/task/views/DeleteView.php" afterPath="$PROJECT_DIR$/original stuffs/task/views/DeleteView.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/task/views/IndexView.php" afterPath="$PROJECT_DIR$/original stuffs/task/views/IndexView.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/task/views/UpdateView.php" afterPath="$PROJECT_DIR$/original stuffs/task/views/UpdateView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/core/core/Config.xml" afterPath="$PROJECT_DIR$/app/code/core/core/Config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/add/add.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/add/addBtn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/add/addBtn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/add/addTaskInputForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/panels/addTaskPanel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/backToHomeBtn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/body.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/bootstrapJs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/btnChangeThemeToOnePageTheme.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/compiledPlugins.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/delete/delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/delete/deleteAllBtn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/delete/deleteBtn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/delete/deleteTaskSelectionForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/head.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/index/index(original).php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/index/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/index/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/index/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/individualIncludeFiles.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/panels/messagePanel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/assets/one_page_theme_javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/panels/populatedTodoListPanel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/add/submitQueryBtn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/delete/submitQueryBtn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/todoListPanel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,10 +72,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="45" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.6677909" vertical-offset="216" max-vertical-offset="900">
+            <state line="2" column="8" selection-start="15" selection-end="15" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="558">
+              <folding>
+                <element signature="e#62#146#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/js/bootstrap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="18" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="35154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="body.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/frontend/core_theme/page/body.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addBtn.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/frontend/one_page_theme/add/addBtn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="324">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/skin/frontend/task_theme/index/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.41197184" vertical-offset="0" max-vertical-offset="738">
               <folding />
             </state>
           </provider>
@@ -243,6 +312,132 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task_theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task_theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task_theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -269,11 +464,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/skin/frontend/task_theme" />
+      <recent name="$PROJECT_DIR$/skin/frontend/one_page_theme" />
+      <recent name="$PROJECT_DIR$/skin/frontend/core_theme" />
+      <recent name="$PROJECT_DIR$/skin/frontend/base/default" />
       <recent name="$PROJECT_DIR$/app/code/local/Todo_List" />
-      <recent name="$PROJECT_DIR$/app/code/core" />
-      <recent name="$PROJECT_DIR$/themes/one_page_theme/delete" />
-      <recent name="$PROJECT_DIR$/themes/one_page_theme/add" />
-      <recent name="$PROJECT_DIR$/themes/task_theme/index" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/original stuffs" />
@@ -364,14 +559,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32831" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15901814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15901814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32008368" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -476,35 +671,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/task_theme/add/addBtn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="65" selection-start="344" selection-end="344" vertical-scroll-proportion="0.061926607" vertical-offset="0" max-vertical-offset="872" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/task_theme/add/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="91" selection-end="91" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="558" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/original stuffs/task/views/DeleteView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="263" selection-end="263" vertical-scroll-proportion="0.1853547" vertical-offset="0" max-vertical-offset="874">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/original stuffs/task/views/UpdateView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="173" selection-end="173" vertical-scroll-proportion="0.10011123" vertical-offset="0" max-vertical-offset="899">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/original stuffs/lib/core/Functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="1" selection-start="635" selection-end="635" vertical-scroll-proportion="0.28031147" vertical-offset="0" max-vertical-offset="899" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/original stuffs/task/views/IndexView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="89" selection-start="299" selection-end="299" vertical-scroll-proportion="0.26229507" vertical-offset="0" max-vertical-offset="549" />
@@ -867,9 +1033,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/task/Registry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="45" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.6677909" vertical-offset="216" max-vertical-offset="900">
+        <state line="2" column="8" selection-start="15" selection-end="15" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="558">
+          <folding>
+            <element signature="e#62#146#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="18" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="35154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/core_theme/page/body.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/one_page_theme/add/addBtn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/task_theme/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.41197184" vertical-offset="0" max-vertical-offset="738">
           <folding />
         </state>
       </provider>
