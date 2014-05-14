@@ -17,11 +17,21 @@
 
 class Core_IndexController
 {
-    public function index()
+    public function index($isFOF = null)
     {
-        if($class = $this->getViewClass(__CLASS__, __FUNCTION__)){
+        if($class = $this->getViewClass(__CLASS__, __FUNCTION__))
+        {
             $class = new $class;
-            $class->render();
+
+
+            if($isFOF != true)
+            {
+                $class->render();
+            }
+            else
+            {
+                $this->passToRenderFOF();
+            }
         }
     }
 
@@ -51,6 +61,15 @@ class Core_IndexController
             $class = new $class;
             $class->render();
         }
+    }
+
+    //quick check to see if this would produce a 404 page.
+    protected function passToRenderFOF()
+    {
+        $class = $this->getViewClass(get_class($this), 'index');
+        $class = new $class;
+        $class->setTargetTemplate('four_oh_four.php');
+        $class->render();
     }
 
 

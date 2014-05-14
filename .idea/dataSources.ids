@@ -1009,12 +1009,5 @@
       <column name="PROCESSLIST_ID" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="NAME" sqlType="VARCHAR" length="128" precision="0" nullable="false" jdbcType="12"/>
     </table>
-    <table name="Todo_List" schema="" catalog="test" type="TABLE">
-      <column name="Task_Number" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
-      <column name="Task_Description" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
-      <column name="Task_Is_Completed" sqlType="TINYINT" length="3" precision="0" nullable="true" jdbcType="-6"/>
-      <primary-key name="PRIMARY" columns="Task_Number"/>
-      <index name="unique_Task_Number" unique="true" columns="Task_Number"/>
-    </table>
   </data-source>
 </component>

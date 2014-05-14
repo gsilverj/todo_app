@@ -121,8 +121,8 @@ class Core_Autoloader
         {
             //todo: throw exception here
             echo'class not found exception here...';
-
-            return;
+            //just a quick exception test...
+            throw new Exception();
         }
 
     }

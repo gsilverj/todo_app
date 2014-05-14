@@ -17,11 +17,26 @@ class Task_IndexController extends Core_IndexController
      * Task_IndexView
      * Task_AddView
      */
-    public function index()
+    public function index($is_FOF = null)
     {
-        //reset the Registry's last_task value back to null
+
         Task_Registry::set('last_task', null);
-        $this->passToRender();
+
+        if($class = $this->getViewClass(__CLASS__, __FUNCTION__))
+        {
+            $class = new $class;
+
+
+            if($is_FOF != true)
+            {
+                $class->render();
+            }
+            else
+            {
+                $this->passToRenderFOF();
+            }
+        }
+
     }
 
     public function add()

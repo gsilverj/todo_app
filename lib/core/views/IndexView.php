@@ -36,7 +36,7 @@ class Core_IndexView
     protected  function setErrorTemplate($newErrorTemplate)     {$this->_errorTemplate = $newErrorTemplate;}
 
     //allow user to change the default template. (can now change the _defaultTemplate to the desired view template or folder layout for view)
-    protected  function setTargetTemplate($newTargetTemplate = null)
+    public  function setTargetTemplate($newTargetTemplate = null)
     {
         if($newTargetTemplate === null || is_numeric(substr($newTargetTemplate, 0 , 1)))
         {

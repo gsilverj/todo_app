@@ -16,6 +16,8 @@ include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'models' . DS . 'DbDataM
 include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'models' . DS . 'DbObjectModel.php';
 include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'models' . DS . 'DbServicesModel.php';
 
+include_once getcwd() . DS . 'lib' . DS . 'core' . DS . 'Install.php';
+
 
 $loader = new Core_Autoloader();
 $loader -> registerAutoloader();

@@ -6,6 +6,12 @@
  * Time: 11:39 AM
  */
 
+
+
+
+//todo: potential issue, this file may break if the table to use isnt in the db name in the config...
+
+
 class Task_DbDataMapperModel extends Core_DbDataMapperModel
 {
 
@@ -15,7 +21,7 @@ class Task_DbDataMapperModel extends Core_DbDataMapperModel
         //create new objects for the database object and database service models
         $this->_dbObject = new Task_DbObjectModel();
         //select which database to use
-        mysqli_select_db(Core_DbConnectionModel::getInstance(), 'test');
+        mysqli_select_db(Core_DbConnectionModel::getInstance(), Core_XMLConfig::getDatabaseInfoDbName());
 
         //need to set this up before
         $this->_dbService = new Task_DbServicesModel();
