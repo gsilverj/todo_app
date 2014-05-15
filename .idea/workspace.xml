@@ -2,48 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/add/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/add/addBtn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/add/addBtn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/add/addTaskInputForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/panels/addTaskPanel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/backToHomeBtn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/body.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/bootstrapJs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/btnChangeThemeToOnePageTheme.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/compiledPlugins.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/delete/delete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/delete/deleteAllBtn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/delete/deleteBtn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/delete/deleteTaskSelectionForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/base/default/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/head.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/index/index(original).php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/index/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/index/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/index/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/individualIncludeFiles.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/panels/messagePanel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/assets/one_page_theme_javascript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/one_page_theme/panels/populatedTodoListPanel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/add/submitQueryBtn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/task_theme/delete/submitQueryBtn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/core_theme/page/todoListPanel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tasks.dev.iws" />
@@ -75,10 +33,73 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="8" selection-start="15" selection-end="15" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="558">
+            <state line="27" column="48" selection-start="1152" selection-end="1152" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="558">
               <folding>
                 <element signature="e#62#146#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/core/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="113" column="18" selection-start="3419" selection-end="3419" vertical-scroll-proportion="-72.0" vertical-offset="0" max-vertical-offset="4140">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbDataMapperModel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/task/models/DbDataMapperModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbObjectModel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/task/models/DbObjectModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="216">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbObjectModel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/core/models/DbObjectModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="3" selection-start="792" selection-end="792" vertical-scroll-proportion="-6.0" vertical-offset="162" max-vertical-offset="1044">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbServicesModel.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/core/core/models/DbServicesModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="962" selection-end="962" vertical-scroll-proportion="0.10297483" vertical-offset="270" max-vertical-offset="1332">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbServicesModel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/task/models/DbServicesModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="8" selection-start="1049" selection-end="1049" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="2016">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbDataMapperModel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/core/models/DbDataMapperModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.0" vertical-offset="108" max-vertical-offset="1008">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,88 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/core_theme/page/body.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addBtn.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/one_page_theme/add/addBtn.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="324">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/task_theme/index/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.41197184" vertical-offset="0" max-vertical-offset="738">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/core/Config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="15" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Autoloader.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code/core/core/Autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="25" selection-start="6626" selection-end="6626" vertical-scroll-proportion="-6.259259" vertical-offset="2081" max-vertical-offset="2844">
+            <state line="133" column="25" selection-start="6626" selection-end="6626" vertical-scroll-proportion="-9.888889" vertical-offset="1983" max-vertical-offset="2844">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XMLConfig.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/core/XMLConfig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="20" selection-start="115" selection-end="115" vertical-scroll-proportion="6.037037" vertical-offset="217" max-vertical-offset="1332">
-              <folding>
-                <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setDatabaseInfo#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getDatabaseInfoHost#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getDatabaseInfoUser#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getDatabaseInfoPass#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getDatabaseInfoDbName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bootstrap.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/core/Bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="48" selection-start="3379" selection-end="3379" vertical-scroll-proportion="-7.5925927" vertical-offset="911" max-vertical-offset="1674">
-              <folding>
-                <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-                <element signature="n#runInstallScripts#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -191,9 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/themes/task_theme/delete/delete.php" />
-        <option value="$PROJECT_DIR$/app/task/views/ReloadView.php" />
-        <option value="$PROJECT_DIR$/themes/task_theme/delete/deleteTaskSelectionForm.php" />
         <option value="$PROJECT_DIR$/themes/task_theme/index/index.php" />
         <option value="$PROJECT_DIR$/themes/one_page_theme/panels/updateTodoListPanel.php" />
         <option value="$PROJECT_DIR$/themes/task_theme/add/addTaskInputForm.php" />
@@ -242,6 +183,9 @@
         <option value="$PROJECT_DIR$/app/code/core/core/Autoloader.php" />
         <option value="$PROJECT_DIR$/app/code/core/core/Config.xml" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/code/core/core/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/task/models/DbServicesModel.php" />
+        <option value="$PROJECT_DIR$/app/code/core/core/models/DbObjectModel.php" />
       </list>
     </option>
   </component>
@@ -312,105 +256,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task_theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo_app.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo_app.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task_theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo_app.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task_theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo_app.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo_app.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,6 +271,74 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo_app.dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -457,7 +371,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="SearchEverywhereHistory" value="--&gt;&#10;'&#10;h1&#10;&gt;&#10;i" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise7.dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../emberdyn" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -567,7 +481,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15901814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32008368" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17991632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -671,46 +585,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/original stuffs/task/views/IndexView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="89" selection-start="299" selection-end="299" vertical-scroll-proportion="0.26229507" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/delete/deleteAllBtn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="593" selection-end="593" vertical-scroll-proportion="0.18859139" vertical-offset="0" max-vertical-offset="859" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/core_theme/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="259" selection-end="259" vertical-scroll-proportion="0.06006674" vertical-offset="0" max-vertical-offset="899" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="886" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="861" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/core_theme/page/individualIncludeFiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="899" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/one_page_theme/assets/one_page_theme_javascript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="899" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/core_theme/page/compiledPlugins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="45" selection-start="130" selection-end="130" vertical-scroll-proportion="0.020642202" vertical-offset="0" max-vertical-offset="872" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/core_theme/page/bootstrapJs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="33" selection-start="96" selection-end="96" vertical-scroll-proportion="0.020642202" vertical-offset="0" max-vertical-offset="872" />
@@ -982,9 +856,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/core/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="48" selection-start="3379" selection-end="3379" vertical-scroll-proportion="-7.5925927" vertical-offset="911" max-vertical-offset="1674">
+          <folding>
+            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+            <element signature="n#runInstallScripts#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/task/Registry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/core_theme/page/body.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/one_page_theme/add/addBtn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/task_theme/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="123" selection-end="123" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/core_theme/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/core/XMLConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="115" selection-end="115" vertical-scroll-proportion="6.037037" vertical-offset="217" max-vertical-offset="1332">
+        <state line="8" column="20" selection-start="115" selection-end="115" vertical-scroll-proportion="0.09507042" vertical-offset="0" max-vertical-offset="1332">
           <folding>
             <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
             <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
@@ -1006,46 +928,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/core/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="48" selection-start="3379" selection-end="3379" vertical-scroll-proportion="-7.5925927" vertical-offset="911" max-vertical-offset="1674">
-          <folding>
-            <element signature="n#initialize#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#quickHandleConfig#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getValidClassName#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#getModuleNameFromClass#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-            <element signature="n#runInstallScripts#0;n#Core_Bootstrap#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/core/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="25" selection-start="6626" selection-end="6626" vertical-scroll-proportion="-6.259259" vertical-offset="2081" max-vertical-offset="2844">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/core/Config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="15" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+        <state line="15" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/task/Registry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="15" selection-end="15" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="558">
-          <folding>
-            <element signature="e#62#146#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,23 +942,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/core_theme/page/body.php">
+    <entry file="file://$PROJECT_DIR$/app/code/core/core/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
+        <state line="113" column="18" selection-start="3419" selection-end="3419" vertical-scroll-proportion="-72.0" vertical-offset="0" max-vertical-offset="4140">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/one_page_theme/add/addBtn.php">
+    <entry file="file://$PROJECT_DIR$/app/code/core/core/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+        <state line="133" column="25" selection-start="6626" selection-end="6626" vertical-scroll-proportion="-9.888889" vertical-offset="1983" max-vertical-offset="2844">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/task_theme/index/index.php">
+    <entry file="file://$PROJECT_DIR$/app/code/local/task/models/DbObjectModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.41197184" vertical-offset="0" max-vertical-offset="738">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/task/models/DbDataMapperModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="48" selection-start="1152" selection-end="1152" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="558">
+          <folding>
+            <element signature="e#62#146#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/task/models/DbServicesModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="8" selection-start="1049" selection-end="1049" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="2016">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/core/models/DbDataMapperModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.0" vertical-offset="108" max-vertical-offset="1008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/core/models/DbObjectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="3" selection-start="792" selection-end="792" vertical-scroll-proportion="-6.0" vertical-offset="162" max-vertical-offset="1044">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/core/models/DbServicesModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="962" selection-end="962" vertical-scroll-proportion="0.10297483" vertical-offset="270" max-vertical-offset="1332">
           <folding />
         </state>
       </provider>
