@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+       <!--user defines what type of page they want here: -->
+       <!--     if nothing is requested or it is not found => use default. -->
+       <!--     otherwise => use that layout. -->
+
+
+
+<layout version="0.1.0">
+    <!--
+    Default layout, loads most of the pages
+    -->
+
+    <default>
+
+        <!--The skeleton will also serve as the location of the file as well...-->
+        <page skeleton="page/1column.phtml"/>
+
+        <block name="head">
+            <action method="addBootstrap"/>
+
+            <!--<action method="addCss">-->
+                <!--<stylesheet>-->
+                    <!---->
+                <!--</stylesheet>-->
+            <!--</action>-->
+            <action method="addTemplate">head.phtml</action>
+
+            <!--<action method="addCss"> location of css  </action>-->
+            <!--<action method="addJs"> location of js  </action>-->
+        </block>
+
+
+        <block name="header">
+
+            <action method="addTemplate">header.phtml</action>
+
+        </block>
+
+
+        <block name="body">
+
+            <action method="addTemplate">body.phtml</action>
+
+        </block>
+
+
+        <block name="footer">
+
+            <action method="addTemplate">footer.phtml</action>
+
+        </block>
+
+    </default>
+
+
+
+    <!-- Custom page layout handles -->
+
+    <page_one_column skeleton="page/1column.phtml">
+
+        <!--custom blah-->
+
+    </page_one_column>
+
+    <page_three_columns skeleton="page/3columns.phtml">
+
+        <!--custom blah-->
+
+    </page_three_columns>
+
+
+</layout>

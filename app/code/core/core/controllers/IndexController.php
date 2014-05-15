@@ -23,15 +23,8 @@ class Core_IndexController
         {
             $class = new $class;
 
-
-            if($isFOF != true)
-            {
-                $class->render();
-            }
-            else
-            {
-                $this->passToRenderFOF();
-            }
+            $class->loadLayout();
+            $class->renderLayout();
         }
     }
 
@@ -51,7 +44,7 @@ class Core_IndexController
             if($class = $this->getViewClass(get_class($this), $function))
             {
                 $class = new $class;
-                $class->render();
+                $class->renderLayout();
             }
         }
         else
@@ -59,7 +52,7 @@ class Core_IndexController
             //maybe throw exception?...
             $class = $this->getViewClass(get_class($this), 'index');
             $class = new $class;
-            $class->render();
+            $class->renderLayout();
         }
     }
 
@@ -69,7 +62,7 @@ class Core_IndexController
         $class = $this->getViewClass(get_class($this), 'index');
         $class = new $class;
         $class->setTargetTemplate('four_oh_four.php');
-        $class->render();
+        $class->renderLayout();
     }
 
 
