@@ -17,7 +17,7 @@ class Core_XMLConfig
     protected static $_database_info = array();
     protected static $_registered_modules = array(); //will hold a 2-dimensional associative array. (ex. registered_modules['lib(namespace)']['core(file_path)'];
     protected static $_registered_themes = array(); //will hold a multi-dim. array of all the themes placed in the config file.
-
+    protected static $_package_name = '';
 
     public function __construct($configFile = null)
     {
@@ -264,6 +264,16 @@ class Core_XMLConfig
     }
 
 
+    public static function setPackageName()
+    {
+//        foreach()
+
+    }
+
+    public static function getPackageName()
+    {
+        return self::$_package_name;
+    }
 
 
 
