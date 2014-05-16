@@ -52,12 +52,12 @@ final class Core_Bootstrap
             {
                 $uri[0] = 'Core_Index';
                 //just for testing if this will switch the current theme or not.
-                Core_XMLConfig::setCurrentTheme('core_theme');
+//                Core_XMLConfig::setCurrentTheme('core_theme');
             }
             elseif($uri[0] == 'core')
             {
                 //another just for testing
-                Core_XMLConfig::setCurrentTheme('core_theme');
+//                Core_XMLConfig::setCurrentTheme('core_theme');
             }
 
 

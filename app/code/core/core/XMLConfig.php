@@ -12,6 +12,8 @@ class Core_XMLConfig
     protected static $_config;  //the loaded xml file
     protected static $_base_url = '';
     protected static $_current_theme ='';
+    protected static $_rollback_theme = '';
+    protected static $_default_theme = 'core_theme';
     protected static $_database_info = array();
     protected static $_registered_modules = array(); //will hold a 2-dimensional associative array. (ex. registered_modules['lib(namespace)']['core(file_path)'];
     protected static $_registered_themes = array(); //will hold a multi-dim. array of all the themes placed in the config file.
@@ -85,6 +87,9 @@ class Core_XMLConfig
         return self::$_base_url;
     }
 
+
+
+    //*** I very quickly SET the ROLLBACK & DEFAULT themes here as well for quick testing purposes...
     public static function setCurrentTheme($themeName = null)
     {
         if($themeName === null)
@@ -96,6 +101,14 @@ class Core_XMLConfig
                 if($child->getName() == 'current_theme')
                 {
                     self::$_current_theme = (string)$child;
+                }
+                elseif($child->getName() == 'rollback_theme')
+                {
+                    self::$_rollback_theme = (string)$child;
+                }
+                elseif($child->getName() == 'default_theme')
+                {
+                    self::$_default_theme = (string)$child;
                 }
             }
         }
@@ -239,6 +252,16 @@ class Core_XMLConfig
         return self::$_registered_themes;
     }
 
+
+    public static function getRollbackTheme()
+    {
+        return self::$_rollback_theme;
+    }
+
+    public static function getDefaultTheme()
+    {
+        return self::$_default_theme;
+    }
 
 
 

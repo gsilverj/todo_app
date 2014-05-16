@@ -8,11 +8,15 @@
 
 class Task_IndexView extends Core_IndexView {
 
-    public function __construct()
+    public function loadLayout($fileName = null)
     {
-        parent::__construct();
-        //set the target template only if you want to change the page that will be loaded...
-        $this->setTargetTemplate(__CLASS__);
+        parent::loadLayout();
+
+    }
+
+    public function renderLayout()
+    {
+        parent::renderLayout();
     }
 
     public function returnTodoListArray()

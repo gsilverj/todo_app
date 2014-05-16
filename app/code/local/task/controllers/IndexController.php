@@ -19,24 +19,15 @@ class Task_IndexController extends Core_IndexController
      */
     public function index($is_FOF = null)
     {
-
         Task_Registry::set('last_task', null);
 
-        if($class = $this->getViewClass(__CLASS__, __FUNCTION__))
+        if($class = $this->getViewClass(get_called_class(), __FUNCTION__))
         {
             $class = new $class;
 
-
-            if($is_FOF != true)
-            {
-                $class->render();
-            }
-            else
-            {
-                $this->passToRenderFOF();
-            }
+            $class->loadLayout();
+            $class->renderLayout();
         }
-
     }
 
     public function add()

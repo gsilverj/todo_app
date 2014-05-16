@@ -5,6 +5,8 @@
     <url>http://todo_app.dev/</url>
     <!-- Name the desired theme to use here.-->
     <current_theme>one_page_theme</current_theme>
+    <rollback_theme>task_theme</rollback_theme>
+    <default_theme>default</default_theme>
 
     <!--Database Info Goes Here. -->
     <database>
