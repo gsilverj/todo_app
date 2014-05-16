@@ -266,8 +266,15 @@ class Core_XMLConfig
 
     public static function setPackageName()
     {
-//        foreach()
+        $xml = self::getConfig();
 
+        foreach ($xml->children() as $child)                                //get children of xml file
+        {
+            if($child->getName() == 'package_name')                   //get the name of the current child and compare
+            {
+                self::$_package_name = (string)$child;
+            }
+        }
     }
 
     public static function getPackageName()

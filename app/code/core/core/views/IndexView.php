@@ -27,13 +27,9 @@ class Core_IndexView
         $this->_designFilePath = getcwd() . DS . "app" . DS . "design";
         $this->parseLayouts($filename);
 
-
         $this->_theme_to_use = Core_XMLConfig::getCurrentTheme();
 
-        //force package name to lowercase
-        $package = explode('_', (get_called_class()));
-        $package[0] = strtolower($package[0]);
-        $this->_package_to_use =  $package[0];
+        $this->_package_to_use = Core_XMLConfig::getPackageName();
 
         $this->compareAndOverwriteLayout();
 
@@ -219,8 +215,7 @@ class Core_IndexView
 
                     if(isset($attributes["skeleton"]))
                     {
-                        $skeleton = $attributes["skeleton"];
-                        $foundSkeleton = true;
+                        $skeleton["skeletonFileName"] = $attributes["skeleton"];
                         $skeleton["isFound"] = true;
                     }
                 }

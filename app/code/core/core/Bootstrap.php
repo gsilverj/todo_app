@@ -31,6 +31,7 @@ final class Core_Bootstrap
             $xmlConfigObj->setDatabaseInfo();
             $xmlConfigObj->setRegisteredModules();
             $xmlConfigObj->setRegisteredThemes();
+            $xmlConfigObj->setPackageName();
     }
 
     public static function matchUri($uri = null)
