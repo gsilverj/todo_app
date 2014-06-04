@@ -33,7 +33,7 @@
       <file leaf-file-name="IndexView.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/code/core/core/views/IndexView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="4" selection-start="8901" selection-end="8901" vertical-scroll-proportion="0.8057554" vertical-offset="768" max-vertical-offset="1728">
+            <state line="239" column="7" selection-start="8845" selection-end="8845" vertical-scroll-proportion="0.78417265" vertical-offset="768" max-vertical-offset="1764">
               <folding>
                 <element signature="n#parseLayouts#0;n#Core_IndexView#0;n#!!top" expanded="false" />
                 <element signature="n#compareAndOverwriteLayout#0;n#Core_IndexView#0;n#!!top" expanded="false" />
@@ -852,7 +852,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/core/views/IndexView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="4" selection-start="8901" selection-end="8901" vertical-scroll-proportion="0.8057554" vertical-offset="768" max-vertical-offset="1728">
+        <state line="239" column="7" selection-start="8845" selection-end="8845" vertical-scroll-proportion="0.78417265" vertical-offset="768" max-vertical-offset="1764">
           <folding>
             <element signature="n#parseLayouts#0;n#Core_IndexView#0;n#!!top" expanded="false" />
             <element signature="n#compareAndOverwriteLayout#0;n#Core_IndexView#0;n#!!top" expanded="false" />

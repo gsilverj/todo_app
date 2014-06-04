@@ -235,10 +235,12 @@ class Core_IndexView
 
 
 
-
+alkjalkjafsd
+lasjflaskjf
+laksjdf
     //##################################################### New Stuff added here.
 
-    
+
 
 
 
