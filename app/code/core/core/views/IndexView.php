@@ -224,4 +224,28 @@ class Core_IndexView
 
         return $skeleton;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    //##################################################### New Stuff added here.
+
+    
+
+
+
+
+
+
+
+
+
 }
