@@ -58,7 +58,7 @@
 
     <!-- Custom page layout handles -->
 
-    <page_one_column>
+    <core_index_index>
 
         <page skeleton="jhvjkhvn.phtml"/>
 
@@ -68,13 +68,13 @@
 
         </block>
 
-    </page_one_column>
+    </core_index_index>>
 
-    <page_three_columns>
+    <!--<page_three_columns>-->
 
-        <!--custom blah-->
+        <!--&lt;!&ndash;custom blah&ndash;&gt;-->
 
-    </page_three_columns>
+    <!--</page_three_columns>-->
 
 
 </layout>

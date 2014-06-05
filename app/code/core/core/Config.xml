@@ -15,7 +15,7 @@
         <host>localhost</host>
         <user>root</user>
         <pass>root</pass>
-        <dbname>test</dbname>
+        <dbname>todoapp</dbname>
     </database>
 
     <!-- List the modules here in this order ->  *code_pool_type*/*module*/*modules_name*/*modules_code_pool_name* -->

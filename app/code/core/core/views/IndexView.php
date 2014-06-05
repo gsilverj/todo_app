@@ -24,14 +24,17 @@ class Core_IndexView
     //do this in a try catch incase of an error happening when loading custom page...
     public function loadLayout($filename = null)
     {
+        //set some of the inital variables up like the name of the current package and the current theme to use.
         $this->_designFilePath = getcwd() . DS . "app" . DS . "design";
-        $this->parseLayouts($filename);
-
         $this->_theme_to_use = Core_XMLConfig::getCurrentTheme();
-
         $this->_package_to_use = Core_XMLConfig::getPackageName();
 
-        $this->compareAndOverwriteLayout();
+
+        $this->parseLayouts($filename);
+
+        // $this->compareAndOverwriteLayout();
+
+        //$this->_checkLayoutForCustomHandle();
 
         //skeleton[isFound=>bool, skeletonFileName=>"filename"]
         $skeleton = $this->getPageSkeleton();
@@ -50,7 +53,7 @@ class Core_IndexView
     protected function parseLayouts($modname = null)
     {
         $this->_defaultLayout = simplexml_load_file( $this->_designFilePath . DS . "frontend" . DS . "core" . DS . "default" . DS . "layout" . DS . "page.xml");
-        //$this->_targetLayout= simplexml_load_file( $this->_designFilePath . DS . "frontend" . DS . $modname . DS . "layout" . DS . "page.xml" );
+        $this->_targetLayout= simplexml_load_file( $this->_designFilePath . DS . "frontend" . DS . $this->_package_to_use . DS . $this->_theme_to_use . DS . "layout" . DS . "page.xml" );
     }
 
     //todo: im not really sure how to handle this :(
@@ -224,4 +227,83 @@ class Core_IndexView
 
         return $skeleton;
     }
+
+
+
+
+
+
+
+//################################  New Stuff added Thursday June 5th, 2014
+
+
+
+    //looks to see if there is a custom handle define, based on the current URI. (I set it to automatically look in the $_targetLayout that would be set before this function is called.
+    //returns bool on existance.
+    protected function _checkLayoutForCustomHandle($layout = null)
+    {
+        $customHandleExists = false;
+
+        if($layout === null)
+        {
+            $layout = $this->_targetLayout;
+        }
+
+        //get the uri minus the first / and without the query. (it says replace the query string from the url that is found in the uri and then grab everything after the first character which is the '/')
+        $targetCustomPageHandle = substr(str_replace($_SERVER['QUERY_STRING'], '', $_SERVER['REQUEST_URI']), + 1);
+
+
+        //if the target page handle is empty, chances are that they are trying to find the "core__index/index" page. (the reason its blank is because of the matchUri function in the bootstrap)
+        if($targetCustomPageHandle == '')
+        {
+            $targetCustomPageHandle = 'core_index_index';
+        }
+        else
+        {
+            //get the target page handle and replace all '/' with underscores. todo: I think I might be able to 'trim()' the handle to make sure no whitespace or /'s are on the ends of the handle
+            $targetCustomPageHandle = str_replace('/' , '_' , $targetCustomPageHandle);
+        }
+
+        //loop through the layout and look for the target page handle.
+        foreach($layout as $pageHandle)
+        {
+            echo $pageHandle->getName();
+            if((string)$pageHandle->getName() == $targetCustomPageHandle)
+            {
+                $customHandleExists = true;
+                break;
+            }
+        }
+
+        return $customHandleExists;
+    }
+
+
+    //check if the found custom handle has any contents, and if it does, handle it. (tell it what to do/method to use)
+    protected function _handleCustomHandleContents()
+    {
+
+    }
+
+
+    //add a brand new block to the Default Layout (the one the will be used when rendering to the screen)
+    protected function _addBlockToDefaultLayout()
+    {}
+
+
+    //this will add something (mainly an action) to a block that already exists in default.
+    protected function _addActionToExistingBlock()
+    {}
+
+
+    //remove all of the contents of an existing block, and add new contents to it. (so like remove->add for an existing block)
+    protected function _updateExistingBlock()
+    {}
+
+
+    //remove an existing block and all its contents from default layout.
+    protected function _removeExistingBlock()
+    {}
+
+
 }
