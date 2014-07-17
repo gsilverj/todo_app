@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef290197-2a10-41bf-8b0f-e1dc5417bff4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/core/core/Config.xml" afterPath="$PROJECT_DIR$/app/code/core/core/Config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/core/core/views/IndexView.php" afterPath="$PROJECT_DIR$/app/code/core/core/views/IndexView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/layout/page.xml" afterPath="$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/layout/page.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,43 +34,23 @@
       <file leaf-file-name="IndexView.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/code/core/core/views/IndexView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="45" selection-start="6331" selection-end="6331" vertical-scroll-proportion="0.71229696" vertical-offset="430" max-vertical-offset="1890">
+            <state line="233" column="0" selection-start="9011" selection-end="9011" vertical-scroll-proportion="0.18957347" vertical-offset="1172" max-vertical-offset="2016">
               <folding>
-                <element signature="e#1167#1831#0" expanded="false" />
-                <element signature="e#1428#1831#0" expanded="false" />
                 <element signature="n#compareAndOverwriteLayout#0;n#Core_IndexView#0;n#!!top" expanded="false" />
                 <element signature="n#renderLayout#0;n#Core_IndexView#0;n#!!top" expanded="false" />
                 <element signature="n#getTemplate#0;n#Core_IndexView#0;n#!!top" expanded="false" />
                 <element signature="e#2978#4807#0" expanded="false" />
                 <element signature="e#3058#4797#0" expanded="false" />
-                <element signature="e#3121#4783#0" expanded="false" />
-                <element signature="e#3251#4765#0" expanded="false" />
                 <element signature="e#3335#4743#0" expanded="false" />
                 <element signature="n#getFileLocation#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-                <element signature="e#5207#6247#0" expanded="false" />
                 <element signature="e#5474#5814#0" expanded="false" />
                 <element signature="e#5823#6069#0" expanded="false" />
                 <element signature="e#6078#6247#0" expanded="false" />
                 <element signature="n#decideWhichThemeIsNeeded#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-                <element signature="e#6496#8269#0" expanded="false" />
-                <element signature="e#6546#7356#0" expanded="false" />
-                <element signature="e#6793#7342#0" expanded="false" />
-                <element signature="e#6955#7342#0" expanded="false" />
-                <element signature="e#7169#7324#0" expanded="false" />
-                <element signature="e#7375#8269#0" expanded="false" />
-                <element signature="e#7449#8259#0" expanded="false" />
-                <element signature="e#7696#8245#0" expanded="false" />
-                <element signature="e#7858#8245#0" expanded="false" />
-                <element signature="e#8072#8227#0" expanded="false" />
                 <element signature="n#getPageSkeleton#0;n#Core_IndexView#0;n#!!top" expanded="false" />
                 <element signature="e#8447#8973#0" expanded="false" />
                 <element signature="e#8527#8963#0" expanded="false" />
-                <element signature="e#8590#8949#0" expanded="false" />
-                <element signature="e#8719#8931#0" expanded="false" />
                 <element signature="n#_checkLayoutForCustomHandle#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-                <element signature="e#9430#9514#0" expanded="false" />
-                <element signature="e#10038#10466#0" expanded="false" />
-                <element signature="e#10158#10466#0" expanded="false" />
                 <element signature="e#10547#10808#0" expanded="false" />
                 <element signature="n#_handleCustomHandleContents#0;n#Core_IndexView#0;n#!!top" expanded="false" />
                 <element signature="n#_addBlockToDefaultLayout#0;n#Core_IndexView#0;n#!!top" expanded="false" />
@@ -84,53 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XMLConfig.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/core/XMLConfig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="5" selection-start="4264" selection-end="4264" vertical-scroll-proportion="-5.740741" vertical-offset="619" max-vertical-offset="1494">
-              <folding>
-                <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getBaseUrl#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setDatabaseInfo#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getDatabaseInfoHost#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getDatabaseInfoUser#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getDatabaseInfoPass#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getDatabaseInfoDbName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="e#6673#7126#0" expanded="false" />
-                <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getRollbackTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getDefaultTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#setPackageName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-                <element signature="n#getPackageName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="page.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/layout/page.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="38" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1530">
-              <folding>
-                <marker date="1401974032965" expanded="true" signature="1578:1755" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/core/Config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="64" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1422">
+            <state line="49" column="0" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0" vertical-offset="628" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -198,8 +133,8 @@
         <option value="$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/template/body.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/template/page/1column.phtml" />
         <option value="$PROJECT_DIR$/app/code/core/core/Config.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/layout/page.xml" />
         <option value="$PROJECT_DIR$/app/code/core/core/views/IndexView.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/layout/page.xml" />
       </list>
     </option>
   </component>
@@ -241,7 +176,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,40 +260,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="one_page_theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todo-app.dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="code" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -379,10 +279,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -392,6 +288,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Revu" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -502,15 +400,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="reVu" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16214807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1640667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50481284" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -519,11 +418,11 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32723358" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32723358" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -823,9 +722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/core/Bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="44" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="2628">
-          <folding />
-        </state>
+        <state line="33" column="44" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="2628" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/task/views/IndexView.php">
@@ -837,9 +734,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/template/body.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="43" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="3" column="43" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/task/controllers/IndexController.php">
@@ -851,9 +746,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/core/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="4104">
-          <folding />
-        </state>
+        <state line="26" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="4104" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/template/header.phtml">
@@ -863,96 +756,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/template/page/1column.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="360">
+        <state line="7" column="10" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/core/Config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="64" selection-start="243" selection-end="243" vertical-scroll-proportion="0.11973392" vertical-offset="0" max-vertical-offset="1422" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/layout/page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0" vertical-offset="628" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/core/XMLConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="5" selection-start="4264" selection-end="4264" vertical-scroll-proportion="-5.740741" vertical-offset="619" max-vertical-offset="1494">
-          <folding>
-            <element signature="n#__construct#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#readInXmlConfigFile#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setBaseUrlFromConfig#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getBaseUrl#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setCurrentTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setDatabaseInfo#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoHost#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoUser#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoPass#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDatabaseInfoDbName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#addModuleToRegisteredModules#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#validateName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="e#6673#7126#0" expanded="false" />
-            <element signature="n#getRegisteredThemes#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getRollbackTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getDefaultTheme#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#setPackageName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-            <element signature="n#getPackageName#0;n#Core_XMLConfig#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/blue/one_page_theme/layout/page.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="749" selection-end="749" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1530">
-          <folding>
-            <marker date="1401974032965" expanded="true" signature="1578:1755" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/core/Config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="64" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1422">
-          <folding />
-        </state>
+        <state line="208" column="27" selection-start="6401" selection-end="6401" vertical-scroll-proportion="0.44457144" vertical-offset="565" max-vertical-offset="1494" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/core/views/IndexView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="45" selection-start="6331" selection-end="6331" vertical-scroll-proportion="0.71229696" vertical-offset="430" max-vertical-offset="1890">
+        <state line="233" column="0" selection-start="9011" selection-end="9011" vertical-scroll-proportion="0.18957347" vertical-offset="1172" max-vertical-offset="2016">
           <folding>
-            <element signature="e#1167#1831#0" expanded="false" />
-            <element signature="e#1428#1831#0" expanded="false" />
             <element signature="n#compareAndOverwriteLayout#0;n#Core_IndexView#0;n#!!top" expanded="false" />
             <element signature="n#renderLayout#0;n#Core_IndexView#0;n#!!top" expanded="false" />
             <element signature="n#getTemplate#0;n#Core_IndexView#0;n#!!top" expanded="false" />
             <element signature="e#2978#4807#0" expanded="false" />
             <element signature="e#3058#4797#0" expanded="false" />
-            <element signature="e#3121#4783#0" expanded="false" />
-            <element signature="e#3251#4765#0" expanded="false" />
             <element signature="e#3335#4743#0" expanded="false" />
             <element signature="n#getFileLocation#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-            <element signature="e#5207#6247#0" expanded="false" />
             <element signature="e#5474#5814#0" expanded="false" />
             <element signature="e#5823#6069#0" expanded="false" />
             <element signature="e#6078#6247#0" expanded="false" />
             <element signature="n#decideWhichThemeIsNeeded#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-            <element signature="e#6496#8269#0" expanded="false" />
-            <element signature="e#6546#7356#0" expanded="false" />
-            <element signature="e#6793#7342#0" expanded="false" />
-            <element signature="e#6955#7342#0" expanded="false" />
-            <element signature="e#7169#7324#0" expanded="false" />
-            <element signature="e#7375#8269#0" expanded="false" />
-            <element signature="e#7449#8259#0" expanded="false" />
-            <element signature="e#7696#8245#0" expanded="false" />
-            <element signature="e#7858#8245#0" expanded="false" />
-            <element signature="e#8072#8227#0" expanded="false" />
             <element signature="n#getPageSkeleton#0;n#Core_IndexView#0;n#!!top" expanded="false" />
             <element signature="e#8447#8973#0" expanded="false" />
             <element signature="e#8527#8963#0" expanded="false" />
-            <element signature="e#8590#8949#0" expanded="false" />
-            <element signature="e#8719#8931#0" expanded="false" />
             <element signature="n#_checkLayoutForCustomHandle#0;n#Core_IndexView#0;n#!!top" expanded="false" />
-            <element signature="e#9430#9514#0" expanded="false" />
-            <element signature="e#10038#10466#0" expanded="false" />
-            <element signature="e#10158#10466#0" expanded="false" />
             <element signature="e#10547#10808#0" expanded="false" />
             <element signature="n#_handleCustomHandleContents#0;n#Core_IndexView#0;n#!!top" expanded="false" />
             <element signature="n#_addBlockToDefaultLayout#0;n#Core_IndexView#0;n#!!top" expanded="false" />

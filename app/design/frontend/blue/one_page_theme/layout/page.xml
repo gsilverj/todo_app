@@ -60,7 +60,7 @@
 
     <core_index_index>
 
-        <page skeleton="jhvjkhvn.phtml"/>
+        <page skeleton="page/1column.phtml"/>
 
         <block name="body">
 
