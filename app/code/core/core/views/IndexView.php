@@ -34,7 +34,14 @@ class Core_IndexView
 
         // $this->compareAndOverwriteLayout();
 
-        //$this->_checkLayoutForCustomHandle();
+        If ($this->_checkLayoutForCustomHandle())
+        {
+            $this->_handleCustomHandleContents();
+        }
+
+
+
+
 
         //skeleton[isFound=>bool, skeletonFileName=>"filename"]
         $skeleton = $this->getPageSkeleton();
@@ -280,8 +287,44 @@ class Core_IndexView
 
 
     //check if the found custom handle has any contents, and if it does, handle it. (tell it what to do/method to use)
+    //returns a layout in simpleXml format.
     protected function _handleCustomHandleContents()
     {
+
+        /**
+         * Just for future reference for me, I am just now in the process of adding code to handle what happens when a custom page handle is found
+         *     and what to do based on the method found inside of that handle.
+         */
+
+
+        //the layout will be the layout that is being targeted by the user.
+        $layout = $this->_targetLayout;
+
+        //get the uri minus the first / and without the query. (it says replace the query string from the url that is found in the uri and then grab everything after the first character which is the '/')
+        $targetCustomPageHandle = substr(str_replace($_SERVER['QUERY_STRING'], '', $_SERVER['REQUEST_URI']), + 1);
+
+        //if the target page handle is empty, chances are that they are trying to find the "core__index/index" page. (the reason its blank is because of the matchUri function in the bootstrap)
+        if($targetCustomPageHandle == '')
+        {
+            $targetCustomPageHandle = 'core_index_index';
+        }
+        else
+        {
+            //get the target page handle and replace all '/' with underscores. todo: I think I might be able to 'trim()' the handle to make sure no whitespace or /'s are on the ends of the handle
+            $targetCustomPageHandle = str_replace('/' , '_' , $targetCustomPageHandle);
+        }
+
+        foreach($layout as $pageHandle)
+        {
+            echo $pageHandle->getName();
+            if((string)$pageHandle->getName() == $targetCustomPageHandle)
+            {
+                $customHandleExists = true;
+                break;
+            }
+        }
+
+
 
     }
 
